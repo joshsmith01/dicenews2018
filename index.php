@@ -14,36 +14,109 @@
  */
 
 get_header(); ?>
+<?php global $wp_query; ?>
 
-<div class="main-grid">
-	<main class="main-content">
-	<?php if ( have_posts() ) : ?>
+<div class="main-container">
+    <div class="main-grid">
+        <!-- Featured posts desktop -->
+        <div class="top-stories grid-x">
+		    <?php $thirds = 0 ?>
+		    <?php $num_featured = 0; ?>
+		    <?php while ( have_posts() ) {
+			    the_post();
+			    if ( $thirds >= 3 ) {
+//				    rewind_posts();
+				    break;
+			    }
+			    $thumb_size = get_field( 'type' ); ?>
+                <div class="small-12 medium-6 large-4 cell <?php echo $thumb_size; ?>">
+				    <?php if ( get_field( 'sponsor' ) ) { ?>
+                        <div class="sponsor">
+                            <img class="logo" src="<?php echo get_field( 'sponsor_icon' ); ?>">
+                            <div class="learn-more">
+                                Brought to you by <?php echo get_field( 'sponsor' ); ?> <a
+                                        href="<?php echo get_field( 'sponsor_link' ); ?>">Learn More</a>
+                            </div>
+                        </div>
+				    <?php }
+				    if ( $thirds == 0 ) {
+					    if ( $thumb_size == 'featured-one-third' ) {
+						    $thirds += 1;
+					    } elseif ( $thumb_size == 'featured-two-third' ) {
+						    $thirds += 2;
+					    } elseif ( $thumb_size == 'featured-full' ) {
+						    $thirds += 3;
+					    } else {
+						    $thumb_size = 'featured-one-third';
+						    $thirds     += 1;
+					    }
+					    the_post_thumbnail( $thumb_size );
+				    } else {
+					    the_post_thumbnail( 'featured-one-third' );
+					    $thirds += 1;
+				    }
+				    $num_featured ++;
+				    ?>
+                    <span class="title blue <?php echo get_field( 'color' ); ?>">
+                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    </span>
+                </div>
+		    <?php } ?>
+        </div>
+        <main class="main-content">
+			<?php if ( get_query_var( 'confirmation', 0 ) > 0 ) { // Email confirmation page ?>
+                <div class="confirmation-header">
+                    <div class="confirmation">
+                        <h1>Confirmation</h1>
+                    </div>
+                    <div class="confirmation-text">Thanks for signing up!</div>
+                </div>
 
-		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
-		<?php endwhile; ?>
+			<?php } elseif ( have_posts() ) { ?>
 
-		<?php else : ?>
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		<?php endif; // End have_posts() check. ?>
 
-		<?php /* Display navigation to next/previous pages when applicable */ ?>
-		<?php
-		if ( function_exists( 'foundationpress_pagination' ) ) :
-			foundationpress_pagination();
-		elseif ( is_paged() ) :
-		?>
-			<nav id="post-nav">
-				<div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
-				<div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
-			</nav>
-		<?php endif; ?>
 
-	</main>
-	<?php get_sidebar(); ?>
+                <!-- Nonfeatured posts -->
+                <div id="content">
+                    <div class="stories">
+                        <!-- Posts -->
+						<?php $gradient_number = 0;
+						$featured_counter      = 0;
+						while ( have_posts() ) {
+							the_post(); ?>
 
+								<?php get_template_part( 'template-parts/content-standard', get_post_format() ); ?>
+
+							<?php $gradient_number ++ ?>
+						<?php } ?>
+                    </div>
+                    <!-- More posts button -->
+<!--                    <div class="autoscroll button expanded">Old Autoscroll</div>-->
+                    <div id="restscroll" class="restscroll button expanded"
+                         data-catid=<?php echo $wp_query->queried_object->cat_ID; ?>>REST Scroll
+                    </div>
+                </div>
+
+				<?php /* Display navigation to next/previous pages when applicable */
+				if ( function_exists( 'foundationpress_pagination' ) ) {
+					foundationpress_pagination();
+				} elseif ( is_paged() ) {
+					?>
+                    <nav id="post-nav">
+                        <div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
+                        <div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
+                    </nav>
+				<?php } ?>
+			<?php } else {
+				get_template_part( 'template-parts/content', 'none' );
+			} ?>
+
+
+        </main>
+		<?php get_sidebar(); ?>
+    </div>
 </div>
 
-<?php get_footer();
+
+<?php get_footer(); ?>

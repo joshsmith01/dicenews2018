@@ -1,0 +1,3167 @@
+201604_supply,201604_demand,sector,skill
+0.23049,0.396,Management,QA
+0.1742,0.19682,Data,SQL
+0.17141,0.21461,Software Development,Java
+0.15377,0.0752,Data,Oracle
+0.15,0.23299,Software Development,JavaScript
+0.14372,0.11817,Software Development,HTML
+0.14009,0.13507,Management,Project management
+0.12155,0.44198,Management,Leadership
+0.12008,0.16478,Data,Database
+0.11005,0.08678,I.T. Administration,Microsoft Windows
+0.10927,0.09767,Software Development,Microsoft SQL Server
+0.10306,0.05425,Software Development,XML
+0.08699,0.14864,Software Development,Linux
+0.08652,0.07631,I.T. Administration,Technical support
+0.08482,0.16743,Management,Agile
+0.08269,0.06608,Software Development,Unix
+0.07979,0.06954,Systems Analysis/Design,Business analysis
+0.0794,0.09665,Management,Finance
+0.07759,0.05182,Industry-specific,Customer service
+0.07755,0.06156,Management,Sales
+0.07394,0.02582,Data,DBA
+0.0736,0.10276,Software Development,.NET
+0.07231,0.07295,I.T. Administration,Networking
+0.07158,0.14096,Software Development,UI
+0.07145,0.05185,Communication,Marketing
+0.06934,0.04773,Management,Budget
+0.0674,0.11716,Software Development,C#
+0.06515,0.21915,"Software Development
+",Software development
+0.0651,0.1412,I.T. Administration,Network
+0.05784,0.08388,Software Development,jQuery
+0.05779,0.03963,I.T. Administration,Active Directory
+0.05739,0.09135,Software Development,Web services
+0.0555,0.02639,Data,PL/SQL
+0.05472,0.0887,Communication,Research
+0.05321,0.09149,Hardware/Embedded Software,C++
+0.05317,0.03266,Data,ETL
+0.0513,0.04363,Software Development,J2EE
+0.05025,0.02284,Systems Analysis/Design,Test cases
+0.04965,0.06446,Hardware/Embedded Software,C
+0.04872,0.09736,Industry-specific,Operations
+0.04811,0.04381,Data,Business intelligence
+0.04785,0.08412,Data,MySQL
+0.04734,0.03383,Software Development,Ajax
+0.04677,0.03955,I.T. Administration,Cisco
+0.04522,0.01294,Software Development,Eclipse
+0.04449,0.01071,Management,ISO 9000
+0.04448,0.09628,I.T. Administration,Hardware
+0.04346,0.04019,Management,CRM
+0.04304,0.04384,Data,Data analysis
+0.04281,0.00438,Systems Analysis/Design,HP Quality Center
+0.04262,0.14399,Industry-specific,Security
+0.0425,0.14102,Hardware/Embedded Software,Software engineering
+0.0424,0.04923,Software Development,ASP.NET
+0.03975,0.03928,Management,Senior management
+0.03973,0.02357,Software Development,Microsoft Visual Studio
+0.03917,0.14046,Software Development,Python
+0.03911,0.03339,Data,Data warehouse
+0.03779,0.02187,Industry-specific,Microsoft Visio
+0.03725,0.04307,Software Development,Spring
+0.0371,0.01983,Data,Acceptance testing
+0.03647,0.09033,Management,Strategy
+0.03629,0.02912,Systems Analysis/Design,Test plans
+0.03585,0.02464,I.T. Administration,Microsoft Exchange
+0.03479,0.07242,Systems Analysis/Design,SDLC
+0.0346,0.01282,Industry-specific,Microsoft Project
+0.03456,0.0763,Software Development,HTML5
+0.03421,0.01032,Systems Analysis/Design,Quality control
+0.03399,0.01204,Design,Adobe Photoshop
+0.0339,0.02746,Management,SAP
+0.03366,0.09203,Software Development,AngularJS
+0.03365,0.02171,Data,Stored procedures
+0.03332,0.01847,I.T. Administration,LAN
+0.03237,0.05374,I.T. Administration,IT management
+0.03228,0.04976,Industry-specific,Supervision
+0.03225,0.02436,Software Development,Hibernate
+0.03222,0.54363,Management,Verification and validation
+0.0321,0.12663,"Software Development
+",Framework
+0.032,0.00808,Management,Process engineering
+0.03066,0.05971,Software Development,PHP
+0.03059,0.06511,Management,Presentations
+0.02954,0.02389,Management,Change management
+0.0295,0.00947,Data,Informatica
+0.02949,0.02501,Industry-specific,Microsoft SharePoint
+0.02911,0.08077,I.T. Administration,Monitoring
+0.02903,0.03922,I.T. Administration,Switches
+0.02888,0.01205,Data,IBM DB2
+0.0286,0.00768,Data,Crystal Reports
+0.02844,0.03696,I.T. Administration,System administration
+0.02812,0.01966,Data,Microsoft SSRS
+0.02787,0.01737,Management,Program management
+0.02774,0.0236,Software Development,Shell scripting
+0.02743,0.05063,Systems Analysis/Design,Unit testing
+0.02728,0.01826,Data,Microsoft SSIS
+0.02726,0.0816,Communication,Writing
+0.02677,0.06938,Software Development,Web development
+0.02647,0.00621,Software Development,Java Servlets
+0.02643,0.00275,Data,Toad
+0.02641,0.01358,Software Development,Microsoft IIS
+0.02592,0.08575,Systems Analysis/Design,Automation
+0.02545,0.09743,I.T. Administration,Software deployment
+0.02527,0.02241,I.T. Administration,DNS
+0.02503,0.04159,Software Development,JSON
+0.02501,0.00766,Software Development,JDBC
+0.02483,0.10796,Software Development,RESTful
+0.02475,0.03693,Software Development,SOAP
+0.02453,0.05874,Management,Scrum
+0.02451,0.01353,Software Development,JUnit
+0.02433,0.00338,Systems Analysis/Design,HP QuickTest Professional
+0.02429,0.03357,"Industry-specific
+",Audit
+0.02428,0.02785,Management,Team leadership
+0.02425,0.02479,Systems Analysis/Design,ERP
+0.02403,0.00752,Data,Business Objects
+0.02378,0.00754,Data,Content management
+0.02369,0.09989,Software Development,API
+0.02352,0.03141,Data,Data modeling
+0.02326,0.02525,I.T. Administration,Routers
+0.02315,0.00643,Software Development,Apache Struts
+0.02307,0.01054,Software Development,Visual Basic
+0.02301,0.00858,I.T. Administration,Mainframe
+0.0229,0.02516,Management,Scheduling
+0.02289,0.028,Management,JIRA
+0.02271,0.00812,Systems Analysis/Design,Regression testing
+0.02253,0.01993,I.T. Administration,Help desk
+0.0221,0.04207,Systems Analysis/Design,Automated testing
+0.02162,0.01904,I.T. Administration,Network management
+0.021,0.01853,Management,Accounting
+0.02091,0.00406,I.T. Administration,COBOL
+0.0209,0.08509,Software Development,Web applications
+0.02085,0.12977,I.T. Administration,Infrastructure
+0.02084,0.01254,Management,Forecasting
+0.02078,0.04063,Software Development,Perl
+0.02066,0.02852,I.T. Administration,TCP/IP
+0.02054,0.01,I.T. Administration,DHCP
+0.02051,0.0098,Software Development,IBM WebSphere
+0.02047,0.01129,Management,Business development
+0.02046,0.0684,Software Development,Git
+0.02012,0.04555,Systems Analysis/Design,Business process
+0.02006,0.04555,Software Development,MVC
+0.01987,0.01371,Management,Account management
+0.0197,0.01345,Management,Negotiations
+0.01962,0.02031,Software Development,Transact-SQL
+0.01961,0.01563,I.T. Administration,ITIL
+0.01953,0.01687,Systems Analysis/Design,Use cases
+0.01943,0.04514,Software Development,Android
+0.01892,0.02739,Management,Salesforce.com
+0.01885,0.01879,Software Development,Apache Tomcat
+0.01876,0.03547,I.T. Administration,VMware
+0.01862,0.02862,Management,Retail
+0.01826,0.00222,Software Development,ADO.NET
+0.0182,0.01059,I.T. Administration,Citrix
+0.01816,0.02108,Design,Graphics
+0.01815,0.00127,I.T. Administration,IBM Notes
+0.01812,0.00652,Software Development,Apache Ant
+0.0179,0.01583,Software Development,WCF
+0.01789,0.04101,Hardware/Embedded Software,Systems engineering
+0.01789,0.02733,Systems Analysis/Design,Functional requirements
+0.01788,0.02124,I.T. Administration,Backup
+0.01767,0.0177,Software Development,Apache Maven
+0.01749,0.04952,I.T. Administration,Operating systems
+0.01732,0.01549,I.T. Administration,Customer support
+0.01716,0.01049,I.T. Administration,Microsoft Windows 7
+0.0171,0.00505,I.T. Administration,IBM AIX
+0.01703,0.02157,I.T. Administration,Network engineering
+0.01702,0.01045,Management,Billing
+0.017,0.00257,I.T. Administration,Microsoft Windows XP
+0.01699,0.04123,Data,Apache Hadoop
+0.01695,0.00305,Industry-specific,Data entry
+0.01694,0.02008,I.T. Administration,Transformation
+0.01691,0.00128,Software Development,Adobe Dreamweaver
+0.0168,0.14024,I.T. Administration,Cloud
+0.01667,0.01063,Management,Logistics
+0.01667,0.00823,Software Development,ASP
+0.01647,0.01061,Data,MATLAB
+0.0164,0.00547,Data,Teradata
+0.01622,0.01205,Management,Procurement
+0.0162,0.01222,Software Development,Visual Basic .NET
+0.01616,0.01724,Systems Analysis/Design,Systems analysis
+0.01613,0.00635,Software Development,Solaris
+0.01604,0.01835,I.T. Administration,VPN
+0.01603,0.05353,Management,Insurance
+0.01597,0.01891,I.T. Administration,WAN
+0.01591,0.02039,Management,Human resources
+0.01581,0.00859,Systems Analysis/Design,Test scripts
+0.01566,0.00842,Management,Payroll
+0.01565,0.00352,Data,Oracle DBA
+0.01561,0.00619,Systems Analysis/Design,Manual testing
+0.0156,0.00738,Management,Purchasing
+0.01556,0.01282,Data,Tableau
+0.01555,0.00411,Management,Invoices
+0.01554,0.01802,Industry-specific,Risk management
+0.0155,0.01576,Systems Analysis/Design,Selenium
+0.01534,0.08471,Management,Mentorship
+0.01523,0.00655,Software Development,Adobe Illustrator
+0.01512,0.01702,Software Development,Microsoft TFS
+0.01496,0.02325,Systems Analysis/Design,Requirements elicitation
+0.01492,0.1115,Software Development,Amazon Web Services
+0.01488,0.04977,Management,Manufacturing
+0.01485,0.01817,Data,Database design
+0.01473,0.009,Software Development,Oracle WebLogic
+0.0147,0.02496,I.T. Administration,Cisco Certifications
+0.01451,0.00453,I.T. Administration,FTP
+0.01449,0.03807,Management,Product management
+0.01449,0.02154,Management,Process improvement
+0.01444,0.01001,Data,SAS
+0.01431,0.02162,Software Development,ASP.NET MVC
+0.01425,0.03573,I.T. Administration,Metrics
+0.01423,0.00223,Software Development,DHTML
+0.01422,0.07748,Industry-specific,Health care
+0.0142,0.00473,Systems Analysis/Design,QA management
+0.01419,0.00821,Systems Analysis/Design,Functional testing
+0.01414,0.01039,I.T. Administration,Printers
+0.01414,0.04587,Software Development,iOS
+0.01385,0.01111,Systems Analysis/Design,Waterfall
+0.01365,0.02668,Industry-specific,Telecommunications
+0.01364,0.01342,Software Development,SVN
+0.01359,0.00762,Management,Accounts payable
+0.01355,0.0028,"Hardware/Embedded Software
+",IBM System i
+0.0135,0.03788,I.T. Administration,Firewall
+0.01349,0.014,I.T. Administration,VoIP
+0.01342,0.00842,I.T. Administration,OS X
+0.01338,0.00922,Management,PeopleSoft
+0.01336,0.00237,Management,Administrative support
+0.01328,0.01632,Management,Banking
+0.01325,0.00794,Software Development,JMS
+0.01321,0.06271,Hardware/Embedded Software,Debugging
+0.01294,0.02182,I.T. Administration,Network security
+0.01289,0.01535,Design,AutoCAD
+0.01275,0.00332,Systems Analysis/Design,SoapUI
+0.01273,0.01734,Management,Customer satisfaction
+0.01273,0.03397,Industry-specific,Science
+0.01261,0.04121,"Industry-specific
+",Electronic commerce
+0.0126,0.01324,I.T. Administration,Client/server
+0.01259,0.02109,I.T. Administration,Disaster recovery
+0.01244,0.00788,Management,Accounts receivable
+0.01226,0.00121,I.T. Administration,Microsoft Windows NT
+0.0122,0.01562,I.T. Administration,IBM
+0.01215,0.02012,Software Development,Apache HTTP Server
+0.01214,0.02478,Hardware/Embedded Software,Mechanical engineering
+0.01211,0.03116,Software Development,Jenkins
+0.01202,0.02717,Software Development,Performance tuning
+0.01201,0.00591,Management,Claims
+0.01198,0.00526,Software Development,Adobe Flash
+0.01188,0.00344,I.T. Administration,Microsoft Windows Server 2003
+0.01175,0.00731,Management,Asset management
+0.0117,0.03365,I.T. Administration,Storage
+0.01166,0.00256,I.T. Administration,JCL
+0.01158,0.00399,"Software Development
+",Enterprise JavaBeans
+0.01149,0.02277,Industry-specific,Information security
+0.01147,0.00918,Management,Vendor relationships
+0.01147,0.00635,Data,Regression analysis
+0.01145,0.05789,Communication,UX
+0.01133,0.04016,Hardware/Embedded Software,Electrical engineering
+0.0113,0.00075,,Apache Log4j
+0.01124,0.00812,Management,Scrum master
+0.0112,0.04881,Software Development,Node.js
+0.01119,0.02204,Data,Statistics
+0.01118,0.06548,"Software Development
+",OOP
+0.0111,0.0088,Communication,Social media
+0.01096,0.00254,"Software Development
+",IBM Rational ClearCase
+0.01096,0.01026,Management,Strategic planning
+0.01093,0.00676,Management,Payments
+0.01087,0.05686,Communication,Analytics
+0.01083,0.0282,Management,Project planning
+0.01077,0.03214,,Data centers
+0.01074,0.01449,Communication,English
+0.01072,0.01852,Industry-specific,Proposal writing
+0.01066,0.00187,Industry-specific,Clerk
+0.01064,0.02082,Communication,Technical writing
+0.0106,0.03088,Communication,Organizational skills
+0.01051,0.03596,Data,MongoDB
+0.01046,0.00642,Data,Microsoft SSAS
+0.01042,0.01179,Management,IT project management
+0.01034,0.0171,I.T. Administration,Issue tracking
+0.01032,0.00548,Management,Project coordination
+0.01026,0.00126,I.T. Administration,Microsoft Windows Vista
+0.01024,0.00182,Data,Informatica PowerCenter
+0.0102,0.05244,Software Development,DevOps
+0.01019,0.00526,Data,IBM Cognos
+0.01019,0.15698,I.T. Administration,A+
+0.01012,0.00277,Systems Analysis/Design,HP LoadRunner
+0.01011,0.00158,Design,Adobe Acrobat
+0.0101,0.01307,Software Development,Web portals
+0.01006,0.04696,Industry-specific,Government
+0.01004,0.09274,Industry-specific,Analytical skill
+0.01003,0.00523,Management,Training and development
+0.00997,0.00543,Software Development,LINQ
+0.00996,0.01418,Systems Analysis/Design,System testing
+0.00993,0.00671,Communication,Editing
+0.00985,0.00441,Systems Analysis/Design,VBScript
+0.00978,0.00365,Systems Analysis/Design,Gap analysis
+0.00976,0.00323,Management,SAP ABAP
+0.00975,0.01453,I.T. Administration,SAN
+0.00974,0.00177,Industry-specific,Filing
+0.00974,0.01364,Management,Taxes
+0.00973,0.00211,I.T. Administration,CICS
+0.00967,0.00142,"Systems Analysis/Design
+",Joint application design
+0.00964,0.01557,Systems Analysis/Design,Integration testing
+0.00956,0.05949,Data,Big data
+0.00952,0.0177,Data,Data management
+0.00951,0.00103,I.T. Administration,Microsoft Windows 2000
+0.00946,0.00494,Management,Operations management
+0.00944,0.00665,I.T. Administration,BMC Remedy
+0.00944,0.01054,Systems Analysis/Design,Requirements analysis
+0.00936,0.00929,Hardware/Embedded Software,Electronics
+0.00935,0.00581,Data,Dimensional modeling
+0.00933,0.00658,Management,Warehouse
+0.00931,0.00263,Management,Financial analysis
+0.00924,0.01078,Design,Web design
+0.00924,0.01786,Management,Status reports
+0.00915,0.00651,Management,EDI
+0.00913,0.01721,"Industry-specific
+",Policies and procedures
+0.00912,0.02475,Communication,Media
+0.00912,0.00256,Software Development,COM
+0.00909,0.00955,I.T. Administration,HP
+0.00909,0.04012,Software Development,Revision control
+0.00908,0.02659,Management,IT consulting
+0.00907,0.01761,I.T. Administration,Production support
+0.00905,0.01144,I.T. Administration,Cables
+0.00903,0.01585,Communication,Advertising
+0.00896,0.01707,Management,Supply chain management
+0.00894,0.03132,Software Development,Design patterns
+0.00889,0.02718,Software Development,SOA
+0.00886,0.00379,Management,Six Sigma
+0.00883,0.0093,Software Development,LDAP
+0.00878,0.00328,Data,VBA
+0.00877,0.01074,Software Development,WordPress
+0.00877,0.00539,Systems Analysis/Design,Defect tracking
+0.00869,0.00776,Management,Shipping
+0.00867,0.00585,Software Development,Business rules
+0.00865,0.00238,Data,ERwin
+0.00863,0.01043,Management,HR management
+0.00863,0.0033,Systems Analysis/Design,Selenium WebDriver
+0.00862,0.01478,Data,Apache Hive
+0.00859,0.01127,Management,CTO
+0.00854,0.0027,Communication,Spanish
+0.00851,0.00615,Software Development,XSLT
+0.00851,0.00997,Software Development,Entity Framework
+0.00841,0.00645,Management,Business administration
+0.00835,0.00966,I.T. Administration,Backup administration
+0.00834,0.00413,Management,SAP ERP
+0.00832,0.00086,Systems Analysis/Design,ETL QA
+0.0083,0.0048,Software Development,XHTML
+0.00829,0.00655,Software Development,Spring MVC
+0.00825,0.0173,I.T. Administration,Microsoft Windows Server
+0.00824,0.004,Systems Analysis/Design,Test scenarios
+0.00822,0.00253,Data,Oracle Applications
+0.00822,0.00906,I.T. Administration,Virtual machines
+0.00821,0.00734,I.T. Administration,Call center
+0.00821,0.01187,Software Development,WildFly
+0.00818,0.01992,Data,R
+0.00813,0.01715,Management,PMP
+0.00812,0.01283,Software Development,Red Hat Linux
+0.00807,0.00661,I.T. Administration,OSPF
+0.00805,0.00796,I.T. Administration,Border Gateway Protocol
+0.00805,0.00179,Management,Sales management
+0.008,0.05039,Data,RDBMS
+0.00798,0.02219,I.T. Administration,Routing
+0.00794,0.04762,I.T. Administration,IT service management
+0.00792,0.02148,Software Development,Adobe InDesign
+0.00785,0.00061,I.T. Administration,Ghost
+0.00785,0.00711,Management,PMO
+0.00782,0.02334,I.T. Administration,Linux administration
+0.00779,0.00606,I.T. Administration,Microsoft Windows Server 2008
+0.00773,0.00762,Industry-specific,HIPAA
+0.00772,0.02371,I.T. Administration,System integration
+0.00769,0.03792,Management,Product development
+0.00767,0.01047,"Industry-specific
+",Assembly
+0.00763,0.0187,Management,Coaching
+0.0075,0.00038,Data,DAO
+0.00746,0.00025,"Software Development
+",IBM Rational Rose XDE
+0.00745,0.00755,Software Development,GUI
+0.00744,0.01419,Design,CAD
+0.0074,0.00382,Data,OLAP
+0.00735,0.00155,Systems Analysis/Design,Traceability matrix
+0.00734,0.02182,I.T. Administration,Network design
+0.00733,0.00581,Management,SAP MM
+0.00732,0.0013,,Property and casualty insurance
+0.00731,0.00991,Software Development,WPF
+0.0073,0.01765,Software Development,Solution architecture
+0.00729,0.03539,Data,Mathematics
+0.00725,0.003,Data,IBM InfoSphere DataStage
+0.00722,0.00729,"Industry-specific
+",Apex
+0.0072,0.0195,Industry-specific,Time management
+0.00717,0.00147,Systems Analysis/Design,IBM RUP
+0.00714,0.05096,Software Development,Ruby
+0.00712,0.00608,Data,Oracle EBS
+0.00708,0.00314,Software Development,DOM
+0.00708,0.00159,Systems Analysis/Design,IBM Rational ClearQuest
+0.00707,0.03416,Software Development,PostgreSQL
+0.00705,0.02639,I.T. Administration,Virtualization
+0.00704,0.04834,Data,Algorithms
+0.00702,0.01643,Software Development,GitHub
+0.007,0.0005,Industry-specific,Secretary
+0.00699,0.00095,Software Development,ADO
+0.00691,0.0032,Management,SAP BI
+0.00687,0.00334,Management,General Ledger
+0.00686,0.01968,Design,Technical drafting
+0.00684,0.00267,I.T. Administration,Microsoft Windows Server 2012
+0.00681,0.01023,Management,Business-to-business
+0.00679,0.01831,Software Development,Windows PowerShell
+0.00678,0.0049,Software Development,Webforms
+0.00677,0.00025,"Industry-specific
+",Office management
+0.00671,0.00067,I.T. Administration,DOS
+0.00669,0.00357,Data,Sybase
+0.00666,0.00871,Management,Team building
+0.00666,0.0019,Data,Hyperion
+0.00664,0.01404,Software Development,Simulation
+0.00664,0.0124,I.T. Administration,Capacity management
+0.00664,0.0065,Management,Team management
+0.00661,0.00014,I.T. Administration,Microsoft Windows 9x
+0.00658,0.01261,Industry-specific,Military
+0.00657,0.00045,I.T. Administration,Novell
+0.00656,0.00709,I.T. Administration,Microsoft SCCM
+0.00656,0.00354,Data,OBIEE
+0.00654,0.00845,Data,Apache Pig
+0.00654,0.00562,Design,SolidWorks
+0.00652,0.00034,Data,SQL*Loader
+0.00652,0.05101,Industry-specific,Collaboration
+0.0065,0.00776,I.T. Administration,Server administration
+0.00649,0.02917,Software Development,Ruby on Rails
+0.00648,0.00412,Data,Data marts
+0.00643,0.00288,Management,Financial reporting
+0.00639,0.00648,Software Development,Data collection
+0.00636,0.01669,Communication,Facilitation
+0.00633,0.01932,Software Development,Objective-C
+0.00633,0.00267,I.T. Administration,Avaya
+0.00633,0.00068,Software Development,Activity diagrams
+0.00632,0.00304,Data,Data loading
+0.00629,0.03739,Software Development,Mobile applications
+0.00627,0.04782,Management,SaaS
+0.00626,0.0011,Software Development,NetBeans
+0.00622,0.0086,Management,MDM
+0.00619,0.00714,Design,Adobe
+0.00617,0.18025,Data,Computer science
+0.00615,0.00489,Systems Analysis/Design,System integration testing
+0.00614,0.01055,Data,MapReduce
+0.00614,0.00285,Management,Inventory management
+0.00614,0.01012,Systems Analysis/Design,Performance testing
+0.00611,0.02281,Data,Research and development
+0.00606,0.0054,I.T. Administration,VLAN
+0.00605,0.00459,Data,Ad hoc reporting
+0.00596,0.02589,Management,Decision-making
+0.00595,0.00525,Data,HDFS
+0.00593,0.00371,Software Development,WSDL
+0.00591,0.00951,I.T. Administration,KPI
+0.00591,0.00335,Software Development,JavaServer Faces
+0.00588,0.00182,Management,Purchase orders
+0.00587,0.01693,Design,Drawing
+0.00585,0.0161,I.T. Administration,Incident management
+0.00582,0.02598,Communication,Multitasking
+0.00582,0.00335,"Industry-specific
+",Macros
+0.0058,0.01389,Software Development,Middleware
+0.00579,0.00709,I.T. Administration,IBM WebSphere MQ
+0.00579,0.00687,"Software Development
+",MVC Framework
+0.00578,0.01018,Software Development,3D computer graphics
+0.00578,0.00193,Communication,Public relations
+0.00576,0.00012,Industry-specific,Cashier
+0.00574,0.01076,Systems Analysis/Design,Application server
+0.00573,0.00128,Communication,Typing
+0.0057,0.00194,"Software Development
+",HP ALM
+0.00568,0.01328,Management,Transportation
+0.00567,0.00694,I.T. Administration,Change request management
+0.00566,0.00252,Data,Apache Sqoop
+0.00565,0.01309,Industry-specific,Release management
+0.00564,0.00728,Management,Sourcing
+0.00564,0.00056,I.T. Administration,Frame Relay
+0.00562,0.0033,I.T. Administration,Network+
+0.00561,0.0087,Communication,SEO
+0.00561,0.02986,Hardware/Embedded Software,Energy
+0.00561,0.00255,Systems Analysis/Design,Black-box testing
+0.0056,0.00416,Industry-specific,Cryptography
+0.00559,0.01368,Software Development,Shell
+0.00558,0.00468,Systems Analysis/Design,Data mapping
+0.00555,0.0014,I.T. Administration,Microsoft Windows 8
+0.00548,0.00235,Systems Analysis/Design,Data validation
+0.00546,0.01871,Design,Systems architecture
+0.00544,0.01174,I.T. Administration,Web server
+0.00543,0.00025,Systems Analysis/Design,IBM Rational RequisitePro
+0.00543,0.01244,Software Development,Web API
+0.00543,0.00275,Management,Credit cards
+0.00542,0.00504,Management,Business management
+0.0054,0.00689,Management,Real estate
+0.0054,0.00623,I.T. Administration,Red Hat Enterprise Linux
+0.00539,0.01025,Systems Analysis/Design,Test methods
+0.00539,0.04194,Hardware/Embedded Software,Software design
+0.00537,0.00266,"Systems Analysis/Design
+",IBM Rational
+0.00537,0.00405,Software Development,Multimedia
+0.00537,0.00032,Management,QuickBooks
+0.00536,0.00472,Management,CEO
+0.00536,0.00391,Management,Collections
+0.00535,0.01678,Design,Systems analysis and design
+0.00534,0.02292,Software Development,Bash
+0.00533,0.0506,Software Development,Continuous integration
+0.0053,0.00822,Software Development,Apache Subversion
+0.00528,0.02893,I.T. Administration,Microsoft Windows Azure
+0.00527,0.00691,I.T. Administration,ServiceNow
+0.00526,0.00064,Management,General management
+0.00523,0.00065,Management,Inventory control
+0.00517,0.01246,I.T. Administration,Microsoft Certified Professional
+0.00516,0.0037,I.T. Administration,VMware ESXi
+0.00515,0.00398,I.T. Administration,EIGRP
+0.00513,0.00743,I.T. Administration,SLA
+0.00512,0.00067,Data,Data Loader
+0.00511,0.01223,Management,Sprint
+0.00511,0.01053,Systems Analysis/Design,User stories
+0.00511,0.0009,Systems Analysis/Design,Bugzilla
+0.00507,0.00726,Management,Data migration
+0.00501,0.03136,Software Development,Code review
+0.005,0.00135,Communication,Photography
+0.005,0.00168,Software Development,SQLite
+0.00499,0.00459,Industry-specific,Economics
+0.00495,0.00152,I.T. Administration,Microsoft Windows Server 2008 R2
+0.00494,0.00331,Data,MicroStrategy
+0.00494,0.00717,Software Development,Xcode
+0.00492,0.00251,Systems Analysis/Design,Mobile application QA
+0.0049,0.00724,Industry-specific,Sarbanes-Oxley
+0.00489,0.00335,Systems Analysis/Design,Test execution
+0.00483,0.02618,Hardware/Embedded Software,Embedded systems
+0.00478,0.0009,I.T. Administration,VMware administration
+0.00475,0.00387,Data,Microsoft SQL Server DBA
+0.00475,0.00659,I.T. Administration,Antivirus
+0.00475,0.02968,Software Development,Mobile development
+0.00474,0.00729,Systems Analysis/Design,Process flow
+0.00473,0.00155,Data,Siebel
+0.00472,0.00059,Management,Office administration
+0.00471,0.00737,Communication,Technical training
+0.0047,0.00448,Data,Document management
+0.0047,0.01105,Systems Analysis/Design,Data QA
+0.00469,0.00359,Management,Financial management
+0.00469,0.00457,I.T. Administration,Cost reduction
+0.00469,0.00355,I.T. Administration,Force.com
+0.00469,0.00926,I.T. Administration,Microsoft technologies
+0.00468,0.00022,I.T. Administration,Computer repair
+0.00468,0.0045,"Industry-specific
+",Geographic information system
+0.00468,0.00118,Software Development,HP-UX
+0.00466,0.02173,Systems Analysis/Design,System requirements
+0.00466,0.00382,Design,Radio
+0.00466,0.00157,Management,SAP SD
+0.00465,0.00306,Systems Analysis/Design,Test strategy
+0.00465,0.00906,Data,Trading
+0.00464,0.00411,Management,SAP HANA
+0.00463,0.00267,Management,SAP FICO
+0.00462,0.00146,Management,Budget management
+0.00461,0.00073,Management,Financial statements
+0.0046,0.00605,Software Development,Ubuntu
+0.00459,0.00301,Systems Analysis/Design,Test management
+0.00458,0.0078,Systems Analysis/Design,Process modeling
+0.00458,0.0089,I.T. Administration,Replication
+0.00456,0.02417,Data,Apache Spark
+0.00455,0.00646,Management,Management consulting
+0.00455,5e-05,Design,Microsoft FrontPage
+0.00455,0.00019,Industry-specific,Receptionist
+0.00453,0.00297,"Industry-specific
+",Printing
+0.00453,0.00934,Data,Apache HBase
+0.00453,0.02166,Industry-specific,Cyber security
+0.00452,0.02295,Software Development,Backbone.js
+0.00451,0.0127,I.T. Administration,Utilities
+0.00449,0.00062,Data,SQL*Plus
+0.00449,0.00139,Management,JIRA Agile
+0.00448,0.0068,I.T. Administration,Optical fiber
+0.00448,0.01453,Management,Management information systems
+0.00445,0.02323,Management,Mergers and acquisitions
+0.00444,0.00047,Software Development,Microsoft Visual SourceSafe
+0.00443,0.00054,Systems Analysis/Design,Smoke testing
+0.00442,0.02634,Management,Financial services
+0.00442,0.00198,I.T. Administration,CA Workload Automation AE
+0.0044,0.00132,I.T. Administration,VSAM
+0.0044,0.02074,,Development testing
+0.00439,0.00293,Software Development,TestNG
+0.00439,0.00328,Design,Broadcasting
+0.00439,0.00258,Management,Market research
+0.00438,0.00158,I.T. Administration,PBX
+0.00438,0.00033,Systems Analysis/Design,PuTTY
+0.00437,0.00469,I.T. Administration,VMware vSphere
+0.00436,0.00095,,Sequence diagrams
+0.00436,0.01622,Management,Continuous improvement
+0.00432,0.02207,Industry-specific,Art
+0.00431,0.00248,Management,Contract management
+0.0043,0.0011,Data,Oracle RMAN
+0.0043,0.00321,Management,Quoting
+0.0043,0.01237,Data,Data mining
+0.00427,0.01549,Management,IT architecture
+0.00427,0.00472,I.T. Administration,Hyper-V
+0.00426,0.02025,Hardware/Embedded Software,Multithreading
+0.00426,0.01206,Industry-specific,IT security
+0.00425,0.00384,"Industry-specific
+",Chemicals
+0.00425,0.00606,I.T. Administration,NAS
+0.00423,0.00343,I.T. Administration,VMware ESX
+0.00422,0.01625,Management,Mobile devices
+0.00421,0.00069,Systems Analysis/Design,Backend testing
+0.0042,0.002,Management,Merchandising
+0.0042,0.03158,Data,Machine learning
+0.00418,0.00252,Data,Microsoft SSMS
+0.00415,0.00399,Communication,Instructional design
+0.00415,0.01676,Software Development,Sass
+0.00415,0.00047,I.T. Administration,Fortran
+0.00414,0.02286,I.T. Administration,High availability
+0.00414,0.00562,Software Development,Visualforce
+0.00414,0.00245,Data,LabVIEW
+0.00413,0.01256,Management,IT infrastructure
+0.00411,0.00657,Design,Adobe CS
+0.00411,0.0085,I.T. Administration,End-user training
+0.00406,0.00031,Software Development,Firebug
+0.00404,0.00534,I.T. Administration,Group policy
+0.00402,0.00806,I.T. Administration,EMC
+0.00401,0.00846,Communication,Digital marketing
+0.00401,0.00092,Management,SAP R/3
+0.004,0.01368,Industry-specific,Identity management
+0.004,0.0059,Management,Quality management
+0.00399,0.02829,Software Development,Puppet
+0.00399,0.02311,"Software Development
+",Software architecture
+0.00397,0.00925,Management,Corrective and preventive action
+0.00397,0.00554,Management,Resource management
+0.00395,0.00178,Management,Trade shows
+0.00395,0.00299,Systems Analysis/Design,Rally
+0.00394,0.00796,I.T. Administration,IT operations
+0.00394,0.00573,Hardware/Embedded Software,File systems
+0.00393,0.00323,Management,Profit and loss
+0.00393,0.0018,Communication,Bilingual
+0.00393,0.01311,Software Development,Responsive design
+0.0039,0.00059,I.T. Administration,Nortel
+0.0039,0.00073,Communication,French
+0.0039,0.00486,"Software Development
+",Software release life cycle
+0.00389,0.01285,Industry-specific,Pharmaceutics
+0.00388,0.00108,Data,Essbase
+0.00388,0.02505,Management,Roadmaps
+0.00388,0.00806,I.T. Administration,Security+
+0.00386,0.00101,Management,Cash flow
+0.00385,0.00358,Management,POS
+0.00384,0.00411,Software Development,Animation
+0.00384,0.02409,Data,Data science
+0.00384,0.00292,Management,CIO
+0.00384,0.00643,I.T. Administration,Juniper
+0.00383,0.03029,Software Development,Chef
+0.00383,0.0441,Industry-specific,Security clearance
+0.00381,0.00133,Data,RAC
+0.00379,0.00657,I.T. Administration,Service desk
+0.00379,0.00141,Data,Ab Initio
+0.00379,0.00437,Management,Performance appraisal
+0.00379,0.01314,Industry-specific,Governance
+0.00377,0.00302,"Industry-specific
+",Point of sale
+0.00377,0.00127,Data,Microsoft SharePoint Designer
+0.00376,0.00465,Communication,Google Analytics
+0.00376,0.00375,Management,Request for proposal
+0.00375,0.00247,Systems Analysis/Design,Web QA
+0.00375,0.00189,Data,Apache Oozie
+0.00375,0.00177,Industry-specific,Google Chrome
+0.00373,0.00252,Data,Qlikview
+0.00371,0.0051,I.T. Administration,Routing protocols
+0.00371,0.00065,Design,Logos
+0.00371,0.00156,Communication,Public speaking
+0.0037,0.01268,Management,Customer engagement
+0.0037,0.01105,Management,Project scoping
+0.00369,0.00152,Hardware/Embedded Software,Assembly language
+0.00369,0.0101,Software Development,Enterprise architecture
+0.00368,0.00353,Systems Analysis/Design,Bug tracking
+0.00367,0.00076,Systems Analysis/Design,Database QA
+0.00367,0.00861,I.T. Administration,Ethernet
+0.00367,0.01631,I.T. Administration,Load balancing
+0.00365,0.04772,Data,NoSQL
+0.00363,0.0065,Management,Performance management
+0.00362,0.01398,Management,Interviewing
+0.00362,0.00311,Management,HR management system
+0.00362,0.00865,Industry-specific,Risk assessment
+0.00361,0.00948,Data,Splunk
+0.00361,0.00782,Management,Screening
+0.0036,0.00343,Management,Field engineering
+0.00359,0.00969,I.T. Administration,Web browsers
+0.00359,0.00314,I.T. Administration,SunOS
+0.00357,0.00195,Management,SAP FI
+0.00357,0.00198,Management,Equities
+0.00357,0.00508,"Industry-specific
+",JPA
+0.00356,0.00154,Management,Marketing management
+0.00356,0.01127,Management,Automotive
+0.00355,0.00191,I.T. Administration,GPS
+0.00355,0.00255,Software Development,XSL
+0.00355,0.01467,Management,Customer experience
+0.00354,0.00939,Data,Data architecture
+0.00351,0.00993,Management,Lean methodology
+0.0035,0.00328,Software Development,Unix administration
+0.00349,0.00899,Hardware/Embedded Software,Robotics
+0.00348,0.00157,Management,OSHA
+0.00348,0.00014,Communication,Bookkeeping
+0.00348,0.00264,Management,Business plans
+0.00347,0.00401,Management,Portfolio management
+0.00346,0.00826,I.T. Administration,Service delivery
+0.00346,0.00772,Industry-specific,Onboarding
+0.00346,0.00368,Industry-specific,Management skills
+0.00345,0.00063,Software Development,JavaBeans
+0.00344,0.00297,Management,Remote support
+0.00342,0.0056,Management,Legacy systems
+0.00341,0.00724,Software Development,RF
+0.00339,0.00387,Management,Sales operations
+0.00339,0.00184,Software Development,IBM WebSphere Application Server
+0.00339,0.002,Data,Oracle BI Publisher
+0.00338,0.00725,Hardware/Embedded Software,Project engineering
+0.00337,0.00012,Communication,Tutoring
+0.00336,0.00062,Management,Travel management
+0.00335,0.00039,Systems Analysis/Design,HP WinRunner
+0.00334,0.00073,Design,Workflow management
+0.00334,0.00106,Software Development,JSTL
+0.00333,0.01319,I.T. Administration,Provisioning
+0.00332,0.00117,Data,EMC Documentum
+0.00332,0.00485,I.T. Administration,Wireshark
+0.00331,0.00356,I.T. Administration,JD Edwards
+0.0033,0.01728,Management,Business partnership
+0.0033,0.0059,I.T. Administration,MPLS
+0.0033,0.00489,Management,Technical analysis
+0.00329,0.00242,Systems Analysis/Design,Requirements management
+0.00329,0.00069,Software Development,JNDI
+0.00329,0.00318,I.T. Administration,NFS
+0.00328,0.00489,I.T. Administration,SNMP
+0.00327,0.00655,Management,Business operations
+0.00323,0.0011,Data,Oracle Data Guard
+0.00323,0.00841,Industry-specific,Authorization
+0.00323,0.00229,Management,Medicare
+0.00323,0.00185,Software Development,Star schema
+0.00323,0.00516,Software Development,Windows Forms
+0.00322,0.01429,Software Development,Django
+0.00321,0.00348,Software Development,XSD
+0.00321,0.00327,Hardware/Embedded Software,Preventive maintenance
+0.0032,0.00354,Management,Field service
+0.00319,0.00832,Software Development,Drupal
+0.00319,0.00148,I.T. Administration,Microsoft SharePoint administration
+0.00318,0.00483,Industry-specific,CheckPoint
+0.00317,0.00148,I.T. Administration,Endevor
+0.00317,0.00269,Management,Medicaid
+0.00316,0.00078,Industry-specific,Psychology
+0.00316,0.01858,Data,Apache Cassandra
+0.00315,0.00113,Management,Firefox
+0.00315,0.00215,Data,Apache Flume
+0.00315,0.0054,Industry-specific,Security management
+0.00315,0.00772,Communication,Publishing
+0.00315,0.01038,I.T. Administration,SSL
+0.00315,0.00049,Design,Adobe After Effects
+0.00314,0.00159,I.T. Administration,SOQL
+0.00314,0.01166,Management,Root cause analysis
+0.00313,0.00362,I.T. Administration,SMTP
+0.00313,0.00675,Management,Return on investment
+0.00311,0.01099,Management,Product owner
+0.0031,0.00422,I.T. Administration,Electrical wiring
+0.0031,0.00298,Data,Order management
+0.0031,0.03302,Management,Enterprise software
+0.00309,0.00734,I.T. Administration,F5
+0.00309,0.00031,Software Development,TortoiseSVN
+0.00309,0.00229,Data,OLTP
+0.00307,0.02253,Design,Systems design
+0.00306,0.00798,Hardware/Embedded Software,Design engineering
+0.00306,0.00164,Management,Lean Six Sigma
+0.00306,0.00081,I.T. Administration,IBM mainframe
+0.00305,0.00605,Industry-specific,Hard working
+0.00305,0.0027,Data,Knowledge management
+0.00305,0.0036,Systems Analysis/Design,Load testing
+0.00301,0.00065,I.T. Administration,ISPF
+0.00301,0.00459,I.T. Administration,Wireless network
+0.00301,0.00749,Industry-specific,Nexus
+0.00299,0.00423,Management,Conflict resolution
+0.00299,0.00326,Data,Securities
+0.00298,0.00421,I.T. Administration,Cisco PIX
+0.00298,0.00149,Communication,Fundraising
+0.00297,0.00045,Management,CFO
+0.00296,0.00097,I.T. Administration,HP OpenView
+0.00295,0.00438,I.T. Administration,Service management
+0.00294,0.01448,Industry-specific,Authentication
+0.00294,0.00446,Industry-specific,Business continuity
+0.00294,0.00467,Management,Risk analysis
+0.00293,0.00217,Data,Data cleansing
+0.00293,0.00083,Management,COO
+0.00293,0.00096,Data,Oracle Developer
+0.00293,0.00457,Management,Technical sales
+0.00292,0.00046,Data,Oracle Reports
+0.00291,0.00052,Data,IBM Informix
+0.00291,0.00347,Software Development,Apache JMeter
+0.0029,0.00106,I.T. Administration,BMC Control-M
+0.0029,0.00158,Software Development,JAXB
+0.0029,0.00665,Data,ORM
+0.0029,0.00095,Data,Oracle Financials
+0.00289,0.02703,Data,Data structure
+0.00289,0.00152,I.T. Administration,Microsoft Exchange administration
+0.00288,0.00301,I.T. Administration,Microsoft Lync
+0.00288,0.0057,Design,Adobe Premiere
+0.00287,0.00531,I.T. Administration,NetApp
+0.00286,0.0019,I.T. Administration,Citrix XenApp
+0.00285,0.00143,I.T. Administration,NetBackup
+0.00284,0.01193,Data,Sensors
+0.00284,0.00743,Hardware/Embedded Software,Physics
+0.00284,0.00377,"Management
+",As-is process
+0.00284,0.00889,Industry-specific,Critical thinking
+0.00283,0.00229,Management,Market analysis
+0.00282,0.00613,Data,Data integrity
+0.00282,0.00163,Software Development,Tivoli
+0.00282,0.00513,I.T. Administration,Cloud architecture
+0.00282,0.0017,Management,Due diligence
+0.00281,0.00247,Software Development,Swing
+0.0028,0.00144,Communication,Website administration
+0.00279,0.00472,Hardware/Embedded Software,Satellite
+0.00279,0.0037,Hardware/Embedded Software,Verilog
+0.00279,0.00499,Data,Information management
+0.00278,0.00089,Data,Oracle Forms
+0.00278,0.00488,Design,Audiovisual
+0.00278,0.00448,Hardware/Embedded Software,Engineering management
+0.00278,0.00156,Data,SPSS
+0.00278,0.00424,Industry-specific,Epic
+0.00277,0.00394,Systems Analysis/Design,Process analysis
+0.00277,0.00154,Data,Netezza
+0.00277,0.02129,Management,Test-driven development
+0.00276,0.00329,Industry-specific,Pharmacy
+0.00274,0.008,Software Development,Unity
+0.00273,0.00643,Software Development,HVAC
+0.00273,0.00388,"Management
+",Control management
+0.00273,0.00809,Software Development,Service level
+0.00272,0.005,"Software Development
+",OOAD
+0.00272,0.00919,Management,Cross-functional team
+0.00272,0.00475,Management,PMBOK
+0.00271,0.00242,Management,SAP PP
+0.00271,0.0025,I.T. Administration,Chemistry
+0.00271,0.00835,Software Development,Tablet
+0.00269,0.00263,I.T. Administration,Case management
+0.00269,0.00043,Data,PVCS
+0.00269,0.00196,Communication,Underwriting
+0.00268,0.00092,Management,Marketing strategy
+0.00268,0.01273,Hardware/Embedded Software,Firmware
+0.00267,0.00112,Data,Microsoft InfoPath
+0.00267,0.00244,Management,Cost-benefit analysis
+0.00267,0.00961,Data,Data integration
+0.00267,0.00151,I.T. Administration,IBM RPG
+0.00267,0.00144,Systems Analysis/Design,Microsoft BizTalk Server
+0.00266,0.02148,Management,Professional services
+0.00266,0.00064,Software Development,IBM RAD
+0.00266,8e-05,Industry-specific,First aid
+0.00266,0.00059,I.T. Administration,ISDN
+0.00265,0.00854,Software Development,CentOS
+0.00265,0.00331,Software Development,TIBCO
+0.00264,0.00073,Systems Analysis/Design,GUI QA
+0.00263,0.00342,Hardware/Embedded Software,VHDL
+0.00263,0.01253,Software Development,Product design
+0.00262,0.00705,Communication,User guides
+0.00261,0.00078,,IT administration
+0.0026,0.00764,Management,Business cases
+0.0026,0.01887,Management,Entrepreneurship
+0.0026,0.00904,I.T. Administration,Control system
+0.0026,0.00441,Management,Relationship building
+0.00259,0.00295,Management,Data conversion
+0.00258,0.00024,,Office supplies
+0.00258,0.0032,I.T. Administration,Software installation
+0.00258,0.00561,I.T. Administration,Problem management
+0.00258,0.00665,Data,Content management systems
+0.00258,0.00023,Communication,Chinese
+0.00258,0.00069,Industry-specific,Nursing
+0.00257,0.00341,Management,Workday
+0.00257,0.0007,Data,Transformer
+0.00256,0.00685,Data,Data flow
+0.00256,0.00138,Industry-specific,Medical records
+0.00256,0.00379,Management,Software development management
+0.00254,0.01536,Software Development,Amazon EC2
+0.00254,0.00311,"Industry-specific
+",Publisher
+0.00253,0.00265,Management,Delivery management
+0.00253,0.00024,Data,Calculus
+0.00253,0.00035,Communication,Event planning
+0.00252,0.00519,Communication,Standard operating procedure
+0.00252,0.0154,Software Development,Usability
+0.00251,0.00055,I.T. Administration,Veritas
+0.00251,0.00534,I.T. Administration,Microsoft Windows administration
+0.00251,0.00463,Software Development,Usability testing
+0.0025,0.00891,I.T. Administration,Clustering
+0.00249,0.00073,Software Development,Adobe Fireworks
+0.00249,0.00135,I.T. Administration,HSRP
+0.00248,0.00043,I.T. Administration,Computer troubleshooting
+0.00248,0.00679,Management,Project implementation
+0.00248,0.00515,Software Development,Cucumber
+0.00248,0.00203,Industry-specific,Surveillance
+0.00247,0.00642,Industry-specific,Security analysis
+0.00247,0.00114,Data,SQR
+0.00246,0.00573,Software Development,Lighting
+0.00246,0.00087,I.T. Administration,Remote desktop
+0.00245,0.00259,Software Development,NUnit
+0.00245,0.00157,Design,Microsoft Silverlight
+0.00245,0.00055,Software Development,Web intelligence
+0.00244,0.00015,I.T. Administration,FoxPro
+0.00244,0.00223,Data,Microsoft BI
+0.00243,0.01014,Industry-specific,Goal oriented
+0.00243,0.00025,Data,Data Transformation Services
+0.00243,0.00082,Data,Snow flake schema
+0.00242,0.00086,Software Development,WCF Data Services
+0.00241,0.00377,Communication,Internet marketing
+0.00241,0.00125,Software Development,JAX-WS
+0.0024,0.00081,Data,Pro*C
+0.0024,0.01657,I.T. Administration,Computer engineering
+0.0024,0.00237,Hardware/Embedded Software,Cadence
+0.00239,0.00763,Industry-specific,Access control
+0.00239,0.00154,Communication,Mandarin Chinese
+0.00239,0.00201,Communication,Email marketing
+0.00239,0.00321,Management,Recruitment management
+0.00239,0.00401,Software Development,Ext JS
+0.00237,0.00205,"Industry-specific
+",Pega
+0.00237,0.00116,Management,Cold calling
+0.00236,0.00122,Management,IDoc
+0.00235,0.01084,Management,Development management
+0.00235,0.00137,Data,Universe
+0.00235,0.00522,I.T. Administration,Network operations
+0.00235,0.00977,Data,Data visualization
+0.00234,0.00039,Management,International business
+0.00234,0.00144,Data,SAS/SQL
+0.00234,0.00187,Data,Web parts
+0.00233,0.00446,Management,Patents
+0.00233,0.00215,Systems Analysis/Design,White-box testing
+0.00233,0.00849,I.T. Administration,Business systems
+0.00233,0.00321,I.T. Administration,Videoconferencing
+0.00233,0.00132,Software Development,ActionScript
+0.00233,0.00253,Design,Counseling
+0.00232,0.00462,Software Development,Remote access
+0.00232,0.00097,Management,Customer retention
+0.00232,0.00713,I.T. Administration,Nagios
+0.00232,0.00259,Software Development,Impact analysis
+0.00232,0.00046,Data,Oracle SQL Developer
+0.00232,0.00556,Industry-specific,Health care IT
+0.00232,0.00116,Management,Valuation
+0.00232,0.00451,Management,Business model
+0.00232,0.02519,Hardware/Embedded Software,OOD
+0.00231,0.00039,Management,Leadership development
+0.00231,0.00779,I.T. Administration,IT strategy
+0.00231,0.00038,Data,Microsoft BIDS
+0.0023,0.00471,I.T. Administration,Secure Shell
+0.0023,0.00127,Systems Analysis/Design,Web service QA
+0.0023,0.00308,"Software Development
+",Software analysis
+0.0023,0.00078,Data,Object Pascal
+0.0023,0.00036,Data,SQL Query Analyzer
+0.00229,0.00325,Communication,Translation
+0.00229,0.00812,Management,Issue resolution
+0.00229,0.00894,Industry-specific,Work ethic
+0.00228,0.00049,I.T. Administration,SOSL
+0.00228,0.00257,Data,Cloudera
+0.00228,0.00567,Software Development,Sketch
+0.00227,0.00189,Industry-specific,XPath
+0.00227,0.00188,I.T. Administration,Hardware installation
+0.00227,0.00303,Data,Fixed income
+0.00226,0.0034,Design,Television
+0.00224,0.00045,Data,SAS/MACROS
+0.00224,0.00132,Management,SAP WM
+0.00224,0.00193,I.T. Administration,BlackBerry
+0.00223,0.0031,"Industry-specific
+",Licensing
+0.00222,0.00421,Management,Strategic management
+0.00222,0.00216,Data,Management reporting
+0.00222,0.00692,I.T. Administration,Sales engineering
+0.00222,0.0049,I.T. Administration,IPsec
+0.00222,0.00689,Management,Kanban
+0.00222,0.00238,Management,Process management
+0.00222,0.00032,,Negative testing
+0.00221,0.00054,Data,IBM Cognos Framework Manager
+0.00221,0.00648,Management,Knowledge base
+0.00221,0.00425,Industry-specific,Information assurance
+0.0022,0.00253,I.T. Administration,Infor
+0.0022,0.00063,Management,Brand management
+0.00219,0.00116,Industry-specific,Welding
+0.00219,0.01546,Software Development,LAMP
+0.00219,0.00088,Management,Cash management
+0.00218,0.00026,,Security officer
+0.00218,0.00627,Management,Instrumentation
+0.00218,0.02213,Software Development,Scala
+0.00217,0.00482,,SOW
+0.00217,0.00058,Communication,Social media marketing
+0.00217,0.0018,Management,Treasury
+0.00216,0.00116,I.T. Administration,Hardware troubleshooting
+0.00216,0.00031,Design,Ansys
+0.00216,0.00105,Management,Bloomberg
+0.00216,0.00167,"Software Development
+",Korn shell
+0.00215,0.00062,Data,Minitab
+0.00215,0.0027,Industry-specific,HL7
+0.00214,0.00216,I.T. Administration,Microsoft Windows Server administration
+0.00214,0.02068,,React.js
+0.00214,0.00062,I.T. Administration,3G
+0.00214,0.0011,Design,CATIA
+0.00213,0.00067,Management,Industrial relations
+0.00213,0.00923,Management,Change control
+0.00213,0.00583,,Business owner
+0.00213,0.00068,Management,Production management
+0.00213,0.0011,Management,Communications management
+0.00212,0.00283,Design,3D modeling
+0.00211,0.00113,Management,Sales strategy
+0.00211,0.00351,I.T. Administration,NOC
+0.0021,0.00161,Management,Soldering
+0.0021,0.00278,Communication,SEM
+0.0021,0.00116,I.T. Administration,Staff management
+0.0021,0.00122,Management,Property management
+0.0021,0.00181,I.T. Administration,NAT
+0.00209,0.00041,I.T. Administration,IBM Lotus Domino
+0.00209,0.00098,Management,Inside sales
+0.00209,0.00174,Management,Departmental management
+0.00208,0.00865,Industry-specific,Penetration testing
+0.00208,0.00356,Hardware/Embedded Software,Microcontrollers
+0.00208,0.00973,Industry-specific,Visualization
+0.00208,0.00222,"Systems Analysis/Design
+",IBM Rational DOORS
+0.00208,0.00258,Management,Product launch
+0.00208,0.00176,Management,Derivatives
+0.00208,0.00474,I.T. Administration,Tier 1
+0.00206,0.01577,"Industry-specific
+",Professional development
+0.00206,0.00042,Data,Report Studio
+0.00205,0.0016,Software Development,IntelliJ IDEA
+0.00205,0.01109,Industry-specific,Encryption
+0.00205,0.01004,Software Development,Knockout JS
+0.00204,0.00111,Management,SAP HCM
+0.00203,0.00193,Software Development,Perforce
+0.00203,0.0007,Design,Video editing
+0.00202,0.03336,Communication,Customer facing
+0.00202,0.00014,Design,Final Cut Pro
+0.00202,0.00402,Software Development,Microsoft Dynamics CRM
+0.00201,0.00306,Software Development,ColdFusion
+0.00201,0.01575,Data,Streaming
+0.00201,0.00204,Management,Competitor analysis
+0.002,0.00681,Industry-specific,Effective communication
+0.002,0.00216,Software Development,W3C
+0.002,0.00235,Communication,Event management
+0.00199,0.00237,Communication,E-learning
+0.00199,0.00119,I.T. Administration,Computer operator
+0.00199,0.00034,Management,SAP LSMW
+0.00199,0.00315,Industry-specific,Aviation
+0.00198,0.00039,Communication,Press release
+0.00198,0.01042,Hardware/Embedded Software,Embedded software
+0.00198,0.0051,Software Development,Mockups
+0.00198,0.00237,Management,Agile management
+0.00198,0.00124,Data,ODBC
+0.00197,0.00295,,Market share
+0.00197,0.00268,Management,Cost accounting
+0.00197,0.00246,Management,Wholesale
+0.00197,0.00146,Management,Lead generation
+0.00196,0.00231,Industry-specific,Biology
+0.00196,0.00764,Industry-specific,System security
+0.00196,0.00149,I.T. Administration,T1
+0.00196,0.00321,Data,Back office
+0.00195,0.00071,Industry-specific,ICD-10
+0.00195,0.00068,Management,Project administration
+0.00194,0.00303,Management,Product marketing
+0.00194,0.00159,Software Development,JAX-RS
+0.00194,0.0014,Communication,Editorial
+0.00193,0.00321,Software Development,Hudson
+0.00193,0.00046,Management,Lawsuit
+0.00193,0.00064,I.T. Administration,Backup Exec
+0.00192,0.00107,Management,Marketing research
+0.00192,0.01005,Data,Data processing
+0.00192,0.00445,Industry-specific,Jasmine
+0.00192,0.00317,I.T. Administration,SolarWinds
+0.00191,0.00042,Management,General journal
+0.00191,0.00164,I.T. Administration,Audioconferencing
+0.00191,0.00077,Design,Illustration
+0.00191,0.00329,Hardware/Embedded Software,Electronic engineering
+0.00191,0.00623,I.T. Administration,Schematics
+0.00191,0.01213,Management,Presales
+0.00191,0.00075,Data,PowerBuilder
+0.0019,0.00581,Management,Project documentation
+0.0019,0.01814,Industry-specific,CISSP
+0.0019,0.00288,Management,Infrastructure management
+0.0019,0.00256,"Industry-specific
+",Lasers
+0.0019,0.00147,Communication,Copywriting
+0.0019,0.00115,Management,Facility management
+0.0019,0.00627,I.T. Administration,Performance monitoring
+0.00189,0.00089,Communication,Records management
+0.00189,0.00053,Data,Analysis of variance
+0.00189,0.00512,I.T. Administration,Software configuration
+0.00188,0.00235,I.T. Administration,RAID
+0.00188,0.00206,Industry-specific,Internal control
+0.00188,0.00056,Systems Analysis/Design,VirtualBox
+0.00188,0.00047,Software Development,Service delivery management
+0.00188,0.00693,Industry-specific,SSO
+0.00187,0.00465,Systems Analysis/Design,Test equipment
+0.00187,0.00071,Management,WEBI
+0.00187,0.00026,I.T. Administration,Easytrieve
+0.00187,0.00159,Industry-specific,ArcGIS
+0.00187,0.00104,Management,Materials management
+0.00187,0.0007,Software Development,Visual C++
+0.00186,0.00162,I.T. Administration,Brocade
+0.00186,0.01119,Systems Analysis/Design,Medical devices
+0.00186,0.00329,I.T. Administration,People skills
+0.00185,0.00014,Data,IBM Cognos Query Studio
+0.00185,0.00098,Management,Implementation management
+0.00185,0.0019,Data,Data profiling
+0.00185,0.00446,Management,Clarity
+0.00185,0.00055,Software Development,Hyperion Planning
+0.00184,0.00089,I.T. Administration,Desktop administration
+0.00184,0.00118,Communication,German
+0.00184,0.00276,Management,Manufacturing engineering
+0.00184,0.00228,Industry-specific,Office equipment
+0.00184,0.00248,"Industry-specific
+",Oil & Gas
+0.00184,0.00341,Management,Warehouse management
+0.00184,0.00176,Data,Operations research
+0.00184,0.00552,Industry-specific,Security controls
+0.00183,0.00505,I.T. Administration,SIP
+0.00183,0.00198,Software Development,Cocoa Touch
+0.00183,0.00046,,Slowly changing dimensions
+0.00183,0.00246,Management,Lean manufacturing
+0.00183,0.00161,Software Development,Telerik
+0.00183,0.00057,Systems Analysis/Design,STLC
+0.00182,0.01249,Communication,Gaming
+0.00182,0.001,Management,Credit risk
+0.00182,0.04004,Software Development,Open source
+0.00181,0.00712,Management,Project delivery
+0.0018,0.02703,,Docker
+0.0018,0.00125,Communication,Google AdWords
+0.0018,0.01174,Data,Apache Kafka
+0.0018,0.00165,Management,SAP GRC
+0.0018,0.00179,Design,Post-production
+0.00179,0.00012,Communication,Russian
+0.00179,0.00335,Data,Database architecture
+0.00179,0.00492,Software Development,MVVM
+0.00178,0.00864,Systems Analysis/Design,Aerospace
+0.00178,0.007,I.T. Administration,Proxies
+0.00178,0.00461,I.T. Administration,Cisco UCM
+0.00178,0.006,Industry-specific,Malware analysis
+0.00177,0.00116,Data,Data-flow diagrams
+0.00177,0.00216,Industry-specific,Symantec
+0.00177,0.00187,,Financing
+0.00177,0.00116,Software Development,UIKit
+0.00177,0.00517,Hardware/Embedded Software,FPGA
+0.00176,0.00076,Industry-specific,Art director
+0.00176,0.00929,Data,Artificial intelligence
+0.00176,0.00828,I.T. Administration,Managed services
+0.00176,0.00269,Management,Salesforce.com administration
+0.00176,0.00274,Management,Project budget
+0.00176,0.00366,Software Development,2D computer graphics
+0.00176,0.00062,I.T. Administration,Log shipping
+0.00175,0.00043,Industry-specific,ICD-9
+0.00175,0.00541,I.T. Administration,Software management
+0.00175,0.00038,Software Development,BTEQ
+0.00175,0.00215,Data,Data extraction
+0.00175,0.00082,Data,FileNet
+0.00175,0.00141,I.T. Administration,Help desk management
+0.00175,0.00102,Management,Order to cash
+0.00175,0.001,Systems Analysis/Design,Test estimation
+0.00175,0.00021,,Data-driven testing
+0.00175,0.0038,Communication,Digital media
+0.00174,0.00317,Management,Construction management
+0.00174,0.00628,Management,Financial software
+0.00174,0.00129,I.T. Administration,System imaging
+0.00174,0.00232,Data,Business analytics
+0.00173,0.00033,Communication,Adobe FrameMaker
+0.00173,0.00087,Software Development,Apache Axis
+0.00173,0.00115,I.T. Administration,SonicWall
+0.00172,0.00285,Communication,Social networks
+0.00172,0.00194,I.T. Administration,Cisco IOS
+0.00172,0.00043,Communication,Advertising mail
+0.00172,0.00097,Data,SAP BODS
+0.00172,0.00964,I.T. Administration,Data link layer
+0.00172,0.00064,Communication,Proofreading
+0.00172,0.00314,I.T. Administration,Tier 2
+0.00172,0.0043,Software Development,Cocoa
+0.00171,0.00552,"Software Development
+",Software packaging
+0.00171,0.00122,Data,Ada
+0.00171,0.00197,I.T. Administration,Firewall administration
+0.00171,0.00247,Management,Resource allocation
+0.00171,0.0022,Data,Storage management
+0.00171,7e-05,Data,TKProf
+0.00171,0.00293,Data,Data governance
+0.00171,0.00635,I.T. Administration,Telephony
+0.0017,0.00927,I.T. Administration,Command-line interface
+0.0017,0.00089,Management,Cost control
+0.0017,0.00095,Systems Analysis/Design,Cross-browser compatibility testing
+0.0017,0.00367,Management,Cost estimation
+0.00169,0.00017,Software Development,SWOT analysis
+0.00169,0.00158,Management,Fixed assets
+0.00168,0.01625,Management,Business software
+0.00168,0.00251,Software Development,jQuery UI
+0.00168,0.00257,Software Development,WLAN
+0.00168,0.00237,,Internal auditing
+0.00168,0.00224,Software Development,XAML
+0.00168,0.00336,Software Development,Dependency injection
+0.00168,0.00211,Management,SAP APO
+0.00168,0.00018,I.T. Administration,Six Sigma Green Belt
+0.00167,0.00043,Systems Analysis/Design,JAD
+0.00167,0.00208,Hardware/Embedded Software,Simulink
+0.00167,0.00117,Hardware/Embedded Software,Embedded C
+0.00167,0.00111,Management,SAP BASIS
+0.00167,0.00135,Design,Autodesk Maya
+0.00167,0.00418,Management,Project development
+0.00167,0.00059,Data,Stata
+0.00167,0.00712,I.T. Administration,Network layer
+0.00166,0.00664,"Industry-specific
+",PCI
+0.00166,0.00081,Data,IBM Cognos BI
+0.00166,0.00039,Software Development,Apache Tiles
+0.00166,0.00051,Management,Organizational management
+0.00166,0.00626,"Industry-specific
+",Commerce
+0.00166,0.01104,Management,Project lifecycle management
+0.00165,0.00158,Data,Entity relationship model
+0.00165,0.00211,Systems Analysis/Design,Business process management
+0.00164,0.00096,Management,Accounting software
+0.00164,0.00042,Design,Creative director
+0.00164,0.00177,Management,Revenue growth
+0.00163,0.00202,Hardware/Embedded Software,ASIC
+0.00163,0.00227,I.T. Administration,Phone support
+0.00163,0.00309,Data,Apache ZooKeeper
+0.00163,0.00017,Software Development,Data Pump
+0.00163,0.00119,Data,Oracle GoldenGate
+0.00163,0.00258,Industry-specific,McAfee
+0.00162,0.01231,,IoT
+0.00162,0.00092,Software Development,Joomla
+0.00162,0.00024,Management,Xcelsius
+0.00162,0.00029,Data,SAS/BASE
+0.00161,0.00099,"Industry-specific
+",OOPS
+0.00161,0.00077,I.T. Administration,Print servers
+0.00161,0.00197,Software Development,Axure
+0.00161,0.00019,Management,Paralegal
+0.00161,0.00019,Communication,Training management
+0.00161,0.00083,Management,Project evaluation
+0.00161,0.00682,Data,D3.js
+0.0016,0.00255,Data,Physical data model
+0.0016,0.00417,Industry-specific,PCI DSS
+0.0016,0.00107,Management,Customer communications
+0.0016,0.03045,Management,Talent management
+0.00159,0.00106,Management,Financial accounting
+0.00159,0.01146,"Industry-specific
+",Palo Alto
+0.00159,0.00303,,Capital market
+0.00159,0.00376,Hardware/Embedded Software,Oscilloscope
+0.00159,0.00534,Management,CMMI
+0.00159,0.00132,Management,Agile coaching
+0.00159,0.00931,Industry-specific,Intrusion detection
+0.00159,0.00282,Hardware/Embedded Software,Semiconductors
+0.00158,0.00394,Industry-specific,Software implementation
+0.00158,0.00099,Management,Prospecting
+0.00158,0.01227,"Data
+",Amazon S3
+0.00158,0.00491,Software Development,Information architecture
+0.00158,0.00192,I.T. Administration,z/OS
+0.00158,0.00164,Management,Organizational development
+0.00158,0.00201,I.T. Administration,Configuration management database
+0.00157,0.00144,Data,Commodities
+0.00157,0.0009,I.T. Administration,Network cabling
+0.00157,0.00048,"Data
+",Enterprise Manager
+0.00157,0.00057,I.T. Administration,Cisco VPN
+0.00157,0.00142,Management,PeopleCode
+0.00157,0.00259,Management,Reengineering
+0.00157,8e-05,I.T. Administration,OS/390
+0.00157,0.00284,Communication,Web analytics
+0.00157,0.00284,Data,Bill of materials
+0.00157,0.00203,Industry-specific,Word processor
+0.00156,0.00434,Management,Systems management
+0.00156,0.00102,Management,SAP Security
+0.00156,0.00015,Data,SQL Navigator
+0.00156,0.0027,Management,Process reengineering
+0.00155,0.00385,Software Development,Game development
+0.00155,0.00035,Hardware/Embedded Software,PSpice
+0.00155,0.00077,Management,SAP CRM
+0.00155,0.00056,I.T. Administration,Rexx
+0.00155,0.00092,Management,SAP LE
+0.00155,0.00151,Software Development,Needs analysis
+0.00154,0.00055,Management,Kaizen
+0.00154,0.00057,Design,Video production
+0.00154,0.00031,Industry-specific,Account reconciliation
+0.00153,0.00085,Systems Analysis/Design,HP Performance Center
+0.00153,0.00022,I.T. Administration,GroupWise
+0.00153,0.00429,I.T. Administration,Break/Fix
+0.00153,0.00201,Management,IT program management
+0.00153,0.00098,Data,Logical data model
+0.00152,0.00066,"Industry-specific
+",Equipment maintenance
+0.00152,0.00162,I.T. Administration,Financial planning
+0.00152,0.00164,Data,Stress testing
+0.00152,0.00662,"Industry-specific
+",Design documentation
+0.00152,0.00384,I.T. Administration,Network monitoring
+0.00152,0.00035,I.T. Administration,Oracle WebLogic administration
+0.00152,0.00036,Software Development,SRS
+0.00152,0.00262,I.T. Administration,WebEx
+0.00151,0.00056,Communication,Japanese
+0.00151,0.00209,Management,Web conferencing
+0.00151,0.00022,I.T. Administration,MS-DOS
+0.0015,0.01706,Software Development,Jersey
+0.0015,0.00403,Software Development,Heroku
+0.0015,0.00209,Industry-specific,Law enforcement
+0.0015,0.01497,Software Development,Apache Flex
+0.00149,0.00155,Communication,Content creation
+0.00149,0.00152,Software Development,ODI
+0.00149,0.00282,Hardware/Embedded Software,Digital design
+0.00149,0.00102,Management,Kronos
+0.00149,0.00409,Data,Data transmission
+0.00149,0.00166,I.T. Administration,Technology assessment
+0.00149,0.00148,I.T. Administration,Microsoft WSUS
+0.00148,0.00072,Management,Mutual funds
+0.00148,0.00094,Management,New business development
+0.00148,0.0003,Management,Sales training
+0.00148,0.00285,Systems Analysis/Design,Functional analysis
+0.00148,0.00118,Management,Clinical trials
+0.00148,0.00188,Software Development,Application engine
+0.00148,0.00451,Management,Infrastructure architecture
+0.00147,0.00113,Design,ProE
+0.00147,0.00255,Management,Stakeholder management
+0.00147,0.00022,I.T. Administration,AS/400 Control Language
+0.00147,0.0026,Software Development,Test suites
+0.00146,0.00025,Management,Loss prevention
+0.00146,0.00038,Management,Financial modeling
+0.00146,0.00102,Software Development,Java SE
+0.00145,0.00453,Software Development,OpenGL
+0.00145,0.002,Management,Project costing
+0.00145,0.00539,Software Development,Groovy
+0.00145,0.00023,,Data warehouse QA
+0.00145,0.00873,I.T. Administration,Data security
+0.00145,0.00195,Data,Front office
+0.00144,0.00037,Management,5S
+0.00144,0.00593,Hardware/Embedded Software,RTOS
+0.00144,0.00223,Management,Organizational change management
+0.00144,0.00039,Industry-specific,Telecommunications skills
+0.00143,0.00026,,PATROL
+0.00143,0.00227,Hardware/Embedded Software,Tcl
+0.00143,0.00275,I.T. Administration,Software troubleshooting
+0.00143,0.00059,"Industry-specific
+",Eagle
+0.00143,3e-05,,Office Assistant
+0.00143,0.00176,Industry-specific,Industrial engineering
+0.00143,0.00013,Software Development,CORBA
+0.00143,0.00365,Communication,Hospitality
+0.00142,0.00075,I.T. Administration,Strategic alliance
+0.00142,0.00259,Software Development,Boost
+0.00142,0.00034,Data,Oracle Grid Control
+0.00142,0.00209,Management,Shared services
+0.00141,0.00344,Data,Statistical models
+0.00141,0.00132,Communication,Adobe Captivate
+0.00141,0.00087,"Industry-specific
+",Mechanics
+0.00141,0.00249,I.T. Administration,Nessus
+0.00141,0.00789,Management,OpenStack
+0.0014,0.00037,Data,Base SAS
+0.0014,0.00258,"Industry-specific
+",Network analysis
+0.0014,0.00563,I.T. Administration,QoS
+0.0014,0.00013,I.T. Administration,Computer maintenance
+0.0014,0.00197,Management,Customer acquisition
+0.0014,0.00258,I.T. Administration,Broadband
+0.0014,0.00062,I.T. Administration,Mercury
+0.0014,0.00026,,Program director
+0.0014,0.0009,"Software Development
+",Oracle SOA
+0.0014,0.00079,I.T. Administration,Sonet
+0.0014,0.00028,Software Development,IBM HTTP Server
+0.0014,0.00098,"Data
+",ASC X12
+0.00139,0.00123,Software Development,Actuate
+0.00139,0.00706,I.T. Administration,Solution delivery
+0.00139,0.00244,Communication,Internationalization and localization
+0.00139,0.00156,Hardware/Embedded Software,Antennas
+0.00139,0.00246,I.T. Administration,Performance engineering
+0.00139,0.00219,Data,Quantitative analyst
+0.00139,0.00014,Communication,Marketing planning
+0.00139,0.01762,Management,IaaS
+0.00139,0.00085,Management,GAAP
+0.00138,0.00054,Communication,Curriculum development
+0.00138,0.00087,Management,Marketing communications
+0.00138,0.00019,Industry-specific,Medical billing
+0.00138,0.00083,I.T. Administration,Google Apps
+0.00138,0.01872,I.T. Administration,Ansible
+0.00138,0.00043,Management,Corporate finance
+0.00137,0.00018,Management,Logistics management
+0.00137,0.00035,Industry-specific,Medical terminology
+0.00137,0.00102,I.T. Administration,Data center administration
+0.00137,4e-05,,Teradata SQL Assistant
+0.00137,0.00046,Systems Analysis/Design,Pega PRPC
+0.00136,0.00119,Software Development,Apache CXF
+0.00136,0.00131,"Industry-specific
+",LIMS
+0.00136,0.00431,Software Development,Bluetooth
+0.00136,0.00214,Management,Wealth management
+0.00135,0.00123,Management,SPC
+0.00135,0.0027,Management,FMEA
+0.00135,0.00139,Design,Machining
+0.00135,0.0017,Management,CPA
+0.00135,0.00129,Management,Primavera
+0.00135,0.00013,,JAXP
+0.00135,0.00055,I.T. Administration,CDMA
+0.00135,0.00061,"Industry-specific
+",PRPC
+0.00135,0.00055,I.T. Administration,Printer support
+0.00135,0.0002,"Data
+",MLoad
+0.00134,0.00077,I.T. Administration,cron
+0.00134,0.00028,Design,Google Docs
+0.00134,0.00234,,Operational efficiency
+0.00134,0.00219,I.T. Administration,Siemens
+0.00134,0.00065,Management,Restructuring
+0.00134,0.00451,Software Development,RSpec
+0.00133,8e-05,I.T. Administration,Veritas Volume Manager
+0.00133,0.00056,Software Development,JDeveloper
+0.00133,0.00431,Systems Analysis/Design,Functional design
+0.00133,0.00085,Management,Outside sales
+0.00133,0.00055,Hardware/Embedded Software,OrCAD
+0.00133,0.00157,,Benefits management
+0.00133,0.00113,Hardware/Embedded Software,Finite element
+0.00133,0.00125,Industry-specific,Laboratory equipment
+0.00132,0.00213,I.T. Administration,Microsoft SCOM
+0.00132,0.00317,Data,Image processing
+0.00132,0.00014,Data,Analysis Studio
+0.00132,0.00064,Communication,Compliance management
+0.00132,0.00033,Software Development,ASP.NET AJAX
+0.00132,0.00117,Management,SAP PI
+0.00132,0.00381,Management,SAP implementation
+0.00132,0.00026,Communication,Social media management
+0.00132,0.0019,Management,Organizational structure
+0.00131,0.01256,Management,Customer focus
+0.00131,0.0034,Data,Search engines
+0.00131,0.0009,Design,Creo
+0.00131,0.00415,I.T. Administration,Contact center
+0.00131,0.00312,Management,Product support
+0.00131,0.00112,Management,Employee engagement
+0.00131,0.00144,Industry-specific,IT audit
+0.00131,0.00127,Communication,Adobe CQ
+0.00131,0.00028,,Cisco administration
+0.0013,0.00201,Management,Brokerage
+0.0013,0.00053,Management,Loan origination
+0.0013,0.00077,Data,iBATIS
+0.0013,0.00103,Software Development,jQuery Mobile
+0.0013,0.00039,I.T. Administration,Samba
+0.0013,0.00176,Software Development,Dojo
+0.0013,0.00071,Industry-specific,File manager
+0.00129,0.00136,Management,SRM
+0.00129,0.00114,Industry-specific,CCTV
+0.00129,0.00036,Management,Web Dynpro
+0.00129,0.00034,I.T. Administration,IDMS
+0.00129,0.0035,I.T. Administration,Cisco UCS
+0.00129,0.00174,Hardware/Embedded Software,SCADA
+0.00128,0.00488,I.T. Administration,Performance analysis
+0.00128,0.002,Software Development,Storyboard
+0.00128,0.00077,I.T. Administration,CAT5
+0.00127,0.00085,I.T. Administration,Citrix administration
+0.00127,0.00037,Management,Capital expenditures
+0.00127,0.00533,Industry-specific,Security architecture
+0.00127,0.00049,Data,Oracle Enterprise Manager
+0.00127,0.00112,Industry-specific,Health care administration
+0.00127,0.00065,Management,Consultative sales
+0.00127,0.00155,I.T. Administration,RF engineering
+0.00127,0.0006,,SAN administration
+0.00127,0.00013,Data,SAS/STAT
+0.00127,0.00273,Management,Business planning
+0.00127,0.0006,Software Development,Game design
+0.00127,0.00278,Hardware/Embedded Software,Microprocessor
+0.00126,0.00039,Management,BAPI
+0.00126,0.00049,I.T. Administration,Alcatel-Lucent
+0.00126,0.00277,Management,Feasibility study
+0.00126,0.00238,Hardware/Embedded Software,Process control
+0.00126,0.0012,Management,Applicant tracking system
+0.00126,0.00042,Design,Adobe Creative Cloud
+0.00125,0.00338,Data,Query optimization
+0.00125,0.00207,Communication,Web content
+0.00125,8e-05,Data,Hyperion Brio
+0.00125,0.00054,I.T. Administration,Data center migration
+0.00125,0.0017,Communication,Learning management
+0.00125,0.00361,"Software Development
+",System implementation
+0.00124,0.00136,Software Development,Mockito
+0.00124,0.00251,I.T. Administration,ACL
+0.00124,0.01547,Software Development,Redis
+0.00124,0.00011,Data,SAS/Access
+0.00124,0.00084,Management,SAP NetWeaver
+0.00124,0.0011,Management,Workflow analysis
+0.00124,0.00087,Software Development,Balsamiq
+0.00124,0.0002,Industry-specific,Google Maps API
+0.00123,0.00137,I.T. Administration,Remote Desktop Services
+0.00123,0.0014,I.T. Administration,Mobile device management
+0.00123,0.00039,Management,SAP BADI
+0.00123,0.00048,Software Development,DNS administration
+0.00123,0.00196,Management,Sales process
+0.00123,0.00157,Hardware/Embedded Software,Chemical engineering
+0.00122,0.00039,Hardware/Embedded Software,VLSI
+0.00122,0.00878,Industry-specific,Security engineering
+0.00122,0.00214,Management,Resource planning
+0.00122,0.00458,I.T. Administration,TCP
+0.00122,0.00341,Hardware/Embedded Software,Device drivers
+0.00122,0.00033,"Industry-specific
+",Electrician
+0.00122,0.00113,Management,Production planning
+0.00122,0.00045,Management,Basel
+0.00122,0.00803,Data,Apache Solr
+0.00121,0.00246,Management,Performance improvement
+0.00121,0.00109,I.T. Administration,SUSE Linux
+0.00121,0.00033,I.T. Administration,Symantec Endpoint Protection
+0.00121,0.00022,I.T. Administration,Xpediter
+0.00121,0.01092,"Data
+",Apache Storm
+0.00121,0.00275,I.T. Administration,Microsoft Servers
+0.00121,0.00211,Industry-specific,RSA
+0.00121,0.00077,I.T. Administration,EMC VNX
+0.00121,0.00444,Communication,A/B testing
+0.0012,0.00313,Industry-specific,Patch Management
+0.0012,0.00346,Industry-specific,Vulnerability assessment
+0.0012,0.00059,I.T. Administration,Telnet
+0.0012,0.00225,Management,Investment banking
+0.0012,0.00101,Data,Oracle RAC
+0.0012,0.00452,"Industry-specific
+",Proprietary software
+0.0012,0.00094,Software Development,Focus groups
+0.00119,0.00086,Software Development,Prism
+0.00119,0.00495,Software Development,Bamboo
+0.00119,0.00211,Data,Talend
+0.00119,0.0011,Communication,Multilingual
+0.00119,0.00095,Systems Analysis/Design,VersionOne
+0.00119,0.00044,Management,Foreign exchange
+0.00119,0.00035,Software Development,ADDM
+0.00119,0.00158,Data,MySQL DBA
+0.00119,0.00188,Management,Process mapping
+0.00119,0.00495,Design,Engineering design
+0.00118,0.00043,Management,Smartforms
+0.00118,4e-05,Management,ITIL management
+0.00118,0.00011,Industry-specific,HPLC
+0.00118,0.00119,Data,Document review
+0.00118,0.00569,Software Development,Laravel
+0.00118,0.00298,Hardware/Embedded Software,Data acquisition
+0.00118,0.00199,Data,PeopleTools
+0.00117,0.00011,Management,SAP ALV
+0.00117,0.00182,Data,Neural networks
+0.00117,0.00107,Data,Computer architecture
+0.00117,0.00141,Data,Oracle ERP
+0.00117,0.00111,Management,Vendor development
+0.00117,0.0003,I.T. Administration,IBM IMS
+0.00117,0.00744,,Design review
+0.00116,0.00022,Management,Bankruptcy
+0.00116,0.00342,Software Development,Level design
+0.00116,0.00032,Communication,Know your customer
+0.00116,0.00234,Hardware/Embedded Software,Circuit design
+0.00116,0.00087,Data,Oracle Service Bus
+0.00116,0.00139,Data,Data warehouse architecture
+0.00116,0.00139,Management,Revenue management
+0.00116,0.00635,Hardware/Embedded Software,Civil engineering
+0.00115,5e-05,Data,Mathematica
+0.00115,0.00171,Data,SQL tuning
+0.00115,2e-05,Industry-specific,Cash handling
+0.00115,0.00122,Management,Microsoft Project Server
+0.00115,0.00083,Management,Project control
+0.00115,0.00227,Design,Schematic
+0.00115,0.00188,Industry-specific,Radar
+0.00115,0.00043,Management,Bonds
+0.00115,0.00204,Communication,Quality improvement
+0.00115,0.00071,"Industry-specific
+",Power station
+0.00114,0.00127,Management,Direct sales
+0.00114,0.0007,Management,Mediation
+0.00114,0.00035,Data,SAS Enterprise Guide
+0.00114,1e-05,,Microsoft Office Live
+0.00114,0.00318,I.T. Administration,Sockets
+0.00113,0.01371,Data,Elasticsearch
+0.00113,0.00073,Industry-specific,Public health
+0.00113,0.0003,Management,Payroll administration
+0.00113,0.00146,Systems Analysis/Design,Agile testing
+0.00113,0.00256,Systems Analysis/Design,Product QA
+0.00113,0.0002,,Tabulate
+0.00113,0.00073,Communication,Business marketing
+0.00113,0.00074,Management,User exit
+0.00113,0.00046,Industry-specific,Physical-to-Virtual
+0.00113,0.00109,Management,Lead management
+0.00113,0.00215,Software Development,User research
+0.00113,0.00045,Management,Strategic marketing
+0.00112,0.00303,Management,Investment management
+0.00112,0.00089,Management,Procure-to-pay
+0.00112,0.00202,I.T. Administration,Problem analysis
+0.00112,0.00087,Software Development,Spring Batch
+0.00112,0.0002,Management,Telemarketing
+0.00112,0.0015,Communication,Business communications
+0.00112,0.00136,Industry-specific,Surveying
+0.00112,0.00053,I.T. Administration,Data recovery
+0.00111,0.00037,I.T. Administration,IBM WebSphere administration
+0.00111,0.00399,Management,Product strategy
+0.00111,0.00016,Industry-specific,Snagit
+0.00111,0.0004,,Random testing
+0.00111,0.00234,Data,Data dictionary
+0.00111,0.0024,I.T. Administration,Database performance tuning
+0.00111,0.00329,Software Development,Flask
+0.00111,0.00149,Communication,Content development
+0.00111,0.00149,Systems Analysis/Design,Trend analysis
+0.0011,0.00039,Software Development,Google Maps
+0.0011,0.00136,Data,Database analysis
+0.0011,0.00013,Data,SAS/ODS
+0.0011,0.00023,I.T. Administration,RSTP
+0.0011,0.00027,Systems Analysis/Design,IBM Rational Quality Manager
+0.0011,0.00031,I.T. Administration,CA Wily Introscope
+0.0011,0.00196,Communication,Educational technology
+0.0011,0.00044,I.T. Administration,PPP
+0.0011,5e-05,Management,Legal research
+0.0011,0.00941,I.T. Administration,Data storage
+0.0011,0.00064,Management,International sales
+0.00109,0.00061,Data,VLOOKUP
+0.00109,0.0009,Management,Regulatory reporting
+0.00109,0.00398,I.T. Administration,Smartphones
+0.00109,0.0001,Data,SAS/GRAPH
+0.00109,0.00034,Communication,Image editing
+0.00109,0.00021,I.T. Administration,IBM Spufi
+0.00109,0.00068,Software Development,ER/Studio
+0.00108,0.00128,Management,Solution management
+0.00108,0.00191,Software Development,Kendo UI
+0.00108,0.00016,Industry-specific,Business-IT alignment
+0.00108,0.00172,Industry-specific,Health informatics
+0.00108,0.00181,Software Development,Razor
+0.00108,0.00854,Software Development,Magento
+0.00108,0.0015,Systems Analysis/Design,API QA
+0.00108,0.00648,Software Development,Nginx
+0.00108,0.00086,Communication,Journalism
+0.00108,0.00052,Data,ETL architecture
+0.00107,0.00324,Software Development,Interaction design
+0.00107,0.0007,Management,Earned value management
+0.00107,0.00062,Software Development,Kickstart
+0.00107,2e-05,Data,PowerPlay
+0.00107,0.00174,I.T. Administration,SFTP
+0.00107,0.00188,Data,Database security
+0.00107,0.00745,Industry-specific,Federal government
+0.00107,0.00385,Software Development,Flowchart
+0.00107,0.00058,I.T. Administration,EMC VMAX
+0.00107,0.00622,Industry-specific,SIEM
+0.00106,0.00284,Data,Data manipulation
+0.00106,0.0006,Management,Program management office
+0.00106,0.0047,Management,Creative problem solving
+0.00106,0.00247,Management,Report writing
+0.00106,0.00194,Design,Unigraphics NX
+0.00106,0.0009,Data,Logistic regression
+0.00105,0.00041,I.T. Administration,Engineering technician
+0.00105,0.00013,Data,SAS/Enterprise Miner
+0.00105,1e-05,,Import Wizard
+0.00105,0.00063,I.T. Administration,CA-7
+0.00105,0.00077,Software Development,BPEL
+0.00105,0.00267,Industry-specific,Brainstorming
+0.00105,0.00072,Software Development,IBM WebSphere Message Broker
+0.00105,0.00321,Hardware/Embedded Software,QT
+0.00105,0.00036,I.T. Administration,Fileaid
+0.00105,0.00099,Management,Business-to-business sales
+0.00104,0.00016,"Data
+",MaxL
+0.00104,0.00719,Management,Job boards
+0.00104,0.00194,Industry-specific,Security audit
+0.00104,0.00388,Data,Data services
+0.00104,0.0004,Data,JMP
+0.00104,0.00033,Design,Adobe RoboHelp
+0.00104,0.00063,Systems Analysis/Design,Maximo
+0.00104,0.00018,"Data
+",PROC SQL
+0.00103,0.00335,Industry-specific,Reverse engineering
+0.00103,8e-05,,WinSCP
+0.00103,0.00144,Management,Project scheduling
+0.00103,0.00086,Data,Linear algebra
+0.00103,0.00025,Management,Material Master Data
+0.00103,0.00158,Software Development,Windows Services
+0.00103,0.00425,Software Development,Product engineering
+0.00103,0.00053,I.T. Administration,UMTS
+0.00103,0.0008,Data,BI architecture
+0.00102,0.0001,"Software Development
+",Impromptu
+0.00102,0.00164,Data,Pentaho
+0.00102,0.00013,Systems Analysis/Design,Sanity testing
+0.00102,5e-05,Industry-specific,Machine operator
+0.00102,0.00042,Management,Sales presentations
+0.00102,0.00346,I.T. Administration,Server hardware
+0.00102,0.00095,I.T. Administration,Tandem
+0.00102,0.00036,Communication,Portuguese
+0.00102,0.00067,Management,Guidewire
+0.00102,0.00058,Management,Direct marketing
+0.00102,0.00173,Management,Functional management
+0.00102,0.00016,Management,Procurement management
+0.00101,0.00571,Industry-specific,Biotechnology
+0.00101,0.00172,I.T. Administration,Debian Linux
+0.00101,0.00284,Management,Software estimation
+0.00101,0.00178,Management,Practice management
+0.00101,0.00184,I.T. Administration,WINS
+0.00101,0.00128,Management,Cost management
+0.00101,0.00096,I.T. Administration,Nmap
+0.00101,0.00052,Industry-specific,Fluid mechanics
+0.00101,0.00217,Software Development,Interface design
+0.001,0.0011,Management,Taleo
+0.001,0.00055,Data,Program evaluation
+0.001,0.00097,I.T. Administration,Fiddler
+0.001,0.00034,Management,Econometrics
+0.001,0.0001,I.T. Administration,Electronics technician
+0.001,0.00184,Software Development,Microsoft Dynamics GP
+0.001,0.00156,Design,Typography
+0.001,0.00015,I.T. Administration,EMC CLARiiON
+0.001,0.00136,Industry-specific,IT governance
+0.001,0.00121,Management,Failure analysis
+0.00099,0.00118,Industry-specific,Siteminder
+0.00099,0.00076,I.T. Administration,To-be process
+0.00099,0.00116,Data,Oracle Exadata
+0.00099,0.00017,Communication,Copy editing
+0.00099,0.00013,Industry-specific,Safety management
+0.00099,0.00029,I.T. Administration,Database mirroring
+0.00099,0.00282,Software Development,Microsoft Dynamics AX
+0.00099,0.00037,,Expediting
+0.00099,0.01764,I.T. Administration,Skype
+0.00099,0.00044,Industry-specific,Computer literacy
+0.00099,0.00317,"Industry-specific
+",ProVision
+0.00099,0.00035,Industry-specific,Microbiology
+0.00099,0.00047,,Online banking
+0.00099,0.00636,Data,Predictive analytics
+0.00098,0.00074,Systems Analysis/Design,Software requirements specification
+0.00098,0.00141,"Industry-specific
+",Hand tools
+0.00098,0.00344,Industry-specific,Forensics
+0.00098,0.00035,Management,SAP Solution Manager
+0.00098,0.00151,,Material handling
+0.00098,0.00051,Data,Order processing
+0.00098,0.00106,I.T. Administration,Disk imaging
+0.00097,4e-05,,IBM Cognos Connection
+0.00097,0.00147,Systems Analysis/Design,Avionics
+0.00097,0.01293,Management,PaaS
+0.00097,0.00098,Management,Strategy development
+0.00097,0.00048,Industry-specific,Assays
+0.00097,0.00018,Management,Accounting management
+0.00097,0.00132,Software Development,TIBCO BusinessWorks
+0.00097,0.00023,Software Development,FreeBSD
+0.00097,0.00256,Management,Program development
+0.00097,0.00092,Hardware/Embedded Software,Xilinx
+0.00097,0.00076,Systems Analysis/Design,Clinical research
+0.00097,0.00464,"Hardware/Embedded Software
+",Hardware development
+0.00096,0.00058,Communication,FileMaker Pro
+0.00096,0.00125,Software Development,Mule
+0.00096,0.00514,Software Development,Gradle
+0.00096,0.00637,"Hardware/Embedded Software
+",Firmware development
+0.00096,0.00127,I.T. Administration,Citrix XenDesktop
+0.00096,0.00101,Management,Engagement management
+0.00096,0.00032,Systems Analysis/Design,Compatibility testing
+0.00096,0.00022,Management,SAP BEx
+0.00096,0.00018,I.T. Administration,Internet research
+0.00095,0.00048,I.T. Administration,HP Service Manager
+0.00095,7e-05,I.T. Administration,NetWare
+0.00095,0.00057,Management,SAP WRICEF
+0.00095,0.001,Management,Campaign management
+0.00095,0.00618,Management,Product requirements
+0.00095,0.0013,Management,Work breakdown structure
+0.00095,0.00017,I.T. Administration,Changeman
+0.00095,0.00161,Software Development,PhoneGap
+0.00095,5e-05,,SublimeText
+0.00095,0.00029,Data,Cascading
+0.00095,0.00415,Software Development,Zend
+0.00094,0.00104,Software Development,Spring Security
+0.00094,0.00156,Data,Decision trees
+0.00094,0.00072,Design,Audio engineering
+0.00094,0.00019,"Industry-specific
+",Carpentry
+0.00094,0.00088,Industry-specific,Biomedicine
+0.00094,0.00047,Management,VAN
+0.00094,4e-05,Data,Statspack
+0.00094,0.00185,Management,Decision support
+0.00094,0.00381,Industry-specific,Vulnerability management
+0.00093,0.00238,Software Development,Xamarin
+0.00093,0.00098,Data,TIBCO Spotfire
+0.00093,0.00014,,POJO
+0.00093,0.00046,"Data
+",PS Query
+0.00093,0.002,"Industry-specific
+",DNA
+0.00093,0.00021,Management,Strategic technology planning
+0.00093,0.00081,Data,DAC
+0.00093,0.00054,Management,Consulting management
+0.00093,0.00157,Software Development,Sonar
+0.00092,0.00305,,Bitbucket
+0.00092,0.00162,I.T. Administration,iSCSI
+0.00092,0.00345,I.T. Administration,Bridging
+0.00092,0.00218,"Industry-specific
+",Physical layer
+0.00092,0.00156,Industry-specific,Physical security
+0.00092,0.00147,I.T. Administration,User Administration
+0.00092,0.00053,"Industry-specific
+",MMIS
+0.00092,0.00087,Data,Nintex
+0.00092,0.00118,Management,Materials science
+0.00092,0.00165,Communication,Wiki
+0.00092,0.00077,I.T. Administration,Veeam
+0.00092,0.00148,I.T. Administration,Fortinet
+0.00091,0.00215,Management,Intellectual property
+0.00091,0.00151,Software Development,IBM Websphere DataPower
+0.00091,0.00243,Hardware/Embedded Software,I2C
+0.00091,0.001,Data,IBM InfoSphere
+0.00091,0.00184,"Industry-specific
+",Offshore development
+0.00091,0.00054,"Software Development
+",Oracle Application Framework
+0.00091,0.00087,I.T. Administration,McAfee ePO
+0.00091,0.00737,I.T. Administration,Spectrum
+0.00091,0.00038,"Industry-specific
+",Blackboard
+0.00091,0.00224,Management,Process automation
+0.00091,0.0009,I.T. Administration,Storage engineering
+0.00091,0.00344,Software Development,TypeScript
+0.00091,0.0036,Data,Predictive modelling
+0.00091,0.00781,I.T. Administration,Network protocols
+0.0009,0.00146,Software Development,CodeIgniter
+0.0009,0.00135,I.T. Administration,Web hosting
+0.0009,0.00078,"Industry-specific
+",Barcode
+0.0009,0.00025,Management,Credit management
+0.0009,0.00088,Data,Oracle Fusion Middleware
+0.0009,0.00049,Management,Maintenance Management
+0.0009,0.00078,I.T. Administration,Blade servers
+0.0009,0.00203,Management,Ariba
+0.0009,0.00082,"Industry-specific
+",P2P
+0.0009,0.00064,Management,Regulatory affairs
+0.00089,0.01119,I.T. Administration,Software security
+0.00089,0.00014,,DBCC
+0.00089,0.00029,I.T. Administration,ProLiant
+0.00089,0.0002,I.T. Administration,BlackBerry Enterprise Server
+0.00089,9e-05,,Purchasing management
+0.00089,0.00064,I.T. Administration,HP SiteScope
+0.00089,0.0011,Hardware/Embedded Software,VxWorks
+0.00089,0.00071,I.T. Administration,VRRP
+0.00089,0.00031,Software Development,Microsoft Enterprise Library
+0.00089,0.00356,Industry-specific,Software documentation
+0.00089,0.00025,Data,JasperReports
+0.00088,0.00044,Management,Concur
+0.00088,0.0004,I.T. Administration,Fedora
+0.00088,0.00035,Communication,Korean
+0.00088,0.00475,"Industry-specific
+",Control engineering
+0.00088,0.00043,,Compensation management
+0.00088,0.00367,Industry-specific,Payment processing
+0.00088,0.00047,I.T. Administration,Altiris
+0.00088,0.00075,"Industry-specific
+",Power tools
+0.00088,0.00014,Management,FMLA
+0.00087,0.00137,Data,Design of experiments
+0.00087,0.00225,Software Development,Release engineering
+0.00087,0.00013,Industry-specific,Biochemistry
+0.00087,0.00045,I.T. Administration,Satellite telecommunications
+0.00087,0.00149,I.T. Administration,IPv6
+0.00087,0.00117,Communication,Adobe SiteCatalyst
+0.00087,0.00101,"Data
+",File formats
+0.00087,0.00032,Software Development,Applets
+0.00087,0.0025,Software Development,User-centered design
+0.00087,0.00066,Industry-specific,Biomedical engineering
+0.00087,0.00052,Data,Informatica MDM
+0.00087,0.00139,I.T. Administration,IPv4
+0.00087,0.00146,"Industry-specific
+",Power supply
+0.00087,0.00072,Software Development,TIBCO EMS
+0.00086,0.00264,Management,NetSuite
+0.00086,6e-05,Industry-specific,Notepad++
+0.00086,0.00284,Management,Product demonstration
+0.00086,0.00475,I.T. Administration,Unified communications
+0.00086,0.00114,I.T. Administration,4G
+0.00086,0.004,Communication,Higher education
+0.00086,0.00027,Management,Call center management
+0.00086,0.00101,Management,Report Writer
+0.00086,0.00111,Management,Communication planning
+0.00086,0.00158,I.T. Administration,POP
+0.00085,0.00113,Data,Digital signal processing
+0.00085,0.00077,Industry-specific,Operational risk
+0.00085,0.00024,Industry-specific,DMAIC
+0.00085,0.00115,Industry-specific,Information security management
+0.00085,0.00017,I.T. Administration,Veritas Cluster Server
+0.00085,0.00082,Management,Retail banking
+0.00085,0.00037,,Quality audit
+0.00085,0.00022,I.T. Administration,SS7
+0.00085,0.00083,Industry-specific,Payment systems
+0.00085,0.0011,I.T. Administration,Voicemail
+0.00085,0.00061,Management,Strategic sourcing
+0.00085,0.00177,Software Development,Personas
+0.00085,0.00092,Communication,Active listening
+0.00085,0.00051,Data,Numerical analysis
+0.00085,0.0013,Software Development,Dynatrace
+0.00085,0.00231,Data,Cloudera Impala
+0.00084,0.00042,Communication,Linguistics
+0.00084,0.00045,Software Development,UDDI
+0.00084,0.00377,I.T. Administration,Engineering support
+0.00084,0.00024,Data,Siebel CRM
+0.00084,0.00127,Communication,Technical communication
+0.00084,0.00067,Systems Analysis/Design,Microsoft Test Manager
+0.00084,0.00027,I.T. Administration,ESQL
+0.00084,0.0003,I.T. Administration,TFTP
+0.00084,3e-05,Data,Desktop Intelligence
+0.00084,0.00017,,Microsoft TFS administration
+0.00084,0.00024,Data,Oracle Applications DBA
+0.00084,0.00828,Software Development,LESS
+0.00084,0.00383,I.T. Administration,Tier 3
+0.00084,5e-05,I.T. Administration,Computer assembly
+0.00084,0.00148,Design,MicroStation
+0.00084,3e-05,,DDMS
+0.00083,0.00088,I.T. Administration,Wise
+0.00083,0.00083,Management,Crisis management
+0.00083,0.00144,"Industry-specific
+",BMC
+0.00083,0.00154,Management,Business transformation
+0.00083,0.00046,Management,CA Clarity
+0.00083,0.00019,Data,Monte Carlo method
+0.00083,0.00074,Hardware/Embedded Software,Synopsys
+0.00083,0.00019,Management,Territory management
+0.00083,0.00121,Management,Fit/gap analysis
+0.00083,0.00182,Management,Project estimation
+0.00083,0.00122,"Industry-specific
+",Policy administration
+0.00083,0.00023,Software Development,WWF
+0.00083,0.00073,I.T. Administration,Meraki
+0.00083,0.00023,Systems Analysis/Design,Defect analysis
+0.00082,0.00091,Communication,Global marketing
+0.00082,0.00013,Management,Vendor master data
+0.00082,0.00218,I.T. Administration,Cisco Nexus
+0.00082,0.00174,I.T. Administration,Data compression
+0.00082,0.00019,Management,Supervisory management
+0.00082,0.00042,I.T. Administration,Lotus
+0.00082,0.00026,I.T. Administration,Baan
+0.00082,0.00071,Industry-specific,Intelligence analysis
+0.00082,0.00142,Management,New product introduction
+0.00082,0.00301,Software Development,Apache Cordova
+0.00082,0.00025,Management,Total quality management
+0.00082,0.00089,"Industry-specific
+",Harvest
+0.00082,0.00184,Communication,Web content management
+0.00081,0.00029,Communication,Camtasia
+0.00081,0.0045,Software Development,Mobile Web
+0.00081,0.00351,Industry-specific,Operational excellence
+0.00081,0.00048,I.T. Administration,Service level management
+0.00081,0.00068,Software Development,IBM WebSphere Portal
+0.00081,0.00298,Data,Signal processing
+0.00081,0.00026,I.T. Administration,Telecommunications management
+0.00081,0.00162,Data,SQL Azure
+0.00081,0.00052,"Management
+",Production scheduling
+0.00081,0.00036,Management,SAP BASIS administration
+0.00081,0.00144,Management,Go to market
+0.00081,0.00216,Industry-specific,Informatics
+0.0008,0.00071,I.T. Administration,RFID
+0.0008,8e-05,Management,Retail management
+0.0008,0.00068,Data,IBM DB2 DBA
+0.0008,0.00329,,Virtual private cloud
+0.0008,0.00079,I.T. Administration,Microsoft IIS administration
+0.0008,0.00019,I.T. Administration,Oracle iPlanet Web Server
+0.0008,0.00083,Management,Product costing
+0.0008,0.00038,Data,PowerDesigner
+0.0008,0.00033,Systems Analysis/Design,ISTQB
+0.0008,0.00033,,Purchase requisitions
+0.0008,0.0032,Software Development,Apache Velocity
+0.0008,0.00088,I.T. Administration,Thin client
+0.0008,0.00217,,Express.js
+0.0008,0.00045,Management,Banking software
+0.0008,0.00025,I.T. Administration,Barracuda
+0.00079,0.00045,Industry-specific,21 CFR Part 11
+0.00079,0.00056,Systems Analysis/Design,Requirements traceability
+0.00079,0.00013,,Administrative management
+0.00079,0.002,I.T. Administration,Software administration
+0.00079,0.00029,Data,Informatica Data Quality
+0.00079,0.00487,Systems Analysis/Design,Security QA
+0.00079,0.00225,Industry-specific,Contingency plan
+0.00079,8e-05,,DHCP administration
+0.00079,0.00228,Hardware/Embedded Software,Analog circuits
+0.00079,0.00103,I.T. Administration,Service operations
+0.00079,0.00107,I.T. Administration,Site survey
+0.00079,0.00026,Industry-specific,Communications security
+0.00079,0.00051,Management,ERP management
+0.00078,0.00049,Hardware/Embedded Software,Socket programming
+0.00078,0.00616,Software Development,RabbitMQ
+0.00078,0.00074,Software Development,GlassFish
+0.00078,0.02808,Data,Distributed computing
+0.00078,0.00048,Design,Avid
+0.00078,0.00045,Industry-specific,Business continuity planning
+0.00078,0.00101,Management,webMethods
+0.00078,0.00044,Management,Production control
+0.00078,0.00786,Design,Autodesk Revit
+0.00078,4e-05,Data,RStudio
+0.00077,0.00103,,Field operations
+0.00077,0.00047,oftware Development,XMLSpy
+0.00077,0.00427,I.T. Administration,Hardware management
+0.00077,0.00033,I.T. Administration,Six Sigma Black Belt
+0.00077,0.00041,,Domain controllers
+0.00077,0.0003,Data,Informatica PowerExchange
+0.00077,0.00063,,Product analysis
+0.00077,0.00424,Industry-specific,Security operations
+0.00077,8e-05,Design,QuarkXPress
+0.00077,0.00035,Industry-specific,Molecular biology
+0.00077,0.0002,Management,International management
+0.00077,0.00073,I.T. Administration,AirWatch
+0.00077,0.0045,Industry-specific,NIST
+0.00077,0.00508,Management,Business acumen
+0.00077,0.00042,Management,Claims management
+0.00076,0.00147,"Industry-specific
+",Job scheduling
+0.00076,0.00018,Management,Emergency management
+0.00076,0.00083,"Management
+",Laboratory management
+0.00076,0.00029,Software Development,TIBCO administration
+0.00076,0.00957,,Data engineering
+0.00076,0.00155,Management,Integrated marketing
+0.00076,0.00154,Industry-specific,FISMA
+0.00076,0.00025,Hardware/Embedded Software,Arduino
+0.00076,0.0006,"Hardware/Embedded Software
+",MIPS architecture
+0.00076,0.00092,Industry-specific,Ambulatory care
+0.00076,0.00023,Systems Analysis/Design,Mainframe QA
+0.00076,0.00021,Management,Dodd-Frank
+0.00076,0.00088,I.T. Administration,Subnetwork
+0.00076,0.0003,Data,OBIA
+0.00075,0.00292,Software Development,Vagrant
+0.00075,0.00088,Data,Oracle Data Integrator
+0.00075,3e-05,Software Development,phpMyAdmin
+0.00075,0.00188,Management,Transportation management
+0.00075,0.00097,"Industry-specific
+",PPM
+0.00075,0.002,Management,Government contracts
+0.00075,0.00027,I.T. Administration,VPN administration
+0.00075,0.00292,Software Development,Sitecore
+0.00075,0.00173,Data,Algorithmic trading
+0.00074,0.00033,Software Development,Universe Designer
+0.00074,0.00173,I.T. Administration,OSI model
+0.00074,0.00094,Communication,Content marketing
+0.00074,0.00029,Industry-specific,Labour law
+0.00074,0.00232,Industry-specific,COBIT
+0.00074,0.00431,Management,System monitoring
+0.00074,0.00035,I.T. Administration,Terminal server
+0.00074,0.00405,Industry-specific,Certified Ethical Hacker
+0.00074,0.00116,Management,Relationship development
+0.00074,0.0007,Data,Mathematical modeling
+0.00074,0.00774,Industry-specific,Life sciences
+0.00073,0.0009,Communication,Content strategy
+0.00073,0.00012,Management,SAP OO ABAP
+0.00073,0.00073,"Industry-specific
+",Electronic discovery
+0.00073,0.00439,Design,Structural engineering
+0.00073,0.00606,Communication,Soft skills
+0.00073,0.00135,Software Development,Business architecture
+0.00073,0.00034,I.T. Administration,ADABAS
+0.00073,0.00028,Design,Motion graphics
+0.00073,0.01184,Management,Lifecycle management
+0.00073,0.00056,I.T. Administration,ShoreTel
+0.00073,0.00035,Industry-specific,Microscope
+0.00073,0.00036,I.T. Administration,CiscoWorks
+0.00073,0.0013,Industry-specific,Regular expression
+0.00073,0.0009,Management,Product lifecycle management
+0.00072,0.00017,Management,Financial aid
+0.00072,0.00111,,Maintenance planning
+0.00072,0.00026,I.T. Administration,Norton AntiVirus
+0.00072,0.00063,Management,Sage
+0.00072,0.00057,I.T. Administration,TACACS+
+0.00072,0.00015,,TPump
+0.00072,0.00684,Industry-specific,Public sector
+0.00072,2e-05,Systems Analysis/Design,Mantis
+0.00071,0.00016,,Spring Web Flow
+0.00071,0.0003,Software Development,Autodesk 3ds Max
+0.00071,0.00072,Management,Supplier relationship management
+0.00071,0.00067,I.T. Administration,HP Server
+0.00071,0.0012,Data,Bioinformatics
+0.00071,0.00031,"Industry-specific
+",Milling
+0.00071,0.00034,Hardware/Embedded Software,Modelsim
+0.00071,0.00079,Management,Process optimization
+0.00071,0.00056,Management,Organizational leadership
+0.00071,0.00052,I.T. Administration,Connect:Direct
+0.00071,0.00136,I.T. Administration,Spanning Tree Protocol
+0.00071,0.00062,Software Development,Design management
+0.00071,0.00014,Management,Basecamp
+0.00071,0.00022,Management,Succession planning
+0.0007,0.00024,I.T. Administration,Circuit analysis
+0.0007,0.00387,"Industry-specific
+",Arena
+0.0007,0.00012,Industry-specific,GIS analysis
+0.0007,0.00094,Software Development,PowerPivot
+0.0007,0.00054,,Oracle ADF
+0.0007,0.00081,I.T. Administration,Metasploit
+0.0007,0.00107,Management,Private equity
+0.0007,0.00036,I.T. Administration,EMC NetWorker
+0.0007,0.00021,I.T. Administration,Installshield
+0.0007,0.00344,Management,Consumer goods
+0.0007,0.00114,Software Development,3D CAD
+0.0007,0.00028,Communication,Corporate communications
+0.00069,0.00439,Data,Computer vision
+0.00069,0.00012,Communication,Print production
+0.00069,0.00059,Industry-specific,Oracle Identity Management
+0.00069,0.0011,Design,Concept development
+0.00069,0.00052,Management,Market risk
+0.00069,0.00067,Software Development,Microsoft Windows Phone
+0.00069,0.00038,Hardware/Embedded Software,Mathcad
+0.00069,0.00185,Management,Hybris
+0.00069,0.00054,Management,Integration management
+0.00069,0.00023,Management,Market development
+0.00069,0.00055,Industry-specific,Hydraulics
+0.00069,0.00057,,MarkLogic
+0.00068,0.00067,Data,Applied mathematics
+0.00068,0.00254,"Industry-specific
+",Engineering analysis
+0.00068,0.00121,Management,Line management
+0.00068,0.00104,I.T. Administration,Hitachi
+0.00068,0.00156,Management,Software project management
+0.00068,0.00159,Management,Workforce management
+0.00068,0.00213,"Hardware/Embedded Software
+",Programmable logic controller
+0.00068,0.00317,Industry-specific,Geospatial analysis
+0.00068,3e-05,I.T. Administration,Laptop repair
+0.00068,0.00037,,Software asset management
+0.00068,0.00083,Management,Scope management
+0.00068,0.00041,Management,SAP Project Management
+0.00068,0.00153,"Software Development
+",Apache Camel
+0.00068,0.00027,Industry-specific,Executive support
+0.00068,0.0002,Management,Partner relationship management
+0.00068,0.00209,Data,Knowledge sharing
+0.00067,0.00172,Software Development,Integration architecture
+0.00067,0.00056,Software Development,BPMN
+0.00067,0.00198,Software Development,TOGAF
+0.00067,0.00101,I.T. Administration,Polycom
+0.00067,0.00053,I.T. Administration,Database migration
+0.00067,0.00111,Management,Project finance
+0.00067,0.00092,I.T. Administration,Microsoft Cluster Server
+0.00067,0.00094,Industry-specific,Computer forensics
+0.00067,0.0009,"Data
+",Integration Broker
+0.00067,0.00061,"Design
+",Packaging design
+0.00067,0.00021,I.T. Administration,Email administration
+0.00067,0.0007,Software Development,Microsoft Windows Mobile
+0.00067,0.00044,Management,Revenue recognition
+0.00067,0.00102,Communication,OpenText
+0.00067,0.00354,Hardware/Embedded Software,Linux kernel
+0.00067,0.00877,Management,Thought leadership
+0.00066,0.00044,Management,Statistical process control
+0.00066,0.00241,Data,Parallel computing
+0.00066,0.00463,I.T. Administration,Software maintenance
+0.00066,0.00247,Industry-specific,Endpoint protection
+0.00066,0.00032,Software Development,SmartView
+0.00066,0.00027,Management,Production engineering
+0.00066,0.00029,I.T. Administration,Unisys
+0.00066,0.00034,"Industry-specific
+",Audit management
+0.00066,0.00078,Communication,Adult education
+0.00066,3e-05,,Acceptance testing management
+0.00066,0.0012,Software Development,Drools
+0.00066,0.00051,"Industry-specific
+",Component interface
+0.00065,0.00042,Design,Autodesk
+0.00065,0.0002,Software Development,WLST
+0.00065,0.00041,I.T. Administration,Remote management
+0.00065,0.00034,Industry-specific,MEDITECH
+0.00065,0.002,Hardware/Embedded Software,SystemVerilog
+0.00065,0.00089,I.T. Administration,SSL VPN
+0.00065,0.00024,I.T. Administration,EMC SRDF
+0.00065,0.00057,,Technical director
+0.00065,0.00142,"Industry-specific
+",Blue Coat
+0.00065,0.0012,Data,OpenCV
+0.00065,0.00083,Management,Business writing
+0.00065,0.00016,Software Development,VuGen
+0.00065,0.00034,,Object manager
+0.00065,0.00038,Management,Strategic Analysis
+0.00065,0.00414,I.T. Administration,Enterprise networks
+0.00065,0.00143,I.T. Administration,Batch processing
+0.00065,0.00049,Communication,Internal communications
+0.00065,0.00098,Hardware/Embedded Software,RS-232
+0.00065,0.00031,I.T. Administration,Numara
+0.00064,0.00138,Software Development,NHibernate
+0.00064,0.00137,"Data
+",Hortonworks
+0.00064,0.00087,I.T. Administration,VMware Infrastructure
+0.00064,9e-05,Management,COBRA
+0.00064,0.00052,I.T. Administration,RACF
+0.00064,0.00023,Management,Hyperion Financial Management
+0.00064,0.0009,Software Development,CruiseControl
+0.00064,0.00018,Industry-specific,Proposal management
+0.00064,0.00078,Data,Oracle Fusion
+0.00064,0.00037,I.T. Administration,MPLS VPN
+0.00063,0.00034,Software Development,Vim
+0.00063,0.00035,Management,Oracle SCM
+0.00063,0.00068,I.T. Administration,Asterisk
+0.00063,0.00094,Software Development,Liferay
+0.00063,4e-05,Data,BI Launch Pad
+0.00063,0.00295,Software Development,Grails
+0.00063,0.00034,Industry-specific,Health information management
+0.00063,0.00024,Management,Customer Master Data
+0.00063,0.00287,Industry-specific,Cloud security
+0.00063,0.00109,,Object-relational mapping
+0.00063,0.00196,I.T. Administration,Cisco Wireless
+0.00063,0.00011,Management,Bank reconciliation
+0.00063,0.00034,I.T. Administration,Remote administration
+0.00063,0.00051,Management,SAP BPC
+0.00063,0.00162,Industry-specific,Human factors and ergonomics
+0.00063,0.00044,I.T. Administration,Microsoft App-V
+0.00063,0.00059,Industry-specific,Payment gateways
+0.00063,0.0002,,OFAC
+0.00062,0.00062,I.T. Administration,Sophos
+0.00062,0.00068,,Heavy equipment
+0.00062,0.00037,I.T. Administration,IT asset management
+0.00062,0.00018,,FastLoad
+0.00062,0.00046,I.T. Administration,CRM administration
+0.00062,0.00017,"Industry-specific
+",Lockbox
+0.00062,0.00037,Communication,Articulate Storyline
+0.00062,0.00045,Industry-specific,McKesson
+0.00062,0.0001,Industry-specific,Pharmacy technician
+0.00062,0.00391,Industry-specific,Vulnerability scanning
+0.00062,0.00053,Software Development,Jython
+0.00062,0.00034,Management,SAP COPA
+0.00062,0.00022,I.T. Administration,Service Desk Management
+0.00062,0.00019,Industry-specific,Policy analysis
+0.00062,0.00018,I.T. Administration,Electronic troubleshooting
+0.00062,0.00028,Data,VLDB
+0.00062,0.00565,Software Development,Ember.js
+0.00062,0.00379,Industry-specific,Hardening
+0.00062,0.00017,,Operating expenses
+0.00062,0.00103,Industry-specific,NIST SP 800 Series
+0.00061,0.00107,Hardware/Embedded Software,Optics
+0.00061,0.00139,Management,Manufacturing operations
+0.00061,0.00108,I.T. Administration,Data center design
+0.00061,0.00019,Software Development,ActiveX
+0.00061,2e-05,,VoIP management
+0.00061,0.00494,Industry-specific,OAuth
+0.00061,0.00028,Design,Opera
+0.00061,0.00143,Industry-specific,Packet analysis
+0.00061,0.00157,,Appium
+0.00061,0.00145,Management,Personal development
+0.00061,0.00071,,Customer Care and Billing
+0.00061,0.00094,Communication,Zendesk
+0.00061,0.001,"Communication
+",International experience
+0.00061,0.00028,"Hardware/Embedded Software
+",Multimeter
+0.00061,0.00162,Hardware/Embedded Software,UART
+0.00061,0.00067,Industry-specific,CISO
+0.00061,0.0006,"Industry-specific
+",FSCM
+0.00061,0.00103,Software Development,BIND
+0.00061,0.00131,Industry-specific,CMOS
+0.0006,0.00103,Communication,Marketing operations
+0.0006,0.0012,Communication,Release notes
+0.0006,0.00405,"Industry-specific
+",Conceptual design
+0.0006,0.00268,Software Development,Rapid prototyping
+0.0006,8e-05,,MyEclipse
+0.0006,0.00196,Data,Marketing analytics
+0.0006,5e-05,Management,Offshore management
+0.0006,0.00259,Data,Pivotal
+0.0006,0.00197,Software Development,Windows API
+0.0006,0.00521,"Software Development
+",Code refactoring
+0.0006,0.00155,I.T. Administration,NetScaler
+0.0006,0.00193,Management,Marketing automation
+0.0006,0.00016,I.T. Administration,GLBP
+0.0006,0.0001,Communication,Social media strategy
+0.0006,0.00058,Management,Demand planning
+0.00059,0.00026,Management,ASAP Methodology
+0.00059,0.0006,I.T. Administration,CAT6
+0.00059,0.00115,Communication,Digital strategy
+0.00059,0.00044,I.T. Administration,Lisp
+0.00059,0.00083,,ICMP
+0.00059,0.00051,Industry-specific,Geology
+0.00059,0.0014,Software Development,Injection molding
+0.00059,0.00181,Industry-specific,Security policy
+0.00059,0.00037,Software Development,Infragistics
+0.00059,0.00011,,IBM WebSphere Application Server administration
+0.00059,0.00075,Systems Analysis/Design,Exploratory testing
+0.00059,0.00056,Software Development,Microsoft Message Queuing
+0.00059,0.00012,,Data migration QA
+0.00059,0.00024,Communication,Desktop publishing
+0.00059,0.00016,Management,Channel management
+0.00059,7e-05,Systems Analysis/Design,Descriptive programming
+0.00058,0.00138,Industry-specific,Good Clinical Practice
+0.00058,0.00028,I.T. Administration,HP Printer
+0.00058,0.00013,"Industry-specific
+",Librarian
+0.00058,0.0016,"Industry-specific
+",OSI
+0.00058,0.0002,Management,JIT
+0.00058,0.00072,,Electronic commerce management
+0.00058,0.00014,Management,SAP SRM
+0.00058,0.00069,Management,Pricing strategy
+0.00058,0.00064,I.T. Administration,Trend Micro
+0.00058,0.00037,Design,Stress analysis
+0.00058,0.00126,Software Development,RADIUS
+0.00058,0.00032,Management,Reinsurance
+0.00058,0.0005,Management,Project portfolio management
+0.00058,0.00111,I.T. Administration,Snort
+0.00058,0.00027,I.T. Administration,Solaris administration
+0.00058,0.00014,Management,Value stream mapping
+0.00058,8e-05,Management,Labor relations
+0.00057,0.00085,I.T. Administration,System Center
+0.00057,0.00148,Industry-specific,Security awareness
+0.00057,0.00033,"Software Development
+",IBM Rational Team Concert
+0.00057,0.00106,Data,CommVault
+0.00057,0.00047,I.T. Administration,EMC Avamar
+0.00057,0.00032,,Dropbox
+0.00057,0.00022,Management,Expense management
+0.00057,0.00351,Industry-specific,IT risk
+0.00057,0.00028,Management,Go-to-market strategy
+0.00057,0.00088,I.T. Administration,Telco
+0.00057,0.00063,Management,Sage 50 Accounting
+0.00057,0.0006,"Industry-specific
+",Drive testing
+0.00057,0.00021,Data,Oracle Workflow
+0.00057,0.00143,Industry-specific,Risk management framework
+0.00057,0.00018,Management,Oracle iExpenses
+0.00057,0.00053,,Cisco ASC
+0.00056,7e-05,I.T. Administration,Dell PowerEdge
+0.00056,0.00039,Software Development,Sendmail
+0.00056,0.00025,,Contact management
+0.00056,0.00091,Software Development,Lua
+0.00056,0.00062,,SAP Fiori
+0.00056,0.00033,Management,Project accounting
+0.00056,0.00075,Hardware/Embedded Software,BIOS
+0.00056,0.00299,Management,SAP SCM
+0.00056,0.00011,I.T. Administration,Switchboard
+0.00056,0.00771,Data,Amazon Redshift
+0.00056,0.00025,Management,Profitability analysis
+0.00056,0.0001,Communication,Community management
+0.00056,0.00171,I.T. Administration,Server virtualization
+0.00056,0.0006,Systems Analysis/Design,SAP QA
+0.00056,0.00047,I.T. Administration,VMware View
+0.00056,0.00022,,Strategic communication
+0.00056,0.00053,I.T. Administration,AdminStudio
+0.00056,0.00421,Data,Semantics
+0.00056,0.00251,Industry-specific,Threat analysis
+0.00056,0.00509,Management,Microsoft Dynamics
+0.00056,0.00011,,Distance education
+0.00055,0.00156,I.T. Administration,Fiber channel
+0.00055,0.00045,Industry-specific,Biostatistics
+0.00055,0.00064,Industry-specific,Digital forensics
+0.00055,0.0006,I.T. Administration,Global Operations
+0.00055,0.0012,I.T. Administration,PL/I
+0.00055,6e-05,,Loss mitigation
+0.00055,0.00087,"Industry-specific
+",MAGIC
+0.00055,0.00051,Data,IBM Cognos TM1
+0.00055,0.00132,Data,Information design
+0.00055,0.00165,Data,Text mining
+0.00055,0.00161,I.T. Administration,Environment management
+0.00055,0.00053,Management,Escalation management
+0.00055,0.0022,,SDET
+0.00055,0.00038,Management,Financial forecast
+0.00055,0.00247,I.T. Administration,Global delivery
+0.00055,0.00055,Design,Digital video
+0.00055,0.00324,Hardware/Embedded Software,Allen-Bradley
+0.00054,0.00088,Data,SAS 70
+0.00054,0.00217,Software Development,TeamCity
+0.00054,0.00092,I.T. Administration,Wintel
+0.00054,5e-05,I.T. Administration,OS X Server
+0.00054,0.00101,Design,Structural analysis
+0.00054,0.00029,Management,SAP MDM
+0.00054,0.00184,,Code coverage
+0.00054,0.00015,I.T. Administration,IBM PowerHA
+0.00054,2e-05,,JavaScriptMVC
+0.00054,0.00129,"Systems Analysis/Design
+",Hardware QA
+0.00054,0.00011,,OBIEE administration
+0.00054,0.00029,Systems Analysis/Design,RSA SecurID
+0.00054,0.00019,,Microsoft Visual C#
+0.00054,0.00023,Management,Core banking
+0.00054,0.00143,Data,Power electronics
+0.00054,0.00012,"Industry-specific
+",Aspen
+0.00053,0.00104,Management,Quantitative research
+0.00053,0.0075,Data,Meta-data management
+0.00053,0.00073,I.T. Administration,Software licensing
+0.00053,0.00622,Data,Amazon RDS
+0.00053,0.00023,Data,Oracle Discoverer
+0.00053,0.00295,"Industry-specific
+",ANSI
+0.00053,0.0002,Management,Channel sales
+0.00053,0.0001,,Account determination
+0.00053,0.00067,Software Development,OmniGraffle
+0.00053,0.00177,,PLM
+0.00053,0.00059,"Design
+",Machine design
+0.00053,0.0001,I.T. Administration,Microsoft Servers administration
+0.00053,9e-05,,Windows Deployment Services
+0.00053,0.00016,I.T. Administration,POP3
+0.00053,0.00246,"Industry-specific
+",Electromechanics
+0.00053,3e-05,Software Development,FileZilla
+0.00053,0.00054,Management,Scrum product owner
+0.00052,0.00023,Software Development,4GL
+0.00052,0.00075,Management,Executive search
+0.00052,0.00044,I.T. Administration,Telephone exchange
+0.00052,7e-05,I.T. Administration,VMware Workstation
+0.00052,0.00022,Data,Teradata DBA
+0.00052,0.00065,I.T. Administration,IP address management
+0.00052,2e-05,I.T. Administration,Google Apps administration
+0.00052,0.00044,Software Development,Portlets
+0.00052,0.00155,Software Development,Ideation
+0.00052,0.0001,Management,ADP Payroll
+0.00052,0.00258,Software Development,Web standards
+0.00052,0.00015,I.T. Administration,2G
+0.00052,0.00089,,Platinum
+0.00052,0.00155,Data,Database modeling
+0.00052,0.00247,Management,Atlassian
+0.00052,0.00026,I.T. Administration,Cisco MDS
+0.00052,0.0004,"Industry-specific
+",Quartz
+0.00052,7e-05,Design,CorelDRAW
+0.00052,0.00094,Hardware/Embedded Software,Logic synthesis
+0.00052,0.00072,Data,Informatica administration
+0.00052,0.00018,"Industry-specific
+",LexisNexis
+0.00052,0.00062,Industry-specific,Allscripts
+0.00052,0.00038,,Change data capture
+0.00052,0.00105,Industry-specific,Acoustics
+0.00051,0.00115,Software Development,MSBuild
+0.00051,0.00077,Management,Sales enablement
+0.00051,0.00022,I.T. Administration,IBM AIX administration
+0.00051,0.00245,Software Development,Mercurial
+0.00051,0.00154,Hardware/Embedded Software,IEEE 802.11
+0.00051,0.00448,Data,Amazon DynamoDB
+0.00051,0.00012,"Software Development
+",IBM Build Forge
+0.00051,0.00022,,Qualitative Analysis
+0.00051,0.00028,I.T. Administration,PeopleSoft administration
+0.00051,3e-05,Data,SAS/Connect
+0.00051,0.00034,I.T. Administration,Domain management
+0.00051,0.00061,Industry-specific,Forensic Toolkit
+0.00051,0.00015,Industry-specific,Caml
+0.00051,0.00323,Industry-specific,Build automation
+0.00051,0.00028,I.T. Administration,W-CDMA
+0.00051,0.00019,,CRP
+0.00051,0.00017,Software Development,Silk
+0.00051,0.00032,Management,Planview
+0.00051,0.0039,Hardware/Embedded Software,Embedded Linux
+0.00051,0.00168,,LMS
+0.00051,4e-05,,SAP BEx Analyzer
+0.00051,0.00354,Data,Apache Lucene
+0.00051,0.00128,Software Development,StarTeam
+0.00051,0.00166,Software Development,Sinatra
+0.00051,0.00856,Software Development,Scripting language
+0.00051,0.00039,Management,Business relationship management
+0.00051,0.00287,Industry-specific,Internet security
+0.0005,0.00101,Design,Teamcenter
+0.0005,0.00018,I.T. Administration,Transition management
+0.0005,0.00026,,Loan servicing
+0.0005,0.00028,Data,Serena
+0.0005,0.00049,I.T. Administration,LANDesk
+0.0005,0.00015,"Industry-specific
+",Batch testing
+0.0005,0.00147,Industry-specific,Esri
+0.0005,0.00041,Hardware/Embedded Software,Spectrum analyzer
+0.0005,0.00168,I.T. Administration,IT outsourcing
+0.0005,0.0085,Software Development,Continuous delivery
+0.0005,0.005,Communication,System documentation
+0.0005,9e-05,Software Development,Apache Axis2
+0.0005,0.00051,Management,Fleet management
+0.0005,4e-05,Design,Adobe Photoshop Lightroom
+0.0005,0.00041,Data,Oracle Application Express
+0.0005,0.00036,I.T. Administration,J2ME
+0.00049,0.00021,Management,Organizational effectiveness
+0.00049,0.00246,I.T. Administration,Multicast
+0.00049,0.0006,Management,Demand management
+0.00049,0.00056,Data,Infographics
+0.00049,9e-05,,JAX-RPC
+0.00049,0.00027,Software Development,Remote sensing
+0.00049,0.00013,Design,Videography
+0.00049,0.00015,,IBM Cognos administration
+0.00049,0.0003,Industry-specific,Metrology
+0.00049,0.00027,Hardware/Embedded Software,Digital electronics
+0.00049,0.001,Communication,Online advertising
+0.00049,0.0014,I.T. Administration,Aruba
+0.00049,0.00084,,Apache Sling
+0.00049,9e-05,Management,Credit analysis
+0.00049,2e-05,,JBuilder
+0.00049,0.00122,I.T. Administration,Server architecture
+0.00049,0.00264,Systems Analysis/Design,CaliberRM
+0.00049,0.00067,I.T. Administration,JDA
+0.00049,3e-05,Communication,Microsoft Publisher
+0.00048,0.00122,Data,Enterprise content management
+0.00048,0.00013,,SEO management
+0.00048,0.00039,Industry-specific,MobileIron
+0.00048,8e-05,I.T. Administration,Wise Package Studio
+0.00048,0.00075,"Industry-specific
+",ICD
+0.00048,0.0037,Management,Consumer electronics
+0.00048,0.00013,I.T. Administration,Dell KACE
+0.00048,0.00115,Software Development,Apache ActiveMQ
+0.00048,8e-05,Communication,Arabic
+0.00048,0.00016,Management,SAP PS
+0.00048,0.00032,Communication,ConnectWise
+0.00048,1e-05,Data,LaTeX
+0.00048,0.00144,Software Development,Section 508
+0.00048,0.00202,Management,Strategic thinking
+0.00048,0.00197,Software Development,Xen
+0.00048,0.00084,Software Development,XQuery
+0.00048,0.00019,Management,Capital management
+0.00048,0.00076,Design,New media
+0.00048,0.00061,Data,Oracle WebCenter
+0.00048,0.00027,Systems Analysis/Design,TeamTrack
+0.00048,0.00053,Systems Analysis/Design,IBM BPM
+0.00047,0.00051,Software Development,Netcool
+0.00047,0.00105,Software Development,Sencha
+0.00047,0.0002,Communication,GoToMeeting
+0.00047,0.00029,Management,FP&A
+0.00047,0.00068,Software Development,Google App Engine
+0.00047,0.00141,Communication,Taxonomy
+0.00047,0.00013,Communication,Moodle
+0.00047,0.00086,Industry-specific,EMC RSA Archer
+0.00047,0.00139,I.T. Administration,White hat
+0.00047,0.00096,Management,Solution selling
+0.00047,0.00095,I.T. Administration,DWDM
+0.00047,0.00023,Management,Competitive intelligence
+0.00047,0.00054,Communication,Digital asset management
+0.00047,0.0001,Data,IBM Cognos Report Studio
+0.00047,0.00039,Management,Actimize
+0.00047,0.00042,I.T. Administration,IBM i
+0.00047,0.00428,Industry-specific,SAML
+0.00047,0.00039,Management,PPAP
+0.00047,0.0006,Management,VMware vCloud
+0.00047,0.00314,Software Development,Human-computer interaction
+0.00047,0.00053,Industry-specific,PACS
+0.00047,0.00028,Industry-specific,Agilent
+0.00047,0.00036,Data,Red Gate
+0.00047,0.00094,Industry-specific,DMZ
+0.00047,0.00104,Software Development,iptables
+0.00047,0.0003,Management,Channel marketing
+0.00047,0.00281,Design,Video streaming
+0.00047,0.00018,Management,SAP NetWeaver Portal
+0.00047,0.00047,I.T. Administration,Network optimization
+0.00047,0.00062,I.T. Administration,Oracle Linux
+0.00047,0.00024,Management,Process Scheduler
+0.00046,0.00014,Management,Supply management
+0.00046,4e-05,Management,Event coordination
+0.00046,0.00264,Management,Venture capital
+0.00046,0.00017,I.T. Administration,IBM Tivoli Storage Manager
+0.00046,0.00056,"Industry-specific
+",Machinist
+0.00046,0.00072,Management,Capital budgeting
+0.00046,0.00073,"Software Development
+",MyBatis
+0.00046,0.00017,Industry-specific,Keyboarding
+0.00046,0.00083,I.T. Administration,3PAR
+0.00046,0.00024,I.T. Administration,Microsoft Deployment Toolkit
+0.00046,0.00064,Management,Complex sales
+0.00046,0.00024,,Calendaring
+0.00046,0.00203,Software Development,Research design
+0.00046,0.00054,,Money management
+0.00046,0.00011,Management,Productivity improvement
+0.00046,0.00032,Communication,Loyalty program
+0.00045,0.00119,Industry-specific,NextGen
+0.00045,0.0053,Industry-specific,CISA
+0.00045,0.00022,Software Development,JBoss Seam
+0.00045,0.00164,Software Development,CakePHP
+0.00045,0.00076,Systems Analysis/Design,Coded UI
+0.00045,0.00032,I.T. Administration,WiMAX
+0.00045,0.00043,,Apache Avro
+0.00045,0.00321,Systems Analysis/Design,Pair programming
+0.00045,0.00028,Industry-specific,Google Earth
+0.00045,0.00018,I.T. Administration,Syncsort
+0.00045,0.00032,Industry-specific,Thin film
+0.00045,0.00022,I.T. Administration,Tidal
+0.00045,3e-05,Systems Analysis/Design,Process Definition Documents
+0.00045,0.00193,Software Development,Handlebars
+0.00045,0.00099,Systems Analysis/Design,Microsoft Dynamics NAV
+0.00045,0.00125,"Software Development
+",Enterprise application integration
+0.00045,0.00054,I.T. Administration,Websense
+0.00045,0.00123,I.T. Administration,Riverbed
+0.00045,0.00102,Software Development,Application lifecycle management
+0.00045,0.00035,Industry-specific,Medical classification
+0.00045,0.00161,Design,GD&T
+0.00045,0.00021,I.T. Administration,Bomgar
+0.00045,0.00018,Management,Merger integration
+0.00045,0.00024,Management,System migration
+0.00045,7e-05,Management,Business blueprint
+0.00045,0.01249,Management,Emerging technologies
+0.00045,0.00011,I.T. Administration,OpenVMS
+0.00045,0.00051,I.T. Administration,Server farms
+0.00045,0.00029,"Industry-specific
+",ATLAS
+0.00045,0.00468,Systems Analysis/Design,Software development methodology
+0.00045,6e-05,,Hyperion Financial Data Quality Management
+0.00045,0.00049,Software Development,Developer Express
+0.00045,0.00151,Industry-specific,Intrusion prevention
+0.00044,0.00027,I.T. Administration,OPNET
+0.00044,0.00041,Management,SAP QM
+0.00044,0.00011,I.T. Administration,Windows Installer
+0.00044,0.00151,Data,CUDA
+0.00044,0.0005,"Hardware/Embedded Software
+",Numerical control
+0.00044,0.00019,Management,3PL
+0.00044,0.00047,Management,Absence management
+0.00044,0.00022,I.T. Administration,Mitel
+0.00044,0.0006,"Management
+",Office automation
+0.00044,0.00121,Communication,Online production
+0.00044,0.00054,Data,Document imaging
+0.00044,0.00017,I.T. Administration,Watchguard
+0.00044,0.00044,Systems Analysis/Design,Computerized system validation
+0.00044,0.00024,I.T. Administration,IMAP
+0.00044,0.00012,I.T. Administration,GPRS
+0.00044,0.00094,Communication,Endeca
+0.00044,0.00361,Software Development,Symfony
+0.00044,0.00012,Data,Cluster analysis
+0.00044,0.0002,Systems Analysis/Design,TestLink
+0.00044,0.00126,Industry-specific,Web application security
+0.00044,0.0006,Management,Workforce planning
+0.00044,0.00224,Management,Reliability engineering
+0.00044,0.00082,I.T. Administration,Structured cabling
+0.00044,0.00014,I.T. Administration,SPARC
+0.00044,0.00045,Data,EMC Isilon
+0.00044,4e-05,I.T. Administration,LotusScript
+0.00044,0.00021,I.T. Administration,JAMF Casper Suite
+0.00044,0.00107,Management,Energy management
+0.00044,0.00013,Management,ESS/MSS
+0.00044,0.00023,Management,Cost center accounting
+0.00044,0.00026,Industry-specific,Category management
+0.00044,0.00107,Management,Market intelligence
+0.00044,0.00092,Data,Data domain
+0.00044,0.00113,Data,Vertica
+0.00044,0.00134,I.T. Administration,Server Message Block
+0.00044,0.00082,I.T. Administration,Virtual desktop
+0.00044,5e-05,,HDLC
+0.00043,0.00159,I.T. Administration,Log analysis
+0.00043,7e-05,Management,SAP Workflow
+0.00043,0.00164,Industry-specific,ArcSight
+0.00043,0.00086,I.T. Administration,Junos
+0.00043,0.00018,Data,Oracle Designer
+0.00043,0.00106,Data,Web performance optimization
+0.00043,0.00242,I.T. Administration,Cisco Voice
+0.00043,0.00016,Data,Recovery management
+0.00043,8e-05,Management,ISO 14000
+0.00043,0.00132,Industry-specific,Wireless security
+0.00043,0.00031,Data,BIRT
+0.00043,0.00389,Hardware/Embedded Software,Concurrent computing
+0.00043,0.00121,Industry-specific,ISO 13485
+0.00043,0.00163,Management,Demand generation
+0.00043,0.0002,"Industry-specific
+",Maestro
+0.00043,0.00035,,Mortgage servicing
+0.00043,0.00045,Systems Analysis/Design,Interface QA
+0.00042,0.00137,Communication,Web 2.0
+0.00042,0.00054,I.T. Administration,Windows Client
+0.00042,0.00035,Industry-specific,Online Help
+0.00042,0.00021,Management,Internal Orders
+0.00042,0.00049,Communication,Online learning
+0.00042,0.00077,Industry-specific,EnCase
+0.00042,5e-05,Industry-specific,CPOE
+0.00042,0.00012,Management,Quality inspection
+0.00042,0.00117,I.T. Administration,H.323
+0.00042,0.00029,Systems Analysis/Design,SOA QA
+0.00042,0.00037,I.T. Administration,HR management system administration
+0.00042,8e-05,Communication,Technical editing
+0.00042,0.00262,Hardware/Embedded Software,x86
+0.00042,0.0001,Software Development,ActiveReports
+0.00042,3e-05,Data,Siebel Analytics
+0.00042,0.00011,I.T. Administration,SQL/400
+0.00042,0.0004,Data,Computational finance
+0.00042,0.00018,,IGRP
+0.00042,0.00113,Industry-specific,Data loss prevention
+0.00042,3e-05,,Wireless management
+0.00042,0.0002,Management,Trackwise
+0.00042,0.00127,Management,Marketo
+0.00042,8e-05,I.T. Administration,TeamViewer
+0.00042,0.00208,,Ionic
+0.00042,0.00026,"Industry-specific
+",Material safety data sheet
+0.00042,0.00016,,TIBCO Hawk
+0.00042,0.00049,I.T. Administration,ZFS
+0.00041,0.00042,"Industry-specific
+",ISSO
+0.00041,0.00166,Data,Pattern recognition
+0.00041,0.00076,,Information gathering
+0.00041,0.00134,Data,Network programming
+0.00041,0.00032,"Industry-specific
+",Gentran
+0.00041,0.00016,Software Development,WiX
+0.00041,0.00049,Hardware/Embedded Software,Set-top box
+0.00041,0.00064,Management,Windchill
+0.00041,0.00208,Management,Customer insight
+0.00041,0.00108,,SuccessFactors
+0.00041,0.00098,Management,Vertex
+0.00041,0.00074,I.T. Administration,Genesys
+0.00041,3e-05,Software Development,.NET Remoting
+0.00041,0.00072,,Pathway
+0.00041,0.0006,Industry-specific,Burp suite
+0.00041,0.00042,Management,SAP HUM
+0.00041,0.00025,I.T. Administration,Logical partition
+0.00041,0.00014,,JACL
+0.00041,0.00012,Management,Internet recruiting
+0.00041,0.00168,Software Development,Experience design
+0.00041,9e-05,,Product packaging
+0.00041,0.00073,I.T. Administration,Infoblox
+0.00041,0.00643,,Golang
+0.00041,0.0002,I.T. Administration,QxDM
+0.00041,0.00083,Industry-specific,3D printing
+0.00041,0.00027,Industry-specific,ActiveSync
+0.00041,1e-05,,FLOAD
+0.00041,0.00126,Management,Virtual team
+0.00041,0.00033,"Management
+",Production orders
+0.00041,0.00217,Data,High performance computing
+0.0004,0.00044,Communication,Technology integration
+0.0004,0.0002,Communication,Social marketing
+0.0004,0.00095,Management,Epicor
+0.0004,0.00272,,Amazon Route 53
+0.0004,0.00013,Design,Space planning
+0.0004,0.0016,Management,Product planning
+0.0004,0.00039,"Industry-specific
+",PPT
+0.0004,0.0001,,SAS/ETL
+0.0004,0.00042,I.T. Administration,VMware Site Recovery Manager
+0.0004,0.00014,Software Development,TIBCO Rendezvous
+0.0004,0.0009,I.T. Administration,Software distribution
+0.0004,0.00081,I.T. Administration,Project governance
+0.0004,0.00068,Data,JasperSoft
+0.0004,0.00027,I.T. Administration,DCOM
+0.0004,0.00018,Management,Fiserv
+0.0004,0.00029,Data,IBM InfoSphere QualityStage
+0.0004,0.00189,,Product optimization
+0.0004,0.00028,,SAP CO
+0.0004,0.00015,I.T. Administration,Hardware technician
+0.0004,0.00059,"Data
+",Optical character recognition
+0.0004,0.00016,,FastExport
+0.0004,3e-05,,Cisco ASDM
+0.0004,0.00129,,AppDynamics
+0.0004,0.0004,Management,Plant maintenance
+0.0004,0.00126,I.T. Administration,Cisco Unity
+0.0004,0.00115,I.T. Administration,System deployment
+0.0004,0.00026,Software Development,PrimeFaces
+0.0004,0.00047,,POSTMAN
+0.0004,0.00167,Software Development,Kerberos
+0.00039,0.00023,"Software Development
+",IBM RSA
+0.00039,8e-05,,PVST
+0.00039,0.0006,Systems Analysis/Design,VSTS
+0.00039,0.00053,Data,Middle office
+0.00039,0.00029,,Corrective maintenance
+0.00039,0.0006,,Open Data Protocol
+0.00039,0.00025,Management,Deltek
+0.00039,0.0003,Management,Strategic leadership
+0.00039,0.00065,Industry-specific,DIACAP
+0.00039,0.00131,I.T. Administration,IT transformation
+0.00039,0.00156,Software Development,OSGi
+0.00039,2e-05,Data,IBM Cognos ReportNet
+0.00039,0.00022,Data,Microsoft PerformancePoint
+0.00039,0.00014,I.T. Administration,CA ARCserve
+0.00039,0.0002,Industry-specific,EHS
+0.00039,0.00085,Management,Career counseling
+0.00039,7e-05,Industry-specific,VSAT
+0.00039,0.00054,Management,PMLC
+0.00039,0.00036,,Media management
+0.00039,0.0007,Management,Supply chain planning
+0.00039,0.00022,Communication,Marketing support
+0.00039,0.00069,Hardware/Embedded Software,Digital circuit design
+0.00039,0.00055,Software Development,TestComplete
+0.00039,0.00198,"Software Development
+",Message queues
+0.00039,0.00087,,Continuous monitoring
+0.00039,0.00022,I.T. Administration,Micro Focus
+0.00039,0.00039,Software Development,Postfix
+0.00039,0.00097,"Industry-specific
+",Power management
+0.00039,0.0001,Communication,DameWare
+0.00039,0.00041,,LACP
+0.00039,0.00137,Industry-specific,STIG
+0.00038,4e-05,I.T. Administration,TEMS
+0.00038,0.00014,"Industry-specific
+",Amdocs
+0.00038,0.00037,Management,PRINCE2
+0.00038,0.00016,Software Development,Microsoft Windows CE
+0.00038,9e-05,I.T. Administration,Sourcing management
+0.00038,0.00019,I.T. Administration,Computer management
+0.00038,0.00012,Software Development,ArcMap
+0.00038,4e-05,I.T. Administration,Malware removal
+0.00038,0.00012,Industry-specific,Numeric keypad
+0.00038,0.00096,Hardware/Embedded Software,JTAG
+0.00038,0.0003,Software Development,Object identifier
+0.00038,0.00028,Communication,Instructor-led training
+0.00038,0.0079,Hardware/Embedded Software,ARM
+0.00038,0.00059,Management,APQP
+0.00038,0.00141,Data,Biometrics
+0.00038,0.00043,Software Development,Redmine
+0.00038,6e-05,Management,Distribution management
+0.00038,0.00157,I.T. Administration,tcpdump
+0.00038,0.00017,"Design
+",Print design
+0.00038,0.0001,Software Development,Cartography
+0.00038,0.00049,Management,E-procurement
+0.00038,0.00053,,Employee self-service
+0.00038,0.00171,I.T. Administration,Technical marketing
+0.00038,0.00022,"Industry-specific
+",MAPPER
+0.00038,0.00018,I.T. Administration,Data center consolidation
+0.00038,6e-05,Industry-specific,MapInfo
+0.00038,8e-05,Communication,Microsoft Live Meeting
+0.00037,0.00034,Data,Power View
+0.00037,0.00019,Data,Data Mover
+0.00037,0.0003,"Industry-specific
+",Centricity
+0.00037,0.0002,Software Development,Tuxedo
+0.00037,0.00031,Systems Analysis/Design,Requirements engineering
+0.00037,0.00289,Industry-specific,OWASP
+0.00037,0.00044,"Industry-specific
+",Argus
+0.00037,0.00106,I.T. Administration,API management
+0.00037,0.00061,I.T. Administration,Licensing management
+0.00037,0.00078,Management,FMECA
+0.00037,0.00089,"Industry-specific
+",Conceptualization
+0.00037,0.00027,Data,Oracle Application Server
+0.00037,0.00018,,JProfiler
+0.00037,0.00179,Software Development,Interactive design
+0.00037,1e-05,I.T. Administration,Outsourcing management
+0.00037,0.00052,Data,Hyland OnBase
+0.00037,0.00022,Management,Ceridian
+0.00037,0.00027,I.T. Administration,ADTRAN
+0.00037,9e-05,Data,Metrics management
+0.00037,0.00013,Communication,Business-to-consumer marketing
+0.00037,0.00064,Industry-specific,NTFS
+0.00037,0.0001,Communication,Italian
+0.00037,0.0002,Management,Pipeline management
+0.00037,0.00508,Industry-specific,CISM
+0.00037,0.00035,Management,IBM Sterling B2B Integrator
+0.00037,0.00024,,Retail operations
+0.00037,0.00081,Industry-specific,NIST 800-53
+0.00037,0.00012,,Microsoft SQL Server Data Tools
+0.00037,0.00044,Management,AS2
+0.00037,0.00117,Data,EMC GreenPlum
+0.00037,0.00081,Management,Value engineering
+0.00037,0.00025,"Industry-specific
+",QNXT
+0.00037,0.00135,Software Development,Service design
+0.00037,0.0,,Microsoft Works
+0.00037,0.00123,,End-user computing
+0.00037,0.00227,Hardware/Embedded Software,Mixed-signal integrated circuit
+0.00037,0.00023,Management,SAP VC
+0.00036,6e-05,Communication,Media relations
+0.00036,0.00083,Software Development,Haskell
+0.00036,0.00013,Data,Oracle ASM
+0.00036,0.00163,Industry-specific,Scientific research
+0.00036,0.00025,Management,Treasury management
+0.00036,0.00039,Management,Stakeholder engagement
+0.00036,0.00011,Software Development,Microsoft Dynamics SL
+0.00036,0.00047,,Integrated circuit
+0.00036,0.00016,Management,Stakeholder analysis
+0.00036,0.00034,Software Development,IBM WebSphere Cast Iron
+0.00036,0.00017,Communication,Oracle UPK
+0.00036,0.00039,I.T. Administration,Server+
+0.00036,0.00046,Hardware/Embedded Software,Altera
+0.00036,0.00046,I.T. Administration,Foundry
+0.00036,0.00017,"Industry-specific
+",Granite
+0.00036,7e-05,"Industry-specific
+",Peregrine
+0.00036,0.00028,I.T. Administration,NetScreen
+0.00036,0.00011,,LATAM
+0.00036,2e-05,Data,Microsoft OneNote
+0.00036,9e-05,Management,SQL Trace
+0.00036,0.0009,I.T. Administration,VMware Certified Professional
+0.00036,0.00039,Management,SAP PM
+0.00036,0.00282,I.T. Administration,Rackspace
+0.00036,0.0034,Data,Advanced analytics
+0.00036,0.00013,Data,SunGard
+0.00036,0.0001,Management,HP PPM
+0.00036,0.00136,Software Development,Jetty
+0.00036,4e-05,Software Development,Facebook API
+0.00036,0.00057,Hardware/Embedded Software,Integrated circuit design
+0.00036,0.0004,Industry-specific,Smart card
+0.00035,0.00082,Software Development,IBM WebSphere Commerce
+0.00035,0.00111,Data,Information retrieval
+0.00035,5e-05,,Analytical chemistry
+0.00035,0.00016,I.T. Administration,EVDO
+0.00035,0.00039,I.T. Administration,Digital Signage
+0.00035,7e-05,Data,DBVisualizer
+0.00035,0.00034,Data,Yardi
+0.00035,6e-05,Industry-specific,Spectroscopy
+0.00035,0.00082,Software Development,Design thinking
+0.00035,0.00043,"Software Development
+",Crucible
+0.00035,0.00075,Software Development,Industrial design
+0.00035,0.00011,Software Development,WAMP
+0.00035,0.00025,Management,QAD Enterprise Applications
+0.00035,0.00153,Industry-specific,Zabbix
+0.00035,0.00014,,COM+
+0.00035,0.00014,Communication,Kaseya
+0.00035,0.00014,Management,EDIFACT
+0.00035,0.00026,Communication,HEAT
+0.00035,0.00022,Industry-specific,Litigation support
+0.00035,0.00106,Software Development,YUI
+0.00035,0.00138,I.T. Administration,ZigBee
+0.00035,8e-05,Design,Photo manipulation
+0.00035,0.00023,Management,Tactical Planning
+0.00035,0.00043,Industry-specific,Retina
+0.00035,0.00044,,compress
+0.00035,0.00039,Industry-specific,SIM
+0.00035,0.00221,Management,Mobile technology
+0.00035,0.00086,,Product research
+0.00035,0.00103,Management,Design for manufacturability
+0.00035,3e-05,,BEx Query Designer
+0.00035,0.00047,Software Development,ReSharper
+0.00035,3e-05,,C-level relations
+0.00035,5e-05,Data,OLE DB
+0.00035,8e-05,Data,Pascal
+0.00035,0.00097,I.T. Administration,Cloud management
+0.00035,0.00053,Management,Emerging markets
+0.00034,0.00086,Management,Organizational architecture
+0.00034,0.00019,"Industry-specific
+",CMMS
+0.00034,0.00163,,ADFS
+0.00034,0.00019,Data,Linear programming
+0.00034,0.00045,I.T. Administration,Linux+
+0.00034,0.00033,I.T. Administration,CA Wily
+0.00034,9e-05,,Client administration
+0.00034,0.00016,Management,InfoCube
+0.00034,0.00013,,HQL
+0.00034,0.00015,Industry-specific,Chromatography
+0.00034,5e-05,I.T. Administration,Symmetrix
+0.00034,0.00131,Industry-specific,Government contracting
+0.00034,0.00013,,LMS administration
+0.00034,0.00076,"Industry-specific
+",Mobile banking
+0.00034,0.00024,Management,Profit center accounting
+0.00034,9e-05,Software Development,Visual FoxPro
+0.00034,0.00021,I.T. Administration,Multiplexer
+0.00034,0.00013,I.T. Administration,EMC Celerra
+0.00034,0.00016,Software Development,GIMP
+0.00034,0.00038,"Industry-specific
+",HAWK
+0.00034,0.00044,"Industry-specific
+",ASCP
+0.00034,0.00049,Software Development,JNI
+0.00034,0.00276,Software Development,CoffeeScript
+0.00034,0.00018,Software Development,iRise
+0.00034,0.00041,Management,Acquisition management
+0.00034,0.00036,,BCBS
+0.00034,0.00012,Data,SDTM
+0.00034,0.00139,Industry-specific,Neo4j
+0.00034,0.00019,I.T. Administration,Citrix XenServer
+0.00034,0.00017,I.T. Administration,SAP Sybase ASE
+0.00034,0.00014,Data,Oracle BPEL
+0.00034,0.00153,Hardware/Embedded Software,PCI Express
+0.00034,0.00016,Industry-specific,HCPCS
+0.00034,3e-05,Management,Lean management
+0.00033,0.00019,Management,SolMan
+0.00033,0.00052,Design,Mentor Graphics
+0.00033,0.00039,Software Development,Appcelerator
+0.00033,0.00069,,Oracle Cloud
+0.00033,0.00107,"Hardware/Embedded Software
+",GNU
+0.00033,0.00096,Management,Good manufacturing practice
+0.00033,8e-05,I.T. Administration,Cisco IP Phone
+0.00033,0.00131,I.T. Administration,NetFlow
+0.00033,0.00011,I.T. Administration,Routing Information Protocol
+0.00033,0.00083,,Paid search
+0.00033,0.00011,Management,Collections management
+0.00033,0.00046,,Qlik Sense
+0.00033,0.00843,,SWIFT
+0.00033,0.00187,"Software Development
+",Software performance management
+0.00033,0.002,I.T. Administration,Cisco UCCX
+0.00033,0.00011,,Angel
+0.00033,9e-05,I.T. Administration,Google Drive
+0.00033,9e-05,I.T. Administration,RPG Free
+0.00033,0.00024,,KPI management
+0.00033,0.00156,Industry-specific,Directory Services
+0.00033,0.00053,Data,Medical imaging
+0.00033,0.00059,Data,Enterprise portal
+0.00033,0.00054,I.T. Administration,ISIS
+0.00033,0.00076,Software Development,Yii
+0.00033,0.00043,I.T. Administration,XenServer
+0.00033,0.00032,Industry-specific,Oracle Adaptive Access Manager
+0.00033,2e-05,Hardware/Embedded Software,Ghost imaging
+0.00033,0.00014,Management,CDISC
+0.00033,0.00116,"Software Development
+",Behavior-driven development
+0.00033,0.00043,Hardware/Embedded Software,SCSI
+0.00033,0.00019,Industry-specific,Cell culture
+0.00033,0.00052,,Code optimization
+0.00033,0.00198,"Industry-specific
+",Manufacturing execution system
+0.00033,9e-05,,Aeronautics
+0.00033,0.00046,"Industry-specific
+",COOP
+0.00033,0.00082,Industry-specific,SailPoint
+0.00033,0.0001,Industry-specific,Apache Log4net
+0.00033,0.00042,,Non-functional testing
+0.00033,0.00015,Management,TSYS
+0.00033,6e-05,,Request for proposal management
+0.00033,0.00229,Hardware/Embedded Software,Logic analyzer
+0.00033,0.00035,Design,Autodesk Inventor
+0.00033,0.00233,"Industry-specific
+",Apache OpenOffice
+0.00033,0.00184,Software Development,Enterprise integration
+0.00033,0.00014,,WebStorm
+0.00033,0.00014,Software Development,IBM WebSphere Process Server
+0.00033,0.00057,I.T. Administration,DMVPN
+0.00033,0.00011,Data,Rapid SQL
+0.00033,9e-05,,SAP OSS Notes
+0.00032,0.00011,Systems Analysis/Design,IBM Rational Functional Tester
+0.00032,0.00023,,SIPRNet
+0.00032,0.00141,Management,Extreme programming
+0.00032,0.0002,Software Development,Google Web Toolkit
+0.00032,0.0001,Industry-specific,Edifecs
+0.00032,0.00013,Management,Technology transfer
+0.00032,1e-05,Industry-specific,Phlebotomy
+0.00032,0.0002,Management,Strategy management
+0.00032,0.00455,Software Development,Memcached
+0.00032,0.00038,"Industry-specific
+",Catalog management
+0.00032,0.00035,Industry-specific,IronPort
+0.00032,4e-05,Management,Innovation management
+0.00032,0.0003,,CAPM
+0.00032,0.00171,Hardware/Embedded Software,Schematic capture
+0.00032,0.00022,Communication,DITA
+0.00032,0.00054,Industry-specific,Pneumatics
+0.00032,2e-05,Management,Budget administration
+0.00032,0.00045,Industry-specific,DICOM
+0.00032,0.00084,Hardware/Embedded Software,Ladder logic
+0.00032,0.00058,Software Development,jBPM
+0.00032,0.00067,I.T. Administration,Telematics
+0.00032,0.00033,Systems Analysis/Design,Trac
+0.00032,0.00016,Software Development,ADDIE
+0.00032,0.0003,Communication,TeamSite
+0.00031,0.00012,Systems Analysis/Design,DO-178B
+0.00031,0.00022,I.T. Administration,EMC VPLEX
+0.00031,0.00029,,Operations support systems
+0.00031,0.00043,I.T. Administration,Mobile device support
+0.00031,0.00017,Industry-specific,Semiconductor fabrication
+0.00031,9e-05,Industry-specific,SOX 404
+0.00031,0.00051,Industry-specific,Information security governance
+0.00031,9e-05,Industry-specific,Kaspersky
+0.00031,0.00015,I.T. Administration,VIO
+0.00031,0.00118,Software Development,Unreal Engine
+0.00031,0.00037,,Financial Information eXchange
+0.00031,7e-05,Systems Analysis/Design,SilkTest
+0.00031,0.00077,,Voice of the customer
+0.00031,0.00244,Data,GPU
+0.00031,0.00014,,APICS
+0.00031,0.00103,Software Development,DirectX
+0.00031,0.0012,"Hardware/Embedded Software
+",PEARL
+0.00031,0.00034,Industry-specific,ISO/IEC 27000-series
+0.00031,4e-05,Management,SAP OM
+0.00031,3e-05,Design,Adobe Flash Builder
+0.00031,0.00027,,MEGA
+0.00031,0.00043,"Management
+",IBM ODM
+0.00031,0.00026,Industry-specific,Clinical data management
+0.00031,4e-05,,Sales administration
+0.00031,0.00067,Industry-specific,IT risk management
+0.00031,8e-05,Communication,Creative writing
+0.00031,0.0001,,JAX
+0.00031,0.00037,Communication,ATG Commerce
+0.00031,0.00026,Industry-specific,Microscopy
+0.00031,0.00028,Hardware/Embedded Software,Tk
+0.00031,0.00028,,Agile PLM
+0.00031,0.00014,Management,Global sourcing
+0.00031,0.00078,Data,Data steward
+0.00031,0.00064,Industry-specific,HEDIS
+0.00031,0.00032,Management,AS9100
+0.00031,0.00058,I.T. Administration,Call-recording
+0.00031,0.00106,Communication,Mobile payments
+0.00031,0.0003,,Resin
+0.00031,5e-05,,Report Manager
+0.00031,0.00023,,AccuRev
+0.0003,0.00176,Management,Monetization
+0.0003,0.0002,,Market segmentation
+0.0003,4e-05,,Health Care Reform
+0.0003,0.0002,,Business intelligence management
+0.0003,0.00129,,Adobe Experience Manager
+0.0003,0.00067,Data,Computational science
+0.0003,6e-05,,JavaMail
+0.0003,0.00153,Software Development,Cacti
+0.0003,0.00026,I.T. Administration,Data archiving
+0.0003,0.00031,Data,Mathematical analysis
+0.0003,0.00044,Management,SAP Configuration
+0.0003,0.00055,Management,Process integration
+0.0003,0.00076,I.T. Administration,Machine to machine
+0.0003,0.00115,Industry-specific,Qualys
+0.0003,0.00067,I.T. Administration,Virtual Routing and Forwarding
+0.0003,0.00014,Management,UltiPro
+0.0003,1e-05,"Industry-specific
+",Camera operations
+0.0003,0.00028,Management,Demand forecasting
+0.0003,0.00075,Software Development,Underscore.js
+0.0003,6e-05,I.T. Administration,Business Objects administration
+0.0003,0.00019,I.T. Administration,Microsoft SCVMM
+0.0003,0.00063,Communication,Spokesperson
+0.0003,0.00105,Industry-specific,Fortify
+0.0003,0.00142,I.T. Administration,Enterprise storage
+0.0003,0.00019,,CAPE
+0.0003,0.0008,,Distributed File System
+0.0003,0.00016,Data,Oracle Streams
+0.0003,8e-05,I.T. Administration,IBM Utilities
+0.0003,2e-05,Design,Adobe PageMaker
+0.0003,7e-05,I.T. Administration,EMC Symmetrix
+0.0003,0.00041,I.T. Administration,MGCP
+0.0003,0.0004,Data,Kofax
+0.0003,0.00023,Management,Process consulting
+0.0003,0.0002,Industry-specific,Thermal analysis
+0.0003,6e-05,,AnthillPro
+0.0003,0.00043,"Industry-specific
+",FIPS
+0.00029,0.00028,Management,Database marketing
+0.00029,6e-05,Management,SAP FI AR
+0.00029,0.00035,Industry-specific,3GPP
+0.00029,0.00028,Data,Weka
+0.00029,8e-05,Management,SAP EDI
+0.00029,0.00034,I.T. Administration,Mobile computing
+0.00029,0.00031,I.T. Administration,Web server administration
+0.00029,0.00018,,Contract lifecycle management
+0.00029,0.00011,,Telecommunications billing
+0.00029,5e-05,Design,Pro Tools
+0.00029,0.00011,,EDI management
+0.00029,4e-05,Software Development,Blender
+0.00029,0.0001,Design,Prepress
+0.00029,0.00023,I.T. Administration,CA Unicenter Service Desk
+0.00029,0.00018,Industry-specific,EPMA
+0.00029,4e-05,Management,Bullhorn
+0.00029,0.00324,Software Development,Functional programming
+0.00029,0.00012,"Industry-specific
+",Policy writing
+0.00029,0.00012,Management,Collateral management
+0.00029,8e-05,,Printer management
+0.00029,0.00038,I.T. Administration,Dell Compellent
+0.00029,0.0001,,V-Model
+0.00029,0.00023,Software Development,Ehcache
+0.00029,0.00026,"Industry-specific
+",JAWS
+0.00029,0.00065,Software Development,Rapid application development
+0.00029,0.00076,Management,Eloqua
+0.00029,0.00019,,Password management
+0.00029,9e-05,,NAS management
+0.00029,0.00178,I.T. Administration,Sourcefire
+0.00029,0.00033,Management,Equity derivatives
+0.00028,4e-05,,Infrastructure lifecycle management
+0.00028,0.00148,Hardware/Embedded Software,Altium
+0.00028,0.00019,I.T. Administration,Avaya PBX
+0.00028,0.00108,Data,Systems modeling
+0.00028,0.00106,Management,SEI
+0.00028,0.00039,"Data
+",Pervasive
+0.00028,0.00014,,RACI
+0.00028,0.00059,Communication,Adobe Analytics
+0.00028,0.00143,"Software Development
+",Domain-driven design
+0.00028,0.00017,I.T. Administration,VTAM
+0.00028,0.00029,Communication,Location-based services
+0.00028,0.00012,Data,Siebel administration
+0.00028,0.00196,,Amazon SQS
+0.00028,0.00011,,Water treatment
+0.00028,5e-05,I.T. Administration,IBM Sametime
+0.00028,0.00013,,Risk-based testing
+0.00028,0.00015,Communication,MailChimp
+0.00028,0.00036,Management,Grant management

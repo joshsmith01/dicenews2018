@@ -171,6 +171,37 @@ function foundationpress_mobile_menu_id() {
 endif;
 
 /**
+ * Get mobile menu ID Right
+ */
+
+if ( ! function_exists( 'foundationpress_mobile_menu_right_id' ) ) :
+	function foundationpress_mobile_menu_right_id() {
+		if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) {
+			echo 'off-canvas-menu';
+		} else {
+			echo 'mobile-menu-right';
+		}
+	}
+endif;
+
+/**
+ * Get mobile menu ID Left
+ */
+
+if ( ! function_exists( 'foundationpress_mobile_menu_left_id' ) ) :
+	function foundationpress_mobile_menu_left_id() {
+		if ( get_theme_mod( 'wpt_mobile_menu_layout' ) === 'offcanvas' ) {
+			echo 'off-canvas-menu';
+		} else {
+			echo 'mobile-menu-left';
+		}
+	}
+endif;
+
+
+
+
+/**
  * Get title bar responsive toggle attribute
  */
 
@@ -180,4 +211,28 @@ function foundationpress_title_bar_responsive_toggle() {
 		echo 'data-responsive-toggle="mobile-menu"';
 	}
 }
+endif;
+
+/**
+ * Get title bar responsive toggle attribute
+ */
+
+if ( ! function_exists( 'foundationpress_title_bar_responsive_toggle_left' ) ) :
+	function foundationpress_title_bar_responsive_toggle_left() {
+		if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) {
+			echo 'data-responsive-toggle="mobile-menu-left"';
+		}
+	}
+endif;
+
+/**
+ * Get title bar responsive toggle attribute
+ */
+
+if ( ! function_exists( 'foundationpress_title_bar_responsive_toggle_right' ) ) :
+	function foundationpress_title_bar_responsive_toggle_right() {
+		if ( ! get_theme_mod( 'wpt_mobile_menu_layout' ) || get_theme_mod( 'wpt_mobile_menu_layout' ) === 'topbar' ) {
+			echo 'data-responsive-toggle="mobile-menu-right"';
+		}
+	}
 endif;

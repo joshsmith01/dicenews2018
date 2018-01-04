@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<head>
+    <title>Supply and Demand</title>
+
+    <link rel="stylesheet" type="text/css" href="./Libs/c3-0.4.9/c3.min.css">
+    <link rel="stylesheet" type="text/css" href="./Libs/chosen.css">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body style="height:100%;">
+    <!-- TOP BAR -->
+    
+    <div id="topBar" style="width:100%; padding:10px; height:25px;">
+        <div class="left" style="width:100%">
+            <div style="width:500px;padding-left:10px;">
+                <div class="left regularfont" style="padding-right:5px;">Select Item: </div>
+                <div class="left regularfont">
+                    <select class="regularfont" id="selItems" data-bind="
+                                                     options:    items, 
+                                                     value:      selectedItem,
+                                                     event:      { change: onSelectedItemChanged }                                             
+                                                   ">                        
+                    </select>  
+                </div>
+            </div>
+            <div class="left regularfont" style="padding-left:10px;padding-right:20px; width:240px; text-align:left;">Zoom: <span data-bind="html: zoomLevel"></span> X 
+                <button id="btnReset" class="go rounded" style="">
+                    <span >Reset</span>
+                </button>        
+            </div>
+        </div>
+        <div class="left" style="padding-left:10px;padding-top:10px;">
+            <div class="left" style="width:220px" data-bind="visible:true || !smallScreen()">
+                <input type="checkbox" checked="true" id="checkLargeDataset" data-bind="checked: largeDataSet">
+                <label for="checkLargeDataset" class="regularfont">Larger Dataset?</label>
+            </div>
+            <div class="left regularfont" style="width:150px">
+                <input type="checkbox" checked="true" id="checkLogScale" data-bind="checked: logScale">
+                <label for="checkLogScale" class="">Log Scale</label>
+            </div>
+            <div class="left" style="width:180px">
+                <div id="radioData" style="">
+                    <input data-bind="
+                                      event: { change: onDataTypeChanged },
+                                      checked: dataType
+                                      " type="radio" id="radioSkills" name="radio" value="Skills" checked="skills">
+                    <label for="radioSkills" class="regularfont">Skills</label>
+                    <input data-bind="
+                                      event: { change: onDataTypeChanged },
+                                      checked: dataType
+                                      " type="radio" id="radioTitles" name="radio" value="Titles">
+                    <label for="radioTitles" class="regularfont">Titles</label>
+                </div>
+            </div>
+        </div>
+        <div class="clear"> </div>
+        <div style="padding-left:60px; padding-top:20px;" id="mobileInfoBox" data-bind="visible: smallScreen()">
+        </div>
+    </div>
+    <!-- Charts -->
+    <div id="chartContainer" class="left" style="width:100%; height:100%;">
+        <!-- CHART -->
+        <div id="chart" style="text-align:right; height:100%;">          
+        </div>        
+    </div>
+    
+    <script src="./Libs/d3.v3.min.js"></script>
+    <script src="./Libs/c3-0.4.9/c3.min.js"></script>
+    <!-- needs to precede nvd3 -->
+    <script src="./Libs/functional.js"></script>
+    <script src="./Libs/strings.js"></script>
+    <script src="./Libs/knockout-3.1.0.js"></script>
+    <script src="./Libs/jquery-1.11.1.min.js"></script>
+    <script src="./Libs/chosen.jquery.js"></script>
+  
+    <script src="./Libs/math.js"></script>
+    
+    <script src="get_skills_data.js"></script>
+    <script src="get_titles_data.js"></script>
+
+    <script src="main.js" type="text/javascript"></script>
+</body>
+

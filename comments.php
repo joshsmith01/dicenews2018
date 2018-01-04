@@ -69,15 +69,15 @@ if ( comments_open() ) :
 	if ( (is_page() || is_single()) && ( ! is_home() && ! is_front_page()) ) :
 ?>
 <section id="respond">
-	<h3>
-		<?php
-			comment_form_title(
-				__( 'Leave a Reply', 'foundationpress' ),
-				/* translators: %s: author of comment being replied to */
-				__( 'Leave a Reply to %s', 'foundationpress' )
-			);
-		?>
-	</h3>
+<!--	<h3>-->
+<!--		--><?php
+//			comment_form_title(
+//				__( 'Leave a Reply', 'foundationpress' ),
+//				/* translators: %s: author of comment being replied to */
+//				__( 'Leave a Reply to %s', 'foundationpress' )
+//			);
+//		?>
+<!--	</h3>-->
 	<p class="cancel-comment-reply"><?php cancel_comment_reply_link(); ?></p>
 	<?php if ( get_option( 'comment_registration' ) && ! is_user_logged_in() ) : ?>
 	<p>
@@ -104,47 +104,33 @@ if ( comments_open() ) :
 		</p>
 		<?php else : ?>
 		<p>
-			<label for="author">
+			<label class="show-for-sr" for="author">
 				<?php
 					_e( 'Name', 'foundationpress' ); if ( $req ) { _e( ' (required)', 'foundationpress' ); }
 				?>
 			</label>
-			<input type="text" class="five" name="author" id="author" value="<?php echo esc_attr( $comment_author ); ?>" size="22" tabindex="1" <?php if ( $req ) { echo "aria-required='true'"; } ?>>
+			<input type="text" class="five" name="author" id="author" placeholder="Name" value="<?php echo esc_attr( $comment_author ); ?>" size="22" tabindex="1" <?php if ( $req ) { echo "aria-required='true'"; } ?>>
 		</p>
 		<p>
-			<label for="email">
+			<label class="show-for-sr" for="email">
 				<?php
 					_e( 'Email (will not be published)', 'foundationpress' ); if ( $req ) { _e( ' (required)', 'foundationpress' ); }
 				?>
 			</label>
-			<input type="text" class="five" name="email" id="email" value="<?php echo esc_attr( $comment_author_email ); ?>" size="22" tabindex="2" <?php if ( $req ) { echo "aria-required='true'"; } ?>>
+			<input type="text" class="five" name="email" id="email" placeholder="Email" value="<?php echo esc_attr( $comment_author_email ); ?>" size="22" tabindex="2" <?php if ( $req ) { echo "aria-required='true'"; } ?>>
 		</p>
-		<p>
-			<label for="url">
-				<?php
-					_e( 'Website', 'foundationpress' );
-				?>
-			</label>
-			<input type="text" class="five" name="url" id="url" value="<?php echo esc_attr( $comment_author_url ); ?>" size="22" tabindex="3">
-		</p>
+
 		<?php endif; ?>
 		<p>
-			<label for="comment">
+			<label class="show-for-sr" for="comment">
 					<?php
 						_e( 'Comment', 'foundationpress' );
 					?>
 			</label>
-			<textarea name="comment" id="comment" tabindex="4"></textarea>
+			<textarea name="comment" id="comment" tabindex="4" placeholder="Comment"></textarea>
 		</p>
-		<p id="allowed_tags" class="small"><strong>XHTML:</strong>
-			<?php
-				_e( 'You can use these tags:','foundationpress' );
-			?>
-			<code>
-				<?php echo allowed_tags(); ?>
-			</code>
-		</p>
-		<p><input name="submit" class="button" type="submit" id="submit" tabindex="5" value="<?php esc_attr_e( 'Submit Comment', 'foundationpress' ); ?>"></p>
+
+		<p><input name="submit" class="button expanded" type="submit" id="submit" tabindex="5" value="<?php esc_attr_e( 'Post Comment', 'foundationpress' ); ?>"></p>
 		<?php comment_id_fields(); ?>
 		<?php do_action( 'comment_form', $post->ID ); ?>
 	</form>

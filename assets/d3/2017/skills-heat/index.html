@@ -1,0 +1,177 @@
+<html xmlns="http://www.w3.org/1999/html">
+    <head>
+        <script src="static/d3.v4.min.js"></script>
+
+        <script src="static/js/jquery.js"></script>
+
+        <script type="text/javascript" src="static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="static/bower_components/angular/angular.min.js"></script> 
+
+        <script src="static/js/jquery.ui.core.min.js"></script>
+        <script src="static/js/jquery.ui.widget.min.js"></script>
+        <script src="static/js/jquery.ui.mouse.min.js"></script>
+        <!--<script src="static/js/jquery.ui.slider.min.js"></script>-->
+        <script src="static/js/jquery.ui.autocomplete.min.js"></script>
+        <script src="static/js/jquery.ui.position.min.js"></script>
+        <script src="static/js/jquery.ui.menu.min.js"></script>
+
+        <link rel="stylesheet" href="static/css/ui-lightness/jquery-ui-1.10.2.custom.min.css">
+
+        <script src="static/d3-scale-chromatic.v1.min.js"></script>
+
+        <script src="static/skill-demand.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="static/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+        <style>
+            svg {
+                width:100%;
+                height:600px; /* was 600px */
+                border: 1px solid lightgray;
+            }
+
+            #chartGroup {
+                /*pointer-events: all;*/
+            }
+
+            .offset-line {
+                stroke: grey;
+            }
+
+            .split-key {
+                opacity: 0.0
+            }
+
+            .split-key > text {
+                fill: white;
+                stroke: transparent
+            }
+
+            #guidelines {
+                /*display: none;*/
+            }
+
+            #guideline {
+                display:none;
+            }
+
+            /* simple supply and demand axes */
+            .axis {
+                fill: grey;
+            }
+            .axis path{
+                stroke: grey;
+                fill: lightgrey;
+            }
+
+            .pulled-label {
+                font-size: 10px;
+                fill: #000;
+                opacity:0;
+            }
+
+            .pulled-label-line, .pulled-label-path {
+                stroke: #888;
+            }
+
+            .pulled-label-line .gradbg{
+                stroke: #888;
+            }
+
+            #zoom-controls {
+                position: absolute;
+                margin: 10px;
+            }
+        </style>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-3">
+                    <!-- <div class="panel panel-default"> -->
+                        <!-- <div class="panel-heading"> -->
+                                <h3>Plot type</h3>
+                        <!-- </div> -->
+                        <!-- <div class="panel-body"> -->
+                            <div class="form-inline">
+                                <label for="plottype-scatter" class="radio-inline">
+                                    <input type="radio" onchange="setPlotType($(this).val())" name="plottype" value="scatter" id="plottype-scatter" checked> Scatterplot
+                                </label>
+                                <label for="plottype-beeswarm" class="radio-inline">
+                                    <input  type="radio" onchange="setPlotType($(this).val())" name="plottype" value="beeswarm" id="plottype-beeswarm"> Beeswarm plot
+                                </label>
+                                <!-- <label for="plottype-multi-beeswarm" class="radio-inline">
+                                    <input type="radio" onchange="setPlotType($(this).val())" name="plottype" value="multibeeswarm" id="plottype-multi-beeswarm">Multi-beeswarm
+                                </label> -->
+
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-6">
+                    <h3>Focus</h3>
+                    <div class="form-inline">
+<!--                         <div class="form-inline">
+ -->                            <label for="find" class="textbox-inline">Find
+                                    <input id="find" type="text" id="find" class="form-control typeahead">
+                                </label>
+                        <button type="button" onclick="select()" class="btn btn-default" value="clear">clear</button>
+                        <!-- </div> -->
+                    <!--</div>-->
+                    <!--<div class="form">-->
+                        <label for="label-selection">
+                        Label   
+                        <select id="label-selection" class="form-control" onchange='select($(this).val())'> <!-- to do this programmatically once I Angularise -->
+                            <option value=''>none</option>
+                            <option value='programming languages'>Programming Languages</option>
+                            <option value='Data'>Data</option>
+                            <option value='Software Development'>Software Development</option>
+                            <option value='Communication'>Communication</option>
+                            <option value='I.T. Administration'>I.T. Administration</option>
+                            <option value='Management'>Management</option>
+                            <option value='Systems Analysis/Design'>Systems Analysis/Design</option>
+                            <option value='Hardware/Embedded Software'>Hardware/Embedded Software</option>
+                            <option value='Design'>Design</option>
+                        </select>
+                            </label>
+                    </div>
+                 </div>
+                <div class="col-lg-4 col-md-4 col-sm-3">
+                    <div class="form-inline">
+                        <h3>Style Options</h3>
+                        <div class="form-group">
+                            <label for="style-split" class="checkbox-inline">
+                                <input  type="checkbox" onchange="setSplitStyle($(this)[0].checked)" name="style-split" value="split" id="style-split">
+                                Split Demand/Supply
+                            </label>
+                            <label for="style-heat-background" class="checkbox-inline">
+                                <input  type="checkbox" onchange="setHeatStyle($(this)[0].checked)" name="style-heat-background" value="split" id="style-heat-background">
+                                <abbr title="Only with Beeswarm plot currently">Background Heat</abbr>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="zoom-controls">
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" onclick="zoomIn()" class="btn btn-default btn-lg">
+                            <span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>
+                        </button>
+                        <button type="button" onclick="zoomOut()" class="btn btn-default btn-lg">
+                            <span class="glyphicon glyphicon-zoom-out" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <svg id="chart">
+                    <defs>
+                        <clipPath id="cut-off-top">
+                            <rect x="-100" y="0.25" width="200" height="100"></rect>
+                        </clipPath>
+                        <clipPath id="cut-off-bottom">
+                            <rect x="-100" y="-100.25" width="200" height="100"></rect>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </body>
+</html> 

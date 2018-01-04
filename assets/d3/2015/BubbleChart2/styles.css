@@ -1,0 +1,156 @@
+html{
+    font-family: sans-serif;
+}
+
+.regularfont{
+    font-size: 12pt;
+}
+
+.largerfont{
+    font: 15px/22px Helvetica, Arial, sans-serif
+}
+
+.log{
+    float:      left;
+    padding:    10px;
+    color:      white;
+    font-weight:normal;
+    border:     1px solid black;
+    background-color: #444;
+    width:      100px;
+    text-align: center;
+    cursor:     hand;
+    cursor:     pointer;
+}
+    
+.selected{
+    background-color: #666;
+    color:      white;
+    border:     1px solid black;
+    font-weight: bolder;
+}
+
+.filter{
+    width:244px;
+    margin-right:50px;
+    font-size: 12pt;
+}
+
+body{
+	margin: 0px;
+}
+.left {
+    float:left;
+}
+.right {
+    float:right;
+}
+.rounded {
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+.title{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    font-weight: bolder;
+    color: White;
+}
+.clear{
+	clear:both;
+}
+.pane{
+	width:20%; 
+	height:100%;
+}
+.content{
+	width:58%;
+	height:100%;
+}
+.leftpanel{
+    width:10%;
+    height: 100%;
+}
+.middlepanel{
+    width: 89%;
+    height: 100%;
+}
+
+.header{
+	background-color: #555;
+	height: 50px;
+	padding: 15px;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.indent{
+	margin-left:   5px;
+}
+.info{
+    font-weight:bold; 
+    font-style:italic; 
+    padding: 5px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.menu{
+    width: 220px;
+    background-color: #444;
+    text-align: left;
+    vertical-align: middle;
+    color: white;
+    padding: 0px;
+    cursor: pointer;
+    cursor: hand;
+}
+.menuHeader{
+    border-bottom: 1px solid #555;
+    background-color: #555;
+    line-height: 40px;
+    height: 40px;
+    padding: 5px 5px 5px 20px;
+}
+.menuItem{
+    border-bottom: 1px solid #555;
+    line-height: 40px;
+    height: 40px;
+    display: block;
+    padding: 5px 5px 5px 20px;    
+}
+.menuItemTall{
+    height: 80px;
+}
+.menuItem:hover{
+    background-color: White;
+    color: Black;
+}
+
+
+
+.go {
+    position:relative; top:0;
+    padding:3px 5px 2px;
+    
+    border:none;
+    /*background: -webkit-gradient(linear, left top, left bottom, from(#d631a7), to(#8f1b64));*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#cc0000), to(#ff3300));
+    background: -moz-linear-gradient(top,  #d631a7,  #8f1b64);
+}
+.go span {
+    display: block;
+	width: 54px;
+	height: 18px;
+	/* background: url(http://i.imgur.com/mxxzQ.png) 0 0 no-repeat; */
+	vertical-align: middle;
+	font-size: 11pt;
+	color: white;
+	font-style: italic;
+	padding: 0px;
+	vertical-align: middle;
+	padding-top: 1px;
+}

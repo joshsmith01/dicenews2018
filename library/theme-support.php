@@ -42,7 +42,123 @@ function foundationpress_theme_support() {
 
 	// Add foundation.css as editor style https://codex.wordpress.org/Editor_Style
 	add_editor_style( 'dist/assets/css/' . foundationpress_asset_path('app.css'));
+
+	// Excerpt
+	function custom_excerpt_length( $length ) {
+		return 26;
+	}
+
+	add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+	function custom_excerpt( $text ) {
+		if ( strpos( $text, '[&hellip;]' ) ) {
+			$excerpt = str_replace( '[&hellip;]', '<a class="more-link" href="' . get_permalink() . '">&hellip;</a>', $text );
+		} else {
+			$excerpt = $text . '<p><a class="more-link" href="' . get_permalink() . '">&hellip;</a></p>';
+		}
+
+		return $excerpt;
+	}
+	add_filter( 'the_excerpt', 'custom_excerpt' );
+
+	// Modify query for certain pages
+	function set_query( $query ) {
+
+		$erc         = get_cat_ID( 'employer resources' );
+		$erc_cat_ids = null;
+
+		if ( $erc ) {
+			$erc_cats    = get_categories( array( 'child_of' => $erc ) );
+			$erc_cat_ids = [ $erc ];
+			foreach ( $erc_cats as $cat ) {
+				array_push( $erc_cat_ids, $cat->term_id );
+			}
+		}
+
+		// Prevent home page from displaying ERC posts
+		if ( is_home() && $query->is_main_query() ) {
+			// Set the index.php query
+			$query->set( 'post_status', 'publish' );
+			$query->set( 'post_type', array( 'post', 'dice_ideal_employer' ) );
+			if ( $erc ) {
+				$query->set( 'category__not_in', $erc_cat_ids );
+			}
+		} elseif ( is_category( $erc_cat_ids ) and $query->is_main_query() ) {
+			$query->set( 'post_type', array( 'post', 'report' ) );
+		}
+	}
+
+	add_action( 'pre_get_posts', 'set_query' );
+
+
+	// Thumbnails sizes
+	add_image_size( 'thumbnail-desktop', 220, 149, true );
+
+
 }
 
 add_action( 'after_setup_theme', 'foundationpress_theme_support' );
 endif;
+
+/**
+ * Utility function to check if a gravatar exists for a given email or id
+ *
+ * @param int|string|object $id_or_email A user ID,  email address, or comment object
+ *
+ * @return bool if the gravatar exists or not
+ */
+
+function validate_gravatar( $id_or_email ) {
+	//id or email code borrowed from wp-includes/pluggable.php
+	$email = '';
+	if ( is_numeric( $id_or_email ) ) {
+		$id   = (int) $id_or_email;
+		$user = get_userdata( $id );
+		if ( $user ) {
+			$email = $user->user_email;
+		}
+	} elseif ( is_object( $id_or_email ) ) {
+		// No avatar for pingbacks or trackbacks
+		$allowed_comment_types = apply_filters( 'get_avatar_comment_types', array( 'comment' ) );
+		if ( ! empty( $id_or_email->comment_type ) && ! in_array( $id_or_email->comment_type, (array) $allowed_comment_types ) ) {
+			return false;
+		}
+
+		if ( ! empty( $id_or_email->user_id ) ) {
+			$id   = (int) $id_or_email->user_id;
+			$user = get_userdata( $id );
+			if ( $user ) {
+				$email = $user->user_email;
+			}
+		} elseif ( ! empty( $id_or_email->comment_author_email ) ) {
+			$email = $id_or_email->comment_author_email;
+		}
+	} else {
+		$email = $id_or_email;
+	}
+
+	$hashkey = md5( strtolower( trim( $email ) ) );
+	$uri     = 'http://www.gravatar.com/avatar/' . $hashkey . '?d=404';
+
+	$data = wp_cache_get( $hashkey );
+	if ( false === $data ) {
+		$response = wp_remote_head( $uri );
+		if ( is_wp_error( $response ) ) {
+			$data = 'not200';
+		} else {
+			$data = $response['response']['code'];
+		}
+		wp_cache_set( $hashkey, $data, $group = '', $expire = 60 * 5 );
+
+	}
+	if ( $data == '200' ) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+
+
+
+

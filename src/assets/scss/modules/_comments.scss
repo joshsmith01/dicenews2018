@@ -1,0 +1,35 @@
+.main-content {
+  #comments {
+    background: #ebebeb;
+    padding: 1rem;
+    border-radius: 3px;
+    margin-top: 3rem;
+    box-shadow: 0px 0px 5px 0px #707070;
+  }
+  form {
+    [type='text'],
+    [type='password'],
+    [type='date'],
+    [type='datetime'],
+    [type='datetime-local'],
+    [type='month'],
+    [type='week'],
+    [type='email'],
+    [type='number'],
+    [type='search'],
+    [type='tel'],
+    [type='time'],
+    [type='url'],
+    [type='color'],
+    textarea {
+      background-color: #fafafa;
+      padding: 2rem
+    }
+    textarea {
+      min-height: 192px;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #9a9a9a;
+    }
+  }
+}

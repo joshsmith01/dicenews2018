@@ -1,0 +1,203 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+        <script src="/static/d3-scale.v1.min.js"></script>
+
+
+<style>
+svg {
+  width: 600px;
+  height: 600px;
+}
+
+circle {
+  fill: transparent;
+  stroke: black;
+}
+
+
+  .pulled-label {
+      font-size: 10px;
+      fill: #000;
+      opacity:1.0;
+  }
+
+  .pulled-label-line, .pulled-label-path {
+      stroke: #888;
+  }
+
+</style>
+<svg id="chart">
+    <defs>
+        <clipPath id="cut-off-bottom">
+            <rect x="10" y="10" width="90" height="50" />
+        </clipPath>
+    </defs>
+</svg>
+<script>
+
+function getRandomName(n) {
+  var tokens = "monster coffee policeman beard telephone pencil easter bunny".split(" ")
+  var selection = []
+  for(var i=0; i<n; i++) {
+    selection.push(tokens[Math.round(Math.random()*(tokens.length-1))])
+  }
+  return selection.join(' ')
+}
+
+var addSkillToSelection = function(d) {
+    // check not pre-existing
+    var link;
+    if(labelData.links.some(function(e) { link = e; return d == e.anchor})) {
+      console.log('preexists', link)
+
+//      link.target.x = link.source.x;
+//      link.target.y = link.source.y;
+      return;
+    }
+
+    var name = (function() {return })()
+   var label = {'name':d.tag, x:d.x, y:d.y, vx:0, vy:0}
+    var anchor = {fx:d.x, fy:d.y, x:d.x, y:d.y}
+    labelData.nodes.push(label)//, 'x': source.x, 'y':source.y})
+    labelData.nodes.push(anchor)
+    labelData.links.push({anchor: d, target: label, source:anchor}) // need anchor to update fixed points potentially
+}
+
+var updateLabels = function() {
+    d3.select('#chartGroup').selectAll('.pulled-label-line')
+            .data(labelData.links)
+            .enter()
+            .append('line')
+            .attr('class', 'pulled-label-line')
+
+    var labels = d3.select('#chartGroup')
+        .selectAll('.pulled-label')
+        .data(labelData.nodes)
+        .enter()
+
+
+    var render = function(selection, d, asShadow) {
+        var lines = d.name.split(' ');
+        for(var i = 0; i < lines.length; i++) {
+            var line = selection.append("tspan")
+                    .style('text-anchor', 'middle')
+                    .style('font-size', '30px')
+                    .attr('x', function(d) { return 0; })
+                    .attr('y', function(d) { return i * 20; })
+                    .text(lines[i])
+            if(!!asShadow) {
+                line.style('fill', 'none')
+                        .style('stroke', '#fff')
+                        .style('stroke-linejoin', 'round')
+                        .style('stroke-width',3)
+            }
+//            line
+//            .style('font-size', 0)
+//            .transition()
+//            .style('font-size', '10px')
+        }
+    }
+
+
+    labels
+        .append("g")
+        .attr('class', 'pulled-label')
+        .on('mouseover', function(d) {
+            console.log('raising ' + d.name)
+//            labelData.nodes.push(labelData.nodes.shift())
+//            d3.select('.pulled-label').order()
+//            d3.select(this).raise();
+        })
+        .append("text")
+
+        .each(function(d) {
+                if(!d.name) return; // skip anchors
+
+                render(d3.select(this), d, true)
+                render(d3.select(this), d, false)
+        })
+
+      // just update force!
+      labelForce.nodes(labelData.nodes).alpha(1).restart()
+}
+
+var setupLabelForce = function() {
+    // force-driven label layout
+    // if(typeof labelForce !== "undefined") labelForce.stop()
+    labelForce = d3.forceSimulation()
+        .force('link', d3.forceLink(labelData.links).distance(50).strength(0.35))
+        .force("charge", d3.forceManyBody().strength(function(d) {
+            return !d.name ? -20 : -50;
+        }))
+        .on('tick', function(d){
+            d3.selectAll('.pulled-label')
+            .attr('transform', function(d) {
+              return 'translate('+d.x+','+d.y+')';
+            })
+
+            d3.selectAll('.pulled-label-line')
+            .attr('x1', function(d) {return d.source.x})
+            .attr('y1', function(d) {return d.source.y})
+            .attr('x2', function(d) {return d.target.x})
+            .attr('y2', function(d) {return d.target.y})
+            .each(function(d) {
+                d.source.fx = d.anchor.x;
+                d.source.fy = d.anchor.y;
+            }) // in case anchor is moving
+        })
+}
+
+////////////////
+// INLINE CODE
+////////////////
+d3.select('#chart')
+    .append('g')
+    .attr('id', 'chartGroup')
+
+d3.select('#chartGroup').append('g')
+
+skillsData = []
+for(var i=0; i< 60;i++){ skillsData.push( {tag:getRandomName(3)} ) }
+
+skillNodes = d3.select('#chartGroup')
+    .selectAll('.skill')
+    .data(skillsData)
+    .enter()
+
+//    skillNodes
+    .append('g')
+    .classed('skill', true)
+    .on('mouseover', function(d){
+        addSkillToSelection(d)
+        updateLabels();
+    })
+    .on('mouseout', function(d){
+    })
+    
+d3.select('#chartGroup').call(d3.zoom().on("zoom", function(){
+        d3.select(this).attr("transform",d3.event.transform)
+    }).scaleExtent([0.1, 30])
+    );
+
+skillNodes
+    .append('circle')
+    .attr('r', 5)
+
+simulation = d3.forceSimulation()
+    .force("collide",d3.forceCollide(function(){
+      return 6
+    }).iterations(16)
+    )
+    .force("center", d3.forceCenter(300,300))
+    .force("X", d3.forceX(300))
+    .force("Y", d3.forceY(300))
+    .on("tick",  function() {
+      d3.selectAll('.skill').attr('transform', function(d) {
+        return 'translate(' + d.x + ',' + d.y + ')'
+      })
+    })
+    .nodes(skillsData)
+
+labelData = {nodes:[], links:[]}
+setupLabelForce()
+
+</script>

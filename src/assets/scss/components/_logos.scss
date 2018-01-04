@@ -1,0 +1,61 @@
+.site-navigation .logo-holder svg {
+  width: 62px;
+}
+
+footer .logo-holder svg {
+  width: 100px;
+  height: 53.47px;
+}
+footer .logo-holder.logo-download-store .google-badge svg {
+  height: 53px;
+  width: 177px;
+}
+
+footer .logo-holder.logo-download-store .apple-badge svg {
+  width: 177px;
+  height: 59px;
+}
+.social-icons {
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 4rem;
+  a {
+    color: white;
+  }
+}
+
+.login::before, .tps::before, .twitter::before {
+  margin-right: 0.5em;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.happy {
+  color: white;
+}
+
+.twitter::before {
+  //font-family: "fontawesome";
+  content: "\f099";
+  color: blue;
+}
+.fa-twitch:before {
+  //font-family: "Font Awesome 5 Brands";
+  content: "\f1e8";
+  color: red;
+}
+
+.fa-crosshairs::before {
+  //font-family: "Font Awesome 5 Pro";
+  content: "\f099";
+  color: green;
+}
+
+.fa-pen-alt::before {
+  //font-family: "Font Awesome 5 Pro";
+  content: "\f099";
+  color: green;
+}

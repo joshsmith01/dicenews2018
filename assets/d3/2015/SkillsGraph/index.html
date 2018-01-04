@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>    
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<charset="utf-8">
+		<title>Skill Clusters</title>
+		
+		<link rel="stylesheet" href="css/jquery-ui.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+            
+        <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/d3.v3.min.js"></script>  
+		<script type="text/javascript" src="js/ShortestPathCalculator.js"></script>
+		<script type="text/javascript" src="js/ShortestPathUtils.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		        
+	</head>
+	<body>
+        <div id="container">
+            <div id="search">
+                <div style="margin-bottom:5px;">Search skills:<br/><input type="text" id="txt_search_titles" style="width:190px;">&nbsp;<input type="button" class="button" id="btn_search_titles" value="Go"></div>
+            </div>
+
+            <!--<div id="left">
+                <div class="menu" style="padding:5px;">
+                     <div style="margin-bottom:5px;">Search skills:<br/><input type="text" id="txt_search_titles" style="width:190px;">&nbsp;<input type="button" class="button" id="btn_search_titles" value="Go"></div>
+                    <!-- <div>Search skills:<br/><input type="text" id="txt_search_skills" style="width:190px;">&nbsp;<input type="button" class="button" id="btn_search_titles" value="Go"></div> -->
+                     <!--
+                     <br/>
+                     <div style="margin-bottom:5px;">Color of the nodes:<br/></div>
+                     <div>
+                     <input type="radio" group="rb_color" name="rb_color" value="colorClusters" onchange="changeColor(this);" checked="checked" />&nbsp;Job clusters (<a href="http://en.wikipedia.org/wiki/Modularity_(networks)">modularity</a>)<br/>
+                     <input type="radio" group="rb_color" name="rb_color" value="colorAP" onchange="changeColor(this);" />&nbsp;Job clusters (<a href="http://en.wikipedia.org/wiki/Affinity_propagation">affinity propagation</a>)<br/>
+                     <input type="radio" group="rb_color" name="rb_color" value="colorSalary" onchange="changeColor(this);" />&nbsp;Average salary<br/>
+                     <input type="radio" group="rb_color" name="rb_color" value="colorSupply" onchange="changeColor(this);" />&nbsp;Supply/demand<br/>
+                     <input type="radio" group="rb_color" name="rb_color" value="colorLucrativeness" onchange="changeColor(this);" />&nbsp;Salary vs. supply/demand<br/>		
+                     <input type="radio" group="rb_color" name="rb_color" value="colorTrend" onchange="changeColor(this);" />&nbsp;Trending [NOT DONE YET!]</div>
+                     <br/>
+                     <div style="display:none">
+                     <div style="margin-bottom:5px;">Mode:</div>
+                     <div>
+                     <input type="radio" group="rb_mode" name="rb_mode" id="modeExplore" value="modeExplore" onchange="changeMode(this);" checked="checked" />&nbsp;Explore<br/>
+                     <input type="radio" group="rb_mode" name="rb_mode" id="modeShortestPath" value="modeShortestPath" onchange="changeMode(this);" />&nbsp;Shortest path<br/>
+                     </div>-->
+                     <!--
+                     </div> <!-- Don't display mode options -->
+                     <!--
+                     <br/>
+                     <div style="margin-bottom:5px;">Instructions:</div>
+                     <div style="margin-bottom:5px;"><i>To zoom</i>: 
+                     Use the mousewheel or trackpad gestures (two fingers). You can also double-click (to zoom in) and Shift + double-click (to zoom out).
+                     </div>
+                     <div style="margin-bottom:5px;">
+                     <i>To (un-)select a node</i>: click once to select a node; click again to unselect it.
+                     </div>
+                     <div style="margin-bottom:5px;">
+                     <i>To pan</i>: click and hold anywhere in the background and pan.
+                     </div>
+                     <div style="margin-bottom:5px;">
+                     <i>To reset</i>: click once anywhere in the background.
+                     </div>
+                     <!--<div style="margin-bottom:5px;">
+                     <strong>TO-DO</strong>: finalize shortest path; design "Trending"; pretty up info on a job (in the right panel); 				 
+                     </div>-->
+                     <!--
+                     <br/>
+                     <div style="margin-bottom:5px;">
+                     Note:</div>Node size reflects <a href="http://en.wikipedia.org/wiki/Betweenness_centrality">Betweenness Centrality</a>.
+                     Colors represent clusters based on <a href="http://en.wikipedia.org/wiki/Modularity_(networks)">Modularity</a>.<br/>
+                     <br/>
+                     <br/>
+                </div>
+            </div>-->
+            <!--<div id="right"  style="display:none;">
+                <span></span>-->
+            </div>
+        </div>
+	</body>
+</html>

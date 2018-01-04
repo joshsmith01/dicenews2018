@@ -62,7 +62,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
- gulp.series(clean, sass, javascript, images, copy));
+ gulp.series(clean, sass, fonts, javascript, images, copy));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -83,6 +83,11 @@ function clean(done) {
 function copy() {
   return gulp.src(PATHS.assets)
     .pipe(gulp.dest(PATHS.dist + '/assets'));
+}
+
+function fonts() {
+    return gulp.src(PATHS.fonts)
+        .pipe(gulp.dest('src/assets/fonts'));
 }
 
 // Compile Sass into CSS

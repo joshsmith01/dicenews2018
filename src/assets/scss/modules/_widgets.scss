@@ -1,0 +1,19 @@
+.widget {
+  background: #fff;
+  padding: 1rem 1.3125rem 1rem;
+  margin-bottom: 1rem;
+  border: solid;
+  border-width: 2px 1px 1px 1px;
+  border-color: get-color(theme) $medium-gray $medium-gray $medium-gray;
+  position: relative;
+  ul {
+    margin-left: 0;
+    display: block;
+  }
+}
+
+.widget .heading {
+  display: flex;
+  border-bottom: 1px solid #ebebeb;
+  margin: 0 0 14px;
+}

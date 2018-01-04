@@ -8,8 +8,25 @@
 
 if ( ! function_exists( 'foundationpress_entry_meta' ) ) :
 	function foundationpress_entry_meta() {
+
+
+		$author_meta_data = get_the_author_meta();
+		$the_avatar       = get_avatar( get_the_author_meta( 'ID' ), 64 );
+		$avatar_data      = get_avatar_data( get_the_author_meta( 'ID' ) );
+        $has_avatar         = validate_gravatar( get_the_author_meta( 'ID' ) );
+
+
+
 		/* translators: %1$s: current date, %2$s: current time */
-		echo '<time class="updated" datetime="' . get_the_time( 'c' ) . '">' . sprintf( __( 'Posted on %1$s at %2$s.', 'foundationpress' ), get_the_date(), get_the_time() ) . '</time>';
-		echo '<p class="byline author">' . __( 'Written by', 'foundationpress' ) . ' <a href="' . get_author_posts_url( get_the_author_meta( 'ID' ) ) . '" rel="author" class="fn">' . get_the_author() . '</a></p>';
+		echo '<div class="byline">';
+		if ( validate_gravatar( get_the_author_meta( 'ID' ) ) ) { ?>
+			<?php echo '<a href="' . get_author_posts_url( get_the_author_meta( 'ID' ) ) . '" rel="author" class="fn">' .get_avatar( get_the_author_meta( 'ID' ), 64 ) . '</a>'; ?>
+        <?php }
+		echo '<span class="byline-data"><a href="' . get_author_posts_url( get_the_author_meta( 'ID' ) ) . '" rel="author" class="fn">' . get_the_author_meta( 'display_name' ) . '</a>';
+		echo '<time class="updated" datetime="' . get_the_time( 'c' ) . '">' . get_the_date() . '</time></span></div>';
+		$tag = get_the_tags();
+		if ( $tag ) { ?><div class="post-tags"><i class="fal fa-tag"></i><?php the_tags( '', '' ); ?></div><?php }
 	}
 endif;
+
+
