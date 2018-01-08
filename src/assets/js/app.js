@@ -102,22 +102,23 @@ function loadMore(url, responseHeaderNext) {
             nextLink = parseLinkHeader(responseHeaderNext);
 
             if ( currentPage < responseHeaderTotalPages ) {
+
                 console.log(data);
                 console.log(currentPage, responseHeaderTotalPages);
-
                 confirmStorage();
-                // TODO use .prop() method instead of .removeAttr()
-
-
             } else if (currentPage === responseHeaderTotalPages ) {
+
                 console.log(data);
                 console.log(currentPage, responseHeaderTotalPages);
+                confirmStorage();
             } else {
-
-                console.log('out of data')
+                console.log(data);
+                console.log('success getting data');
+                confirmStorage();
             }
             sessionStorage.setItem('nextPosts', JSON.stringify(data));
             sessionStorage.setItem('nextLink', nextLink.next.href);
+            $('#restscroll').removeClass('invisible');
         }
     });
 }
@@ -190,14 +191,15 @@ function displayData(nextLink) {
 
 $('#restscroll').click(function () {
     displayData();
+    $('#restscroll').addClass('invisible');
 });
 $(document).ready(function () {
     sessionStorage.clear('nextPosts');
     sessionStorage.clear('nextLink');
     buildGetUrl();
+    $('#restscroll').toggleClass('invisible');
     loadMore(getUrl);
     console.log('I\'m the pathname ' + pathname);
-
 });
 
 

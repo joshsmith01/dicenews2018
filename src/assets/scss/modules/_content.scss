@@ -31,6 +31,13 @@
   }
 }
 
+.single { .entry-content {
+  p {
+    font-family: $body-font-family-readability;
+    font-size: $small-font-size-readability;
+  }
+}
+}
 .top-stories,
 .category article{
   margin-right: 0;

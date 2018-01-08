@@ -4935,21 +4935,23 @@ function loadMore(url, responseHeaderNext) {
             nextLink = parseLinkHeader(responseHeaderNext);
 
             if (currentPage < responseHeaderTotalPages) {
+
                 console.log(data);
                 console.log(currentPage, responseHeaderTotalPages);
-
                 confirmStorage();
-                // TODO use .prop() method instead of .removeAttr()
-
             } else if (currentPage === responseHeaderTotalPages) {
+
                 console.log(data);
                 console.log(currentPage, responseHeaderTotalPages);
+                confirmStorage();
             } else {
-
-                console.log('out of data');
+                console.log(data);
+                console.log('success getting data');
+                confirmStorage();
             }
             sessionStorage.setItem('nextPosts', JSON.stringify(data));
             sessionStorage.setItem('nextLink', nextLink.next.href);
+            (0, _jquery2.default)('#restscroll').removeClass('invisible');
         }
     });
 }
@@ -4993,11 +4995,13 @@ function displayData(nextLink) {
 
 (0, _jquery2.default)('#restscroll').click(function () {
     displayData();
+    (0, _jquery2.default)('#restscroll').addClass('invisible');
 });
 (0, _jquery2.default)(document).ready(function () {
     sessionStorage.clear('nextPosts');
     sessionStorage.clear('nextLink');
     buildGetUrl();
+    (0, _jquery2.default)('#restscroll').toggleClass('invisible');
     loadMore(getUrl);
     console.log('I\'m the pathname ' + pathname);
 });
