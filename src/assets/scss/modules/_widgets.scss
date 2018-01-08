@@ -39,3 +39,21 @@
     margin-bottom: 0;
   }
 }
+
+// Jetpack Related Posts that *don't* appear on local
+@media only screen and (max-width: 640px) {
+  #jp-relatedposts .jp-relatedposts-items-visual {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+#jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post img.jp-relatedposts-post-img, #jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post span {
+  width: 100%;
+}
