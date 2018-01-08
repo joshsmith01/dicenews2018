@@ -18,7 +18,15 @@
 .mobile-menu {
   display: none; // prevents repaint caused by JS hiding menu onload
 }
-
+.nav-links {
+  display: flex;
+  .nav-previous {
+    padding-right: 10%;
+  }
+  .nav-next {
+    text-align: right;
+  }
+}
 .off-canvas {
   > ul.menu {
     height: 100vh;
@@ -107,11 +115,31 @@
 
 .main-nav {
   background: #66ccff;
-  .dropdown.menu a {
-    padding: 16px 22px;;
+  .main-container {
+    @media screen and (max-width: 880px) and (min-width: 769px) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+  .dropdown.menu {
+    display: flex;
+    flex-wrap: nowrap;
+    a {
+      padding: 16px 22px;;
+      @media screen and (max-width: 880px) and (min-width: 769px) {
+        padding: 16px 16px;
+      }
+    }
+  }
+  li {
+    display: flex;
+    align-items: center;
   }
   .dropdown.menu .menu-item-has-children a {
     padding: 16px 38px 16px 22px;
+    @media screen and (max-width: 880px) and (min-width: 769px) {
+      padding: 16px 38px 16px 16px;
+    }
   }
   ul:not(.nested) {
     border-left: 1px solid #9bdeff;

@@ -94,7 +94,7 @@ get_header(); ?>
                     <!-- More posts button -->
 <!--                    <div class="autoscroll button expanded">Old Autoscroll</div>-->
                     <div id="restscroll" class="restscroll button expanded"
-                         data-catid=<?php echo $wp_query->queried_object->cat_ID; ?>>REST Scroll
+                         data-catid=<?php echo $wp_query->queried_object->cat_ID; ?>>More Posts
                     </div>
                 </div>
 
@@ -103,7 +103,7 @@ get_header(); ?>
 					foundationpress_pagination();
 				} elseif ( is_paged() ) {
 					?>
-                    <nav id="post-nav">
+                    <nav id="post-nav" class="show-for-sr">
                         <div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
                         <div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
                     </nav>

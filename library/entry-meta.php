@@ -8,7 +8,7 @@
 
 if ( ! function_exists( 'foundationpress_entry_meta' ) ) :
 	function foundationpress_entry_meta() {
-
+        global $post;
 
 		$author_meta_data = get_the_author_meta();
 		$the_avatar       = get_avatar( get_the_author_meta( 'ID' ), 64 );
@@ -24,8 +24,17 @@ if ( ! function_exists( 'foundationpress_entry_meta' ) ) :
         <?php }
 		echo '<span class="byline-data"><a href="' . get_author_posts_url( get_the_author_meta( 'ID' ) ) . '" rel="author" class="fn">' . get_the_author_meta( 'display_name' ) . '</a>';
 		echo '<time class="updated" datetime="' . get_the_time( 'c' ) . '">' . get_the_date() . '</time></span></div>';
-		$tag = get_the_tags();
-		if ( $tag ) { ?><div class="post-tags"><i class="fal fa-tag"></i><?php the_tags( '', '' ); ?></div><?php }
+
+		$post_type = get_post_type();
+		if ( $post_type === 'post' ) {
+			$tag = get_the_tags();
+			if ( $tag ) { ?>
+                <div class="post-tags"><i class="fal fa-tag"></i><?php the_tags( '', '' ); ?></div><?php }
+		} elseif ( $post_type === 'dice_ideal_employer' ) {
+			$tag = get_the_term_list( get_the_ID(), 'ideal-employer-category' );
+			if ( $tag ) { ?>
+                <div class="post-tags"><i class="fal fa-tag"></i><?php echo $tag; ?></div><?php }
+		}
 	}
 endif;
 
