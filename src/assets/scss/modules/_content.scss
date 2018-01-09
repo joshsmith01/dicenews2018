@@ -140,9 +140,7 @@
     @include breakpoint(large) {
       @include xy-cell(4);
       margin-top: 0;
-      width: 100%;
     }
-
   }
 }
 
