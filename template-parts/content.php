@@ -18,12 +18,14 @@
 		the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		}
 	?>
-    <div class="entry-meta">
-        <?php foundationpress_entry_meta(); ?>
-    </div>
-		<?php if ( has_post_thumbnail() and ! get_field( 'hide_featured_image' ) ) {
-	        get_template_part( 'template-parts/single-featured-image' );
-		} ?>
+        <div class="grid-x">
+            <div class="entry-meta cell small-12 small-order-2 medium-order-1">
+                <?php foundationpress_entry_meta(); ?>
+            </div>
+            <?php if ( has_post_thumbnail() and ! get_field( 'hide_featured_image' ) ) {
+                get_template_part( 'template-parts/single-featured-image' );
+            } ?>
+        </div>
 	</header>
 	<div class="entry-content">
 		<?php the_content(); ?>
