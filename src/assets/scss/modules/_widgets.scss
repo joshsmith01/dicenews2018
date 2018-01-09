@@ -43,17 +43,20 @@
 // Jetpack Related Posts that *don't* appear on local
 @media only screen and (max-width: 640px) {
   #jp-relatedposts .jp-relatedposts-items-visual {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
+
 }
 
 @media only screen and (max-width: 640px) {
   #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post {
-    width: 100%;
+    width: 80% !important;
+    margin: auto !important;
     text-align: center;
+    float: none !important;
   }
 }
 
 #jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post img.jp-relatedposts-post-img, #jp-relatedposts .jp-relatedposts-items-visual .jp-relatedposts-post span {
-  width: 100%;
+  width: 100% !important;
 }
