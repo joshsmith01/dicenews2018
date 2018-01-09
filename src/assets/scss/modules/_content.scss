@@ -96,7 +96,7 @@
   margin-top: $global-margin;
 
   @include breakpoint(medium) {
-    margin-top: $global-margin *3;
+    margin-top: $global-margin;
   }
 
   &.sidebar-left {
@@ -228,9 +228,12 @@
     padding: 6px 10px;
     font-size: 13px;
     background-color: transparent;
-    border-color: #858585;
-    color: #858585;
+    border: 1px solid $body-font-color;
+    color: $body-font-color;
     transition: background-color 300ms ease-out;
+      @include breakpoint(medium down) {
+        padding: 14px 24px;
+      }
     }
     i {
       transform: rotate(90deg);
