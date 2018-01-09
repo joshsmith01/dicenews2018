@@ -50,10 +50,24 @@
 
 @media only screen and (max-width: 640px) {
   #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post {
-    width: 80% !important;
+    width: 100% !important;
     margin: auto !important;
     text-align: center;
     float: none !important;
+    padding: 0 !important;
+  }
+  #jp-relatedposts h3.jp-relatedposts-headline {
+    em {
+      font-family: $header-font-family !important;
+      margin: 0 0 -1px !important;
+      padding: 0 0 14px !important;
+      font-size: 19px !important;
+      line-height: 22px !important;
+      font-weight: 400 !important;
+      color: #000 !important;
+      position: relative !important;
+      border-bottom: 2px solid #6cf !important;
+    }
   }
 }
 
