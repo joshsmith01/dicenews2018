@@ -61,7 +61,7 @@ get_header(); ?>
                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                     </span>
                 </div>
-		    <?php } ?>
+		    <?php wp_reset_postdata(); } ?>
         </div>
         <main class="main-content">
 			<?php if ( get_query_var( 'confirmation', 0 ) > 0 ) { // Email confirmation page ?>
@@ -72,9 +72,15 @@ get_header(); ?>
                     <div class="confirmation-text">Thanks for signing up!</div>
                 </div>
 
-			<?php } elseif ( have_posts() ) { ?>
+<!--			--><?php //} elseif ( have_posts() ) { ?>
+			<?php }
 
-
+            /* The 2nd Query (without global var) */
+            $query2 = new WP_Query( array( 'offset' => 3,
+                                           'posts_per_page' => 7,
+                                            'no_found_rows' => true,
+                                            'update_post_meta_cache' => false,
+                                            'update_post_term_cache' => false ) ); ?>
 
 
                 <!-- Nonfeatured posts -->
@@ -83,18 +89,18 @@ get_header(); ?>
                         <!-- Posts -->
 						<?php $gradient_number = 0;
 						$featured_counter      = 0;
-						while ( have_posts() ) {
-							the_post(); ?>
+						while ( $query2->have_posts() ) {
+							$query2->the_post(); ?>
 
 								<?php get_template_part( 'template-parts/content-standard', get_post_format() ); ?>
 
 							<?php $gradient_number ++ ?>
-						<?php } ?>
+						<?php }
+	                    wp_reset_postdata(); ?>
                     </div>
                     <!-- More posts button -->
 <!--                    <div class="autoscroll button expanded">Old Autoscroll</div>-->
-                    <div id="restscroll" class="restscroll button expanded"
-                         >More Posts
+                    <div id="restscroll" class="restscroll button expanded">More Posts
                     </div>
                 </div>
 
@@ -107,8 +113,7 @@ get_header(); ?>
                         <div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
                         <div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
                     </nav>
-				<?php } ?>
-			<?php } else {
+				<?php } else {
 				get_template_part( 'template-parts/content', 'none' );
 			} ?>
 
