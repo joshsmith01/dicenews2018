@@ -47,6 +47,10 @@
   position: relative;
   .featured-one-third {
     padding: 1rem;
+    @media screen and (min-width: 600px) and (max-width: 800px) {
+      width: 33.3333%;
+      padding: 0;
+    }
   }
   img {
     width: 100%;
@@ -58,6 +62,11 @@
     left: 1rem;
     bottom: 21px;
     right: 19%;
+    @media screen and (min-width: 600px) and (max-width: 800px) {
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
     a {
       color: #fff;
       display: block;

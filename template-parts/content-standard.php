@@ -12,10 +12,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('grid-x content-standard'); ?>>
 
-    <div class="article-excerpt-img small-4 cell">
+    <div class="article-excerpt-img small-3 cell">
 	    <?php the_post_thumbnail( 'thumbnail-desktop' ); ?>
     </div>
-    <div class="article-excerpt-details small-8 cell">
+    <div class="article-excerpt-details small-9 cell">
         <header>
 		    <?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
             <div class="entry-meta entry-meta-standard">

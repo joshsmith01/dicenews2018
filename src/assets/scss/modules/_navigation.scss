@@ -181,7 +181,7 @@
   }
 }
 .title-bar, .top-bar-nav {
-  @include breakpoint(medium down) {
+  @include breakpoint(small only) {
     background: $theme-main;
   }
 }
