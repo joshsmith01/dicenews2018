@@ -57,6 +57,7 @@
     padding: 0 !important;
   }
   #jp-relatedposts h3.jp-relatedposts-headline {
+    margin: 0 0 2em 0 !important;
     em {
       font-family: $header-font-family !important;
       margin: 0 0 -1px !important;
@@ -67,6 +68,9 @@
       color: #000 !important;
       position: relative !important;
       border-bottom: 2px solid #6cf !important;
+      &:before {
+        border: none !important;
+      }
     }
   }
 }
