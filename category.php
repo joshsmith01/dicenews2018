@@ -40,7 +40,7 @@ get_header(); ?>
                     </div>
                     <!-- More posts button -->
                     <!--                    <div class="autoscroll button expanded">Old Autoscroll</div>-->
-                    <div id="restscroll" class="restscroll button expanded" data-catid=<?php echo $wp_query->queried_object->cat_ID; ?>>REST Scroll</div>
+                    <div id="restscroll" class="restscroll button expanded" data-catid=<?php echo $wp_query->queried_object->cat_ID; ?>>More Posts</div>
                 </div>
 
 				<?php /* Display navigation to next/previous pages when applicable */

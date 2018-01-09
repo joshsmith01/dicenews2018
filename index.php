@@ -29,7 +29,7 @@ get_header(); ?>
 				    break;
 			    }
 			    $thumb_size = get_field( 'type' ); ?>
-                <div class="small-12 medium-6 large-4 cell <?php echo $thumb_size; ?>">
+                <div class="small-12 medium-4 large-4 cell <?php echo $thumb_size; ?>">
 				    <?php if ( get_field( 'sponsor' ) ) { ?>
                         <div class="sponsor">
                             <img class="logo" src="<?php echo get_field( 'sponsor_icon' ); ?>">
@@ -94,7 +94,7 @@ get_header(); ?>
                     <!-- More posts button -->
 <!--                    <div class="autoscroll button expanded">Old Autoscroll</div>-->
                     <div id="restscroll" class="restscroll button expanded"
-                         data-catid=<?php echo $wp_query->queried_object->cat_ID; ?>>More Posts
+                         >More Posts
                     </div>
                 </div>
 

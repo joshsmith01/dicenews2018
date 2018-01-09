@@ -18,6 +18,16 @@
 .mobile-menu {
   display: none; // prevents repaint caused by JS hiding menu onload
 }
+.small-navigation {
+  .logo-holder {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    p {
+      margin: 0;
+    }
+  }
+}
 .nav-links {
   display: flex;
   justify-content: space-between;
@@ -168,6 +178,11 @@
         flex: 0 0 35px
       }
     }
+  }
+}
+.title-bar, .top-bar-nav {
+  @include breakpoint(medium down) {
+    background: $theme-main;
   }
 }
 .site-navigation {

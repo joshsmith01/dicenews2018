@@ -29,7 +29,7 @@
 <header class="site-header" role="banner">
     <div class="full-width-background top-bar-nav">
         <div class="main-container">
-            <div class="grid-x title-bar" <?php foundationpress_title_bar_responsive_toggle() ?>>
+            <div class="grid-x title-bar site-navigation small-navigation" <?php foundationpress_title_bar_responsive_toggle() ?>>
                 <div class="small-4 cell">
                     <div class="site-title-bar " <?php foundationpress_title_bar_responsive_toggle_left() ?>>
                         <div class="title-bar-left">
@@ -39,8 +39,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="small-4 cell text-center">
-                    <p></p>
+                <div class="small-4 cell text-center logo-holder">
+                    <a href="https://www.dice.com" class="" rel="" target="">
+		                    <?php get_template_part( 'dist/assets/images/svg/logo', 'dice.svg' ) ?>
+                    </a>
+                    <p><?php bloginfo('title'); ?></p>
                 </div>
                 <div class="small-4 cell">
                     <div class="site-title-bar" <?php foundationpress_title_bar_responsive_toggle_right() ?>>

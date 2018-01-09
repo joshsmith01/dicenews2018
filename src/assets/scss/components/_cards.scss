@@ -19,3 +19,14 @@
 
   }
 }
+
+@include breakpoint(medium down) {
+  //.grid-x > .article-excerpt-details {
+  //  width: 60%;
+  //}
+  .grid-x > .article-excerpt-img {
+    //width: 33%;
+    padding-right: $global-margin/2;
+  }
+
+}

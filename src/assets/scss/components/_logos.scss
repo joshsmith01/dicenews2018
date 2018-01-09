@@ -1,5 +1,7 @@
+.site-navigation .logo-holder svg,
 .site-navigation .logo-holder svg {
   width: 62px;
+  height: 33px;
 }
 
 footer .logo-holder svg {
@@ -33,29 +35,27 @@ footer .logo-holder.logo-download-store .apple-badge svg {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
 }
-.happy {
-  color: white;
-}
 
-.twitter::before {
-  //font-family: "fontawesome";
-  content: "\f099";
-  color: blue;
-}
-.fa-twitch:before {
-  //font-family: "Font Awesome 5 Brands";
-  content: "\f1e8";
-  color: red;
-}
 
-.fa-crosshairs::before {
-  //font-family: "Font Awesome 5 Pro";
-  content: "\f099";
-  color: green;
-}
-
-.fa-pen-alt::before {
-  //font-family: "Font Awesome 5 Pro";
-  content: "\f099";
-  color: green;
-}
+//.twitter::before {
+//  //font-family: "fontawesome";
+//  content: "\f099";
+//  color: blue;
+//}
+//.fa-twitch:before {
+//  //font-family: "Font Awesome 5 Brands";
+//  content: "\f1e8";
+//  color: red;
+//}
+//
+//.fa-crosshairs::before {
+//  //font-family: "Font Awesome 5 Pro";
+//  content: "\f099";
+//  color: green;
+//}
+//
+//.fa-pen-alt::before {
+//  //font-family: "Font Awesome 5 Pro";
+//  content: "\f099";
+//  color: green;
+//}

@@ -1,18 +1,18 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
 
-import fontawesome from '@fortawesome/fontawesome'
-import freeBrands from '@fortawesome/fontawesome-free-brands'
-import freeRegular from '@fortawesome/fontawesome-free-regular'
-import freeSolid from '@fortawesome/fontawesome-free-solid'
+// import fontawesome from '@fortawesome/fontawesome'
+// import freeBrands from '@fortawesome/fontawesome-free-brands'
+// import freeRegular from '@fortawesome/fontawesome-free-regular'
+// import freeSolid from '@fortawesome/fontawesome-free-solid'
 // import freeWebfonts from '@fortawesome/fontawesome-free-webfonts'
-import proLight from '@fortawesome/fontawesome-pro-light'
-import proRegular from '@fortawesome/fontawesome-pro-regular'
-import proSolid from '@fortawesome/fontawesome-pro-solid'
+// import proLight from '@fortawesome/fontawesome-pro-light'
+// import proRegular from '@fortawesome/fontawesome-pro-regular'
+// import proSolid from '@fortawesome/fontawesome-pro-solid'
 // import {faUser} from '@fortawesome/fontawesome-pro-webfonts'
 
 // fontawesome.icon(faUser)
-fontawesome.library.add(freeBrands, freeRegular, freeSolid, proLight, proRegular, proSolid)
+// fontawesome.library.add(freeBrands, freeRegular, freeSolid, proLight, proRegular, proSolid);
 
 
 window.$ = $;
@@ -36,7 +36,7 @@ let pathname = window.location.pathname;
 
 function buildGetUrl() {
     let catId = $('#restscroll').data('catid');
-    console.log('I\'m the category ID ' + catId);
+    // console.log('I\'m the category ID ' + catId);
     if (catId) {
          getUrl = "/wp-json/wp/v2/posts?categories=" + catId + "&_embed&page=2";
     } else {
@@ -102,23 +102,22 @@ function loadMore(url, responseHeaderNext) {
             nextLink = parseLinkHeader(responseHeaderNext);
 
             if ( currentPage < responseHeaderTotalPages ) {
-
+                $('#restscroll').removeClass('invisible');
                 console.log(data);
                 console.log(currentPage, responseHeaderTotalPages);
                 confirmStorage();
             } else if (currentPage === responseHeaderTotalPages ) {
-
+                $('#restscroll').removeClass('invisible');
                 console.log(data);
                 console.log(currentPage, responseHeaderTotalPages);
                 confirmStorage();
             } else {
-                console.log(data);
-                console.log('success getting data');
+                $('#restscroll').removeClass('invisible');
+                console.log('out of data');
                 confirmStorage();
             }
             sessionStorage.setItem('nextPosts', JSON.stringify(data));
             sessionStorage.setItem('nextLink', nextLink.next.href);
-            $('#restscroll').removeClass('invisible');
         }
     });
 }
@@ -197,7 +196,7 @@ $(document).ready(function () {
     sessionStorage.clear('nextPosts');
     sessionStorage.clear('nextLink');
     buildGetUrl();
-    $('#restscroll').toggleClass('invisible');
+    $('#restscroll').addClass('invisible');
     loadMore(getUrl);
     console.log('I\'m the pathname ' + pathname);
 });
@@ -208,7 +207,7 @@ let clickable = false;
 let topLinks = $("footer .heading");
 let innerLinks = $("footer .menu");
 
-const breakpoint = 768;
+const breakpoint = 1023;
 
 
 // Make footer headings clickable for smaller windows
