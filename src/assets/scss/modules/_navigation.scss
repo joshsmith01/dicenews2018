@@ -35,6 +35,8 @@
     align-items: center;
     padding: $global-padding/2;
     background-color: $light-gray;
+    border: 1px solid $medium-gray;
+    box-shadow: 0 0 1px 0 $medium-gray;
     transition: background-color 0.25s ease-out, color 0.25s ease-out;
     &:hover {
       background-color: $medium-gray;
