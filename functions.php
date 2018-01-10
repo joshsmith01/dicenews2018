@@ -55,7 +55,7 @@ require_once( 'library/sticky-posts.php' );
 require_once( 'library/responsive-images.php' );
 
 /* More posts button */
-include 'includes/autoscroll/autoscroll.php';
+//include 'includes/autoscroll/autoscroll.php';
 
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
