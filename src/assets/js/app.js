@@ -103,17 +103,17 @@ function loadMore(url, responseHeaderNext) {
 
             if ( currentPage < responseHeaderTotalPages ) {
                 $('#restscroll').removeClass('invisible');
-                console.log(data);
-                console.log(currentPage, responseHeaderTotalPages);
+                // console.log(data);
+                // console.log(currentPage, responseHeaderTotalPages);
                 confirmStorage();
             } else if (currentPage === responseHeaderTotalPages ) {
                 $('#restscroll').removeClass('invisible');
-                console.log(data);
-                console.log(currentPage, responseHeaderTotalPages);
+                // console.log(data);
+                // console.log(currentPage, responseHeaderTotalPages);
                 confirmStorage();
             } else {
                 $('#restscroll').removeClass('invisible');
-                console.log('out of data');
+                // console.log('out of data');
                 confirmStorage();
             }
             sessionStorage.setItem('nextPosts', JSON.stringify(data));
@@ -198,7 +198,7 @@ $(document).ready(function () {
     buildGetUrl();
     $('#restscroll').addClass('invisible');
     loadMore(getUrl);
-    console.log('I\'m the pathname ' + pathname);
+    // console.log('I\'m the pathname ' + pathname);
 });
 
 

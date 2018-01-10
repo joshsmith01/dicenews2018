@@ -15,7 +15,10 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', '' ); ?>
-				<?php the_post_navigation(); ?>
+				<?php the_post_navigation(
+				        array(
+				                'prev_text'=> '<i class="fal fa-chevron-double-left"></i>%title',
+				                'next_text' => '%title<i class="fal fa-chevron-double-right"></i>')); ?>
 				<?php comments_template(); ?>
 			<?php endwhile;?>
 		</main>

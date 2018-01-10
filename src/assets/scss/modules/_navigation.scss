@@ -30,12 +30,33 @@
 .nav-links {
   display: flex;
   justify-content: space-between;
+  a {
+    display: flex;
+    align-items: center;
+    padding: $global-padding/2;
+    background-color: $light-gray;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    &:hover {
+      background-color: $medium-gray;
+      border-radius: $global-radius;
+    }
+    i {
+      font-size: 2rem;
+    }
+  }
   .nav-previous {
     padding-right: 10%;
+    i {
+      margin-right: $global-margin/2;
+    }
   }
   .nav-next {
     text-align: right;
+    i {
+      margin-left: $global-margin/2;
+    }
   }
+
 }
 .off-canvas {
   > ul.menu {
