@@ -231,8 +231,8 @@
     border: 1px solid $body-font-color;
     color: $body-font-color;
     transition: background-color 300ms ease-out;
-      @include breakpoint(medium down) {
-        padding: 14px 24px;
+      @include breakpoint(small only) {
+        padding: 10px 22px;
       }
     }
     i {

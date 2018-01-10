@@ -21,8 +21,7 @@
 .small-navigation {
   .logo-holder {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+
     p {
       margin: 0;
     }
@@ -82,7 +81,7 @@
     }
   }
  ul.submenu {
-   background-color: #505050;
+   background-color: $dark-gray;
  }
   .top-bar-title a {
     font-size: 1rem;
@@ -92,20 +91,23 @@
   }
 
   .menu a {
-    color: #e6e6e6;
+    color: white;
     padding-top: 0;
     padding-bottom: 0;
     font-weight: bold;
     font-size: 0.8rem;
     line-height: 1;
     &:hover:not(.button) {
-      background-color: #42525D;
+      background-color: #4d4d4d;
     }
   }
 
   .menu .active > a { background-color: #ccc; }
 
-  .menu>li:not(.menu-text)>a { padding: 1rem; }
+  .menu>li:not(.menu-text)>a {
+    padding: 1rem;
+    width: 100%;
+  }
 
   .dropdown.menu .submenu { border: 0; }
   .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
@@ -122,8 +124,26 @@
 }
 .top-bar-nav {
   background: $dark-nav-color;
+  .main-container {
+    padding-right: 0;
+    padding-left: 0;
+    @include breakpoint(medium down) {
+      border: 1px solid #090909;
+    }
+  }
 }
 
+.drilldown a {
+  background: $dark-nav-color;
+}
+
+.drilldown .js-drilldown-back > a::before {
+  border-color: transparent $white transparent transparent;
+}
+
+.drilldown .is-drilldown-submenu-parent > a::after {
+  border-color: transparent transparent transparent $pure-white;
+}
 .main-nav {
   background: #66ccff;
   .main-container {
@@ -182,7 +202,7 @@
 }
 .title-bar, .top-bar-nav {
   @include breakpoint(small only) {
-    background: $theme-main;
+    background: $dark-nav-color;
   }
 }
 .site-navigation {
