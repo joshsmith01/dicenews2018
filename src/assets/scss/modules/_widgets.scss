@@ -41,6 +41,13 @@
 }
 
 // Jetpack Related Posts that *don't* appear on local
+#jp-relatedposts h3.jp-relatedposts-headline {
+  font-size: 24px !important;
+}
+
+#jp-relatedposts h3.jp-relatedposts-headline em:before {
+  border: none !important;
+}
 @media only screen and (max-width: 640px) {
   #jp-relatedposts .jp-relatedposts-items-visual {
     margin-right: -.625rem !important;
@@ -61,6 +68,7 @@
     text-align: center;
     float: none !important;
     padding: 0 !important;
+    margin-bottom: 3rem !important;
   }
   #jp-relatedposts h3.jp-relatedposts-headline {
     margin: 0 0 2em 0 !important;
