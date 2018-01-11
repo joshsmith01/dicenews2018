@@ -114,6 +114,7 @@ function loadMore(url, responseHeaderNext) {
             } else {
                 $('#restscroll').removeClass('invisible');
                 console.log('out of data');
+                console.log(data);
                 confirmStorage();
             }
             sessionStorage.setItem('nextPosts', JSON.stringify(data));
