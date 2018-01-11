@@ -59,7 +59,14 @@ get_header(); ?>
 
 
         </main>
-		<?php get_sidebar(); ?>
+		<?php
+		if ( is_category( 'employer-resources' ) ) { ?>
+		    <aside class="sidebar">
+			    <?php dynamic_sidebar('erc-sidebar'); ?>
+            </aside>
+		<?php } else {
+			get_sidebar();
+		} ?>
     </div>
 </div>
 
