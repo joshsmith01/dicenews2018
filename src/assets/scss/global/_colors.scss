@@ -9,3 +9,9 @@ body.post-template-default {
 body.post-template {
   background: #ffffff;
 }
+// Update the font color of block quotes
+// TODO: Move this to a more appropriate scss file location. -JMS
+blockquote, blockquote p {
+  line-height: 1.6;
+  color: #333;
+}

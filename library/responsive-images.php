@@ -20,6 +20,9 @@ add_image_size( 'single-featured-xlarge', 750, 500, true );
 //add_image_size( 'single-featured-large', 748, 200, true );
 add_image_size( 'single-featured-medium', 930, 400, true );
 add_image_size( 'single-featured-small', 500, 100, true );
+add_image_size( 'thumbnail_340x150', 340, 150, true );
+add_image_size( 'thumbnail_108x131', 108, 131, true );
+add_image_size( 'thumbnail_189x116', 189, 116, true );
 
 // Add additional image sizes
 add_image_size( 'fp-small', 640 );
