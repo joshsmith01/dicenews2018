@@ -245,12 +245,14 @@
     }
   }
 }
-.current_page_ancestor,
-.current-menu-item,
-.current-menu-ancestor {
-  background: #006699;
-  a {
-    color: white;
+.main-nav {
+  .current_page_ancestor,
+  .current-menu-item,
+  .current-menu-ancestor {
+    background: #006699;
+    a {
+      color: white;
+    }
   }
 }
 // WP post navigation
