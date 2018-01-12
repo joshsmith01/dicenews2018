@@ -245,10 +245,14 @@
     }
   }
 }
+
 .main-nav {
-  .current_page_ancestor,
-  .current-menu-item,
-  .current-menu-ancestor {
+  .current_page_ancestor > a,
+  .current-menu-ancestor > a {
+    background: #006699;
+    color: white;
+  }
+  .current-menu-item {
     background: #006699;
     a {
       color: white;
