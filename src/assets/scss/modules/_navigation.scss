@@ -223,6 +223,10 @@
     }
   }
 }
+
+.main-nav .current-menu-item a {
+  color: white;
+}
 .title-bar, .top-bar-nav {
   @include breakpoint(small only) {
     background: $dark-nav-color;
@@ -234,9 +238,21 @@
   }
   .menu a {
     display: inline-block;
+    transition: background 0.1s ease-out, color 0.1s ease-out;
+    &:hover {
+      background: rgba(0, 102, 153, 0.70);
+      color: white;
+    }
   }
 }
-
+.current_page_ancestor,
+.current-menu-item,
+.current-menu-ancestor {
+  background: #006699;
+  a {
+    color: white;
+  }
+}
 // WP post navigation
 .post-navigation {
   @include clearfix;

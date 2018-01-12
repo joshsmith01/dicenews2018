@@ -57,6 +57,14 @@ require_once( 'library/responsive-images.php' );
 /* More posts button */
 //include 'includes/autoscroll/autoscroll.php';
 
+/* Post types */
+include 'includes/d3/d3.php';
+include 'includes/dice-webinar-series.php';
+include 'includes/startup-post.php';
+include 'includes/erc-report.php';
+
+
+
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );

@@ -1,7 +1,13 @@
 $dark-nav-color: #333333;
 body.home,
-body.archive {
+body.archive,
+body.page {
   background: #f5f5f5;
+}
+body.page {
+  .content-main-container {
+    background: white;
+  }
 }
 body.post-template-default {
   background: #ffffff;
