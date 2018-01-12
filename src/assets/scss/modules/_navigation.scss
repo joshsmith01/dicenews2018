@@ -224,9 +224,6 @@
   }
 }
 
-.main-nav .current-menu-item a {
-  color: white;
-}
 .title-bar, .top-bar-nav {
   @include breakpoint(small only) {
     background: $dark-nav-color;
@@ -254,7 +251,7 @@
   }
   .current-menu-item {
     background: #006699;
-    a {
+    > a {
       color: white;
     }
   }
