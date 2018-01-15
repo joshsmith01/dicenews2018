@@ -151,3 +151,30 @@ if ( ! function_exists( 'foundationpress_add_menuclass' ) ) {
 	}
 	add_filter( 'wp_nav_menu','foundationpress_add_menuclass' );
 }
+
+/**
+ * Check to see if the DLI cookie exists.
+ * If the cookie exists, that means that the user is logged into the TechPro application.
+ * ergo, provide a  logout link.
+ */
+if (!isset($_COOKIE['DLI'])) {
+
+	/**
+	 * @param $item_output
+	 * @param $item
+	 *
+	 * @return string
+	 */
+	function provide_logout( $item_output, $item ) {
+
+		if ( 'Login/Register' == $item->title ) {
+
+			return '<a href="//www.dice.com/dashboard/logout">' .  __( 'Logout', 'dice-mobile-news-feed' ) .  '</a>';
+
+		}
+
+		return $item_output;
+	}
+
+add_filter( 'walker_nav_menu_start_el', 'provide_logout', 10, 2 );
+}
