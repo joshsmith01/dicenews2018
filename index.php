@@ -104,18 +104,20 @@ get_header(); ?>
                     </div>
                 </div>
 
-				<?php /* Display navigation to next/previous pages when applicable */
-				if ( function_exists( 'foundationpress_pagination' ) ) {
-					foundationpress_pagination();
-				} elseif ( is_paged() ) {
-					?>
-                    <nav id="post-nav" class="show-for-sr">
-                        <div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
-                        <div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
-                    </nav>
-				<?php } else {
-				get_template_part( 'template-parts/content', 'none' );
-			} ?>
+            <div class="navigation-holder show-for-sr">
+                    <?php /* Display navigation to next/previous pages when applicable */
+                    if ( function_exists( 'foundationpress_pagination' ) ) {
+                        foundationpress_pagination();
+                    } elseif ( is_paged() ) {
+                        ?>
+                        <nav id="post-nav" class="show-for-sr">
+                            <div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
+                            <div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
+                        </nav>
+                    <?php } else {
+                    get_template_part( 'template-parts/content', 'none' );
+                } ?>
+            </div>
 
 
         </main>

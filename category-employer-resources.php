@@ -90,21 +90,21 @@ get_header(); ?>
                          data-catid=<?php echo $wp_query->queried_object->cat_ID; ?>>More Posts
                     </div>
                 </div>
-
-				<?php /* Display navigation to next/previous pages when applicable */
-				if ( function_exists( 'foundationpress_pagination' ) ) {
-					foundationpress_pagination();
-				} elseif ( is_paged() ) {
-					?>
-                    <nav id="post-nav">
-                        <div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
-                        <div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
-                    </nav>
-				<?php } ?>
-			<?php } else {
-				get_template_part( 'template-parts/content', 'none' );
-			} ?>
-
+            <div class="navigation-holder show-for-sr">
+                    <?php /* Display navigation to next/previous pages when applicable */
+                    if ( function_exists( 'foundationpress_pagination' ) ) {
+                        foundationpress_pagination();
+                    } elseif ( is_paged() ) {
+                        ?>
+                        <nav id="post-nav">
+                            <div class="post-previous"><?php next_posts_link( __( '&larr; Older posts', 'foundationpress' ) ); ?></div>
+                            <div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
+                        </nav>
+                    <?php } ?>
+                <?php } else {
+                    get_template_part( 'template-parts/content', 'none' );
+                } ?>
+            </div>
 
         </main>
 		<?php if ( is_category( 'employer-resources' ) ) { ?>
