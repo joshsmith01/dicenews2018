@@ -144,6 +144,13 @@
   }
 }
 
+.author-bio {
+  @extend .main-grid;
+  margin-right: 0.9375rem;
+  margin-left: 0.9375rem;
+  background: white;
+  padding: 1rem;
+}
 .page-title-holder {
   //width: calc(66.66667% - 1.875rem);
   margin-top: 2rem;
