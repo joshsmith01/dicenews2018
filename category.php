@@ -20,8 +20,8 @@ get_header(); ?>
     <div class="page-title-holder">
         <h1 class="category-page-title"><?php single_cat_title(); ?></h1>
     </div>
-    <div class="main-grid">
 
+    <div class="main-grid">
         <main class="main-content">
 			<?php if ( have_posts() ) { ?>
                 <!-- Nonfeatured posts -->
@@ -39,8 +39,10 @@ get_header(); ?>
 						<?php } ?>
                     </div>
                     <!-- More posts button -->
-                    <!--                    <div class="autoscroll button expanded">Old Autoscroll</div>-->
-                    <div id="restscroll" class="restscroll button expanded" data-catid=<?php echo $wp_query->queried_object->cat_ID; ?>>More Posts</div>
+                    <!-- <div class="autoscroll button expanded">Old Autoscroll</div>-->
+                    <div id="restscroll" class="restscroll button expanded"
+                         data-catid=<?php echo $wp_query->queried_object->cat_ID; ?>>More Posts
+                    </div>
                 </div>
 
 				<?php /* Display navigation to next/previous pages when applicable */
@@ -59,15 +61,14 @@ get_header(); ?>
 
 
         </main>
-		<?php
-		if ( is_category( 'employer-resources' ) ) { ?>
-		    <aside class="sidebar">
-			    <?php dynamic_sidebar('erc-sidebar'); ?>
+		<?php if ( is_category( 'employer-resources' ) ) { ?>
+            <aside class="sidebar">
+				<?php dynamic_sidebar( 'erc-sidebar' ); ?>
             </aside>
 		<?php } else {
 			get_sidebar();
 		} ?>
-    </div>
+    </div><!-- END ..main-grid -->
 </div>
 
 
