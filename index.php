@@ -75,12 +75,15 @@ get_header(); ?>
 <!--			--><?php //} elseif ( have_posts() ) { ?>
 			<?php }
 
-            /* The 2nd Query (without global var) */
-            $query2 = new WP_Query( array( 'offset' => 3,
-                                           'posts_per_page' => 7,
-                                            'no_found_rows' => true,
-                                            'update_post_meta_cache' => false,
-                                            'update_post_term_cache' => false ) ); ?>
+			/* The 2nd Query (without global var) */
+			$query2 = new WP_Query( array(
+				'offset'                 => 3,
+				'posts_per_page'         => 7,
+				'category__not_in'       => '4722',
+				'no_found_rows'          => true,
+				'update_post_meta_cache' => false,
+				'update_post_term_cache' => false
+			) ); ?>
 
 
                 <!-- Nonfeatured posts -->
