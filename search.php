@@ -25,7 +25,7 @@
                     <!-- More posts button -->
 <!--                     <div class="autoscroll button expanded">Old Autoscroll</div>-->
 <!--                    <div id="restscroll" class="restscroll button expanded"-->
-<!--                         data-catid=--><?php //echo $wp_query->queried_object->cat_ID; ?><!-- data-query-term=--><?php //echo $wp_query->query['s']; ?><!-->More Posts-->
+<!--                         data-catid=--><?php //echo $wp_query->queried_object->cat_ID; ?><!-- data-query-term=--><?php //echo $wp_query->query['s']; ?><!-- More Posts -->
 <!--                    </div>-->
                 </div>
 
