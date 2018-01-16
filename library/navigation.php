@@ -157,7 +157,7 @@ if ( ! function_exists( 'foundationpress_add_menuclass' ) ) {
  * If the cookie exists, that means that the user is logged into the TechPro application.
  * ergo, provide a  logout link.
  */
-if (!isset($_COOKIE['DLI'])) {
+if (isset($_COOKIE['DLI'])) {
 
 	/**
 	 * @param $item_output
