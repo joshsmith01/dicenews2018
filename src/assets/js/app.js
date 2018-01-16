@@ -44,7 +44,7 @@ function buildGetUrl() {
     } else if (authId) {
         getUrl = "/wp-json/wp/v2/posts?author=" + authId + "&_embed&page=2";
     } else {
-         getUrl = "/wp-json/wp/v2/posts?_embed&page=2";
+         getUrl = "/wp-json/wp/v2/posts?_embed&categories_exclude=4722&page=2";
     }
     return getUrl;
 }
