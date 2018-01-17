@@ -31,7 +31,7 @@ else
                 <?php else: ?>
                     <input type="hidden" name="cat" id="cat" value="<?php echo $erc; ?>" />
                 <?php endif ?>
-                <button id="searchsubmit" type="submit"><span class="icon icon-magnifier"></span></button>
+                <button id="searchsubmit" type="submit"><span class="icon icon-magnifier"></span><span class="show-for-sr">Search Insights</span></button>
         	</div>
         </div>
 	</fieldset>
