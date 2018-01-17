@@ -6,3 +6,8 @@
 [data-whatinput="touch"] a:focus, button:focus {
   outline: none;
 }
+
+.pagination .current {
+  padding: .7rem .9rem;
+  border-radius: $global-radius;
+}
