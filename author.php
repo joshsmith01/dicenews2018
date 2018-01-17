@@ -41,6 +41,7 @@
                     </div>
                 </div>
 
+            <div class="navigation-holder show-for-sr">
 				<?php /* Display navigation to next/previous pages when applicable */
 				if ( function_exists( 'foundationpress_pagination' ) ) {
 					foundationpress_pagination();
@@ -54,6 +55,7 @@
 			<?php } else {
 				get_template_part( 'template-parts/content', 'none' );
 			} ?>
+            </div>
 
 
         </main>

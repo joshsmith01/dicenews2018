@@ -29,7 +29,7 @@
 <!--                    </div>-->
                 </div>
 
-            <div class="navigation-holder">
+                <div class="navigation-holder">
                         <?php /* Display navigation to next/previous pages when applicable */
                         if ( function_exists( 'foundationpress_pagination' ) ) {
                             foundationpress_pagination();
