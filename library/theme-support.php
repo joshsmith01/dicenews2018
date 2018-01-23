@@ -91,8 +91,6 @@ function foundationpress_theme_support() {
 	add_action( 'pre_get_posts', 'set_query' );
 
 
-	// Thumbnails sizes
-	add_image_size( 'thumbnail-desktop', 220, 149, true );
 
 
 }

@@ -23,6 +23,7 @@ add_image_size( 'single-featured-small', 500, 100, true );
 add_image_size( 'thumbnail_340x150', 340, 150, true );
 add_image_size( 'thumbnail_108x131', 108, 131, true );
 add_image_size( 'thumbnail_189x116', 189, 116, true );
+add_image_size( 'thumbnail-desktop', 220, 149, true );
 
 // Add additional image sizes
 add_image_size( 'fp-small', 640 );

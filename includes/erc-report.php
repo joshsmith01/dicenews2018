@@ -33,7 +33,7 @@ function diceerc_custom_report_type_init() {
 		'yarpp_support'      => true
 	);
 	register_post_type( 'report', $args );
-	register_taxonomy( 'post_tag', 'category', 'report' );
+//	register_taxonomy( 'post_tag', 'category', 'report' );
 }
 
 add_action( 'init', 'diceerc_custom_report_type_init' );

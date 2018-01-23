@@ -13,7 +13,7 @@ if ( ! function_exists( 'foundationpress_entry_meta' ) ) :
 		$author_meta_data = get_the_author_meta();
 		$the_avatar       = get_avatar( get_the_author_meta( 'ID' ), 64 );
 		$avatar_data      = get_avatar_data( get_the_author_meta( 'ID' ) );
-        $has_avatar         = validate_gravatar( get_the_author_meta( 'ID' ) );
+        $has_avatar       = validate_gravatar( get_the_author_meta( 'ID' ) );
 
 
 
