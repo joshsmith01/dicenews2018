@@ -1,13 +1,8 @@
-# FoundationPress
+# Dicenews 2018
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/olefredrik/foundationpress?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![GitHub version](https://badge.fury.io/gh/olefredrik%2Ffoundationpress.svg)](https://github.com/olefredrik/FoundationPress/releases)
-[![license](https://img.shields.io/npm/l/color-name-list.svg?colorB=ff77b4)](https://github.com/olefredrik/FoundationPress/blob/master/MIT-LICENSE.txt)
-[![Buy Me a Coffee at ko-fi.com](https://img.shields.io/badge/-Buy%20me%20a%20Coffee-orange.svg?colorB=593C1F&colorA=4e798d&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAVUlEQVR4AWNQtnJTQcZ%2Blb2fsWF0dQzYNRHWzIBdE2EDGGCaSNYI47x69fY%2FMRimnmiNyGqwavyflo6MaawRTTP1%2FIiM4dFBQBPl8UggyRHWSHYiBwCwA90T1NTlAQAAAABJRU5ErkJggg%3D%3D%0D%0A&logoWidth=14)](https://ko-fi.com/olefredrik)
 
-This is a starter-theme for WordPress based on Zurb's [Foundation for Sites 6](https://foundation.zurb.com/sites.html), the most advanced responsive (mobile-first) framework in the world. The purpose of FoundationPress, is to act as a small and handy toolbox that contains the essentials needed to build any design. FoundationPress is meant to be a starting point, not the final product.
+Dicenews 2018 is a theme built for WordPress from FoundationPress based on Zurb's [Foundation for Sites 6](https://foundation.zurb.com/sites.html), the most advanced responsive (mobile-first) framework in the world. The purpose of FoundationPress, is to act as a small and handy toolbox that contains the essentials needed to build any design. FoundationPress is meant to be a starting point, not the final product.
 
-Please fork, copy, modify, delete, share or do whatever you like with this.
 
 All contributions are welcome!
 
@@ -26,8 +21,8 @@ If you have not worked with a Sass-based workflow before, I would recommend read
 ### 1. Clone the repository and install with npm
 ```bash
 $ cd my-wordpress-folder/wp-content/themes/
-$ git clone https://github.com/olefredrik/FoundationPress.git
-$ cd FoundationPress
+$ git clone https://github.com/DiceHoldingsInc/dicenews2018
+$ cd dicenews2018
 $ npm install
 ```
 
