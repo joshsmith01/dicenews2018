@@ -15,7 +15,7 @@ add_image_size( 'featured-small', 640, 200, true ); // name, width, height, crop
 add_image_size( 'featured-medium', 1280, 400, true );
 add_image_size( 'featured-large', 1440, 400, true );
 add_image_size( 'featured-xlarge', 1920, 400, true );
-add_image_size( 'featured-one-third', 300, 300, true );
+add_image_size( 'featured-one-third', 358, 358, true );
 add_image_size( 'single-featured-xlarge', 750, 500, true );
 //add_image_size( 'single-featured-large', 748, 200, true );
 add_image_size( 'single-featured-medium', 930, 400, true );
