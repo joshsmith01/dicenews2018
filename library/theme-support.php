@@ -156,6 +156,9 @@ function validate_gravatar( $id_or_email ) {
 	}
 }
 
+// Force GitHub Updater to foreground processing.
+// https://github.com/afragen/github-updater/wiki/Background-Processing
+add_filter( 'github_updater_disable_wpcron', '__return_true' );
 
 
 
