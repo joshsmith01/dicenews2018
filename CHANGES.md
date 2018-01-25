@@ -1,5 +1,9 @@
 #### [unreleased]
 
+### 0.0.6
+#### Added
+* Filter Related Posts on a per page basis
+
 ### 0.0.5
 #### Updated
 * Keep the byline information on the left side of the post

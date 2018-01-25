@@ -163,3 +163,43 @@ add_filter( 'github_updater_disable_wpcron', '__return_true' );
 
 
 
+
+
+
+// http://mercytapscott.com/specific-category-jetpack-related-posts/
+// https://jetpack.com/support/related-posts/customize-related-posts/
+
+
+/**
+ * Server ERC related posts to ERC posts and all other related posts to all other posts. -JMS
+ *
+ * @param $filters
+ *
+ * @return array
+ */
+function jetpack_exclude_other_related_posts ( $filters ) {
+//	$yep = in_category( 'employer-resources' );
+	if(in_category('employer-resources')) {
+		$filters[] = array(
+			'exists' =>
+				array( 'field' => 'category.slug' )
+		);
+		$filters[] = array(
+			'not' =>
+				array( 'term' => array( 'category.slug' => 'uncategorized' ) )
+		);
+
+		return $filters;
+	} elseif (!in_category('employer-resources')) {
+		$filters[] = array(
+			'not' =>
+				array( 'term' => array( 'category.slug' => 'employer-resources' ) )
+		);
+
+		return $filters;
+	} else {
+		return $filters;
+	}
+}
+
+add_filter( 'jetpack_relatedposts_filter_filters', 'jetpack_exclude_other_related_posts');
