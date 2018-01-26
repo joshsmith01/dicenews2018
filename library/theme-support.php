@@ -168,38 +168,54 @@ add_filter( 'github_updater_disable_wpcron', '__return_true' );
 
 // http://mercytapscott.com/specific-category-jetpack-related-posts/
 // https://jetpack.com/support/related-posts/customize-related-posts/
+// https://gist.github.com/kraftbj/9711eaed13e4cf13524e
+// https://samnabi.com/blog/jetpack-only-show-related-posts-from-the-same-category
+/**
+ * Only return ERC related posts on ERC posts from Jetpack
+ * @see
+ * http://mercytapscott.com/specific-category-jetpack-related-posts/
+ * https://jetpack.com/support/related-posts/customize-related-posts/
+ * https://gist.github.com/kraftbj/9711eaed13e4cf13524e
+ * https://samnabi.com/blog/jetpack-only-show-related-posts-from-the-same-category
+ *
+ * @param $categories
+ * @param $post_id
+ *
+ * @return array
+ */
+function jp_only_rp_in_certain_category( $categories, $post_id ) {
+	if ( in_category( 'employer-resources' ) ) { // using a category slug, could be ID, an array of IDs, etc
+		$categories = array( get_category_by_slug( 'employer-resources' ) );
+	}
+
+	return $categories;
+}
+
+add_filter( 'jetpack_relatedposts_filter_has_terms', 'jp_only_rp_in_certain_category', 10, 2 );
 
 
 /**
- * Server ERC related posts to ERC posts and all other related posts to all other posts. -JMS
+ * Return related posts other than ERC posts
+ *
+ * @see
+ * http://mercytapscott.com/specific-category-jetpack-related-posts/
+ * https://jetpack.com/support/related-posts/customize-related-posts/
+ * https://gist.github.com/kraftbj/9711eaed13e4cf13524e
+ * https://samnabi.com/blog/jetpack-only-show-related-posts-from-the-same-category
  *
  * @param $filters
  *
  * @return array
  */
-function jetpack_exclude_other_related_posts ( $filters ) {
-//	$yep = in_category( 'employer-resources' );
-	if(in_category('employer-resources')) {
-		$filters[] = array(
-			'exists' =>
-				array( 'field' => 'category.slug' )
-		);
-		$filters[] = array(
-			'not' =>
-				array( 'term' => array( 'category.slug' => 'uncategorized' ) )
-		);
-
-		return $filters;
-	} elseif (!in_category('employer-resources')) {
+function jetpackme_filter_exclude_category( $filters ) {
+	if ( !in_category( 'employer-resources' ) ) {
 		$filters[] = array(
 			'not' =>
 				array( 'term' => array( 'category.slug' => 'employer-resources' ) )
 		);
 
 		return $filters;
-	} else {
-		return $filters;
 	}
 }
 
-add_filter( 'jetpack_relatedposts_filter_filters', 'jetpack_exclude_other_related_posts');
+add_filter( 'jetpack_relatedposts_filter_filters', 'jetpackme_filter_exclude_category' );
