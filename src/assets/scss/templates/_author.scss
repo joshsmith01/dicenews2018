@@ -1,0 +1,29 @@
+.page-template-custom-page-authors {
+  .main-grid {
+    background: white;
+    padding-top: 1rem;
+    margin-top: 0;
+  }
+  .page-title-holder {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .authors {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .author-fields {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    word-wrap: break-word;
+    text-align: center;
+    margin: 20px 0;
+    //@include breakpoint (500px) {
+    //  width: 40%;
+    //}
+    @include breakpoint (small only) {
+      width: 100%;
+    }
+  }
+}
