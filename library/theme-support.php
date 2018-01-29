@@ -257,31 +257,39 @@ class author_widget extends WP_Widget {
                     </a>
 						<?php $dice_position = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'dice_position' ) ); ?>
                         <div class="author-position"><?php echo $dice_position ?></div>
-	                <?php
-                    $show_email = get_cimyFieldValue( $author, 'author_email' ) == 'YES';
-                    $cimy_twitter = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'twitter' ) );
-                    $show_twitter = strlen( $cimy_twitter ) > 0;
 
-                    if ( $show_email or $show_twitter ) { ?>
-                        <div class="smaller-author-text">
-			                <?php if ( $show_email ) { ?>
-                                <div class="icon icon-mail-1"><?php echo the_author_meta( 'user_email', $author ); ?></div>
-			                <?php } ?>
-			                <?php if ( $show_twitter ) { ?>
-                                <div class="icon icon-twitter-logo-filled"><a
-                                            href="http://www.twitter.com/<?php echo $cimy_twitter ?>"><i
-                                                class="fab fa-twitter"></i><?php echo $cimy_twitter ?></a>
-                                </div>
-			                <?php } ?>
-                        </div>
-	                <?php } ?>
                 </div>
                 <a href="<?php echo get_author_posts_url( $author ); ?>">
 					<?php echo get_avatar( $author ) ?>
                 </a>
-                <div class="author-description"><?php echo the_author_meta( 'description' ); ?></div>
 
             </div>
+            <div class="author-description">
+                <?php echo the_author_meta( 'description' ); ?>
+            </div>
+	        <?php
+	        $show_email   = get_cimyFieldValue( $author, 'author_email' ) == 'YES';
+	        $cimy_twitter = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'twitter' ) );
+	        $show_twitter = strlen( $cimy_twitter ) > 0;
+
+	        if ( $show_email or $show_twitter ) { ?>
+                <?php if ( $show_email ) { ?>
+                    <div class="author-email">
+                        <a href="mailto:<?php echo the_author_meta( 'user_email', $author ); ?>>">
+                            <i class="fas fa-envelope"></i>
+                            <span><?php echo the_author_meta( 'user_email', $author ); ?></span>
+                        </a>
+                    </div>
+                <?php } ?>
+                <?php if ( $show_twitter ) { ?>
+                    <div class="icon icon-twitter-logo-filled">
+                        <a href="http://www.twitter.com/<?php echo $cimy_twitter ?>">
+                            <i class="fab fa-twitter"></i>
+                            <?php echo $cimy_twitter ?>
+                        </a>
+                    </div>
+                <?php } ?>
+	        <?php } ?>
         </div>
 
 	<?php }
