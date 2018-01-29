@@ -92,10 +92,11 @@
 // Templates
 @import "templates/front";
 @import "templates/kitchen-sink";
+@import "templates/author";
 
 // FontAwesome Fonts
 @import "../../../node_modules/@fortawesome/fontawesome-pro-webfonts/scss/fontawesome";
 @import "../../../node_modules/@fortawesome/fontawesome-pro-webfonts/scss/fa-brands";
 @import "../../../node_modules/@fortawesome/fontawesome-pro-webfonts/scss/fa-light";
-//@import "../../../node_modules/@fortawesome/fontawesome-pro-webfonts/scss/fa-regular";
-//@import "../../../node_modules/@fortawesome/fontawesome-pro-webfonts/scss/fa-solid";
+@import "../../../node_modules/@fortawesome/fontawesome-pro-webfonts/scss/fa-regular";
+@import "../../../node_modules/@fortawesome/fontawesome-pro-webfonts/scss/fa-solid";

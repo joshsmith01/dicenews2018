@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
 
-// import fontawesome from '@fortawesome/fontawesome'
+import fontawesome from '@fortawesome/fontawesome'
 // import freeBrands from '@fortawesome/fontawesome-free-brands'
 // import freeRegular from '@fortawesome/fontawesome-free-regular'
 // import freeSolid from '@fortawesome/fontawesome-free-solid'
