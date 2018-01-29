@@ -7,95 +7,104 @@
  */
 
 if ( ! function_exists( 'foundationpress_theme_support' ) ) :
-function foundationpress_theme_support() {
-	// Add language support
-	load_theme_textdomain( 'foundationpress', get_template_directory() . '/languages' );
+	function foundationpress_theme_support() {
+		// Add language support
+		load_theme_textdomain( 'foundationpress', get_template_directory() . '/languages' );
 
-	// Switch default core markup for search form, comment form, and comments to output valid HTML5
-	add_theme_support( 'html5', array(
-		'search-form',
-		'comment-form',
-		'comment-list',
-		'gallery',
-		'caption',
-	) );
+		// Switch default core markup for search form, comment form, and comments to output valid HTML5
+		add_theme_support( 'html5', array(
+			'search-form',
+			'comment-form',
+			'comment-list',
+			'gallery',
+			'caption',
+		) );
 
-	// Add menu support
-	add_theme_support( 'menus' );
+		// Add menu support
+		add_theme_support( 'menus' );
 
-	// Let WordPress manage the document title
-	add_theme_support( 'title-tag' );
+		// Let WordPress manage the document title
+		add_theme_support( 'title-tag' );
 
-	// Add post thumbnail support: http://codex.wordpress.org/Post_Thumbnails
-	add_theme_support( 'post-thumbnails' );
+		// Add post thumbnail support: http://codex.wordpress.org/Post_Thumbnails
+		add_theme_support( 'post-thumbnails' );
 
-	// RSS thingy
-	add_theme_support( 'automatic-feed-links' );
+		// RSS thingy
+		add_theme_support( 'automatic-feed-links' );
 
-	// Add post formats support: http://codex.wordpress.org/Post_Formats
-	add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat') );
+		// Add post formats support: http://codex.wordpress.org/Post_Formats
+		add_theme_support( 'post-formats', array(
+			'aside',
+			'gallery',
+			'link',
+			'image',
+			'quote',
+			'status',
+			'video',
+			'audio',
+			'chat'
+		) );
 
-	// Additional theme support for woocommerce 3.0.+
-    add_theme_support( 'wc-product-gallery-zoom' );
-    add_theme_support( 'wc-product-gallery-lightbox' );
-    add_theme_support( 'wc-product-gallery-slider' );
+		// Additional theme support for woocommerce 3.0.+
+		add_theme_support( 'wc-product-gallery-zoom' );
+		add_theme_support( 'wc-product-gallery-lightbox' );
+		add_theme_support( 'wc-product-gallery-slider' );
 
-	// Add foundation.css as editor style https://codex.wordpress.org/Editor_Style
-	add_editor_style( 'dist/assets/css/' . foundationpress_asset_path('app.css'));
+		// Add foundation.css as editor style https://codex.wordpress.org/Editor_Style
+		add_editor_style( 'dist/assets/css/' . foundationpress_asset_path( 'app.css' ) );
 
-	// Excerpt
-	function custom_excerpt_length( $length ) {
-		return 26;
-	}
-
-	add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
-
-	function custom_excerpt( $text ) {
-		if ( strpos( $text, '[&hellip;]' ) ) {
-			$excerpt = str_replace( '[&hellip;]', '<a class="more-link" href="' . get_permalink() . '">&hellip;</a>', $text );
-		} else {
-			$excerpt = $text . '<p><a class="more-link" href="' . get_permalink() . '">&hellip;</a></p>';
+		// Excerpt
+		function custom_excerpt_length( $length ) {
+			return 26;
 		}
 
-		return $excerpt;
-	}
-	add_filter( 'the_excerpt', 'custom_excerpt' );
+		add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
-	// Modify query for certain pages
-	function set_query( $query ) {
-
-		$erc         = get_cat_ID( 'employer resources' );
-		$erc_cat_ids = null;
-
-		if ( $erc ) {
-			$erc_cats    = get_categories( array( 'child_of' => $erc ) );
-			$erc_cat_ids = [ $erc ];
-			foreach ( $erc_cats as $cat ) {
-				array_push( $erc_cat_ids, $cat->term_id );
+		function custom_excerpt( $text ) {
+			if ( strpos( $text, '[&hellip;]' ) ) {
+				$excerpt = str_replace( '[&hellip;]', '<a class="more-link" href="' . get_permalink() . '">&hellip;</a>', $text );
+			} else {
+				$excerpt = $text . '<p><a class="more-link" href="' . get_permalink() . '">&hellip;</a></p>';
 			}
+
+			return $excerpt;
 		}
 
-		// Prevent home page from displaying ERC posts
-		if ( is_home() && $query->is_main_query() ) {
-			// Set the index.php query
-			$query->set( 'post_status', 'publish' );
-			$query->set( 'post_type', array( 'post', 'dice_ideal_employer' ) );
+		add_filter( 'the_excerpt', 'custom_excerpt' );
+
+		// Modify query for certain pages
+		function set_query( $query ) {
+
+			$erc         = get_cat_ID( 'employer resources' );
+			$erc_cat_ids = null;
+
 			if ( $erc ) {
-				$query->set( 'category__not_in', $erc_cat_ids );
+				$erc_cats    = get_categories( array( 'child_of' => $erc ) );
+				$erc_cat_ids = [ $erc ];
+				foreach ( $erc_cats as $cat ) {
+					array_push( $erc_cat_ids, $cat->term_id );
+				}
 			}
-		} elseif ( is_category( $erc_cat_ids ) and $query->is_main_query() ) {
-			$query->set( 'post_type', array( 'post', 'report' ) );
+
+			// Prevent home page from displaying ERC posts
+			if ( is_home() && $query->is_main_query() ) {
+				// Set the index.php query
+				$query->set( 'post_status', 'publish' );
+				$query->set( 'post_type', array( 'post', 'dice_ideal_employer' ) );
+				if ( $erc ) {
+					$query->set( 'category__not_in', $erc_cat_ids );
+				}
+			} elseif ( is_category( $erc_cat_ids ) and $query->is_main_query() ) {
+				$query->set( 'post_type', array( 'post', 'report' ) );
+			}
 		}
+
+		add_action( 'pre_get_posts', 'set_query' );
+
+
 	}
 
-	add_action( 'pre_get_posts', 'set_query' );
-
-
-
-
-}
-
-add_action( 'after_setup_theme', 'foundationpress_theme_support' );
+	add_action( 'after_setup_theme', 'foundationpress_theme_support' );
 endif;
 
 /**
@@ -161,11 +170,6 @@ function validate_gravatar( $id_or_email ) {
 add_filter( 'github_updater_disable_wpcron', '__return_true' );
 
 
-
-
-
-
-
 // http://mercytapscott.com/specific-category-jetpack-related-posts/
 // https://jetpack.com/support/related-posts/customize-related-posts/
 // https://gist.github.com/kraftbj/9711eaed13e4cf13524e
@@ -208,7 +212,7 @@ add_filter( 'jetpack_relatedposts_filter_has_terms', 'jp_only_rp_in_certain_cate
  * @return array
  */
 function jetpackme_filter_exclude_category( $filters ) {
-	if ( !in_category( 'employer-resources' ) ) {
+	if ( ! in_category( 'employer-resources' ) ) {
 		$filters[] = array(
 			'not' =>
 				array( 'term' => array( 'category.slug' => 'employer-resources' ) )
@@ -219,3 +223,73 @@ function jetpackme_filter_exclude_category( $filters ) {
 }
 
 add_filter( 'jetpack_relatedposts_filter_filters', 'jetpackme_filter_exclude_category' );
+
+
+/* Widget to show post author in sidebar */
+
+class author_widget extends WP_Widget {
+	function __construct() {
+		$widget_ops = array(
+			'classname'   => 'author_widget_class',
+			'description' => 'Display author bio'
+		);
+		parent::__construct( 'author_widget', 'Author Widget', $widget_ops );
+	}
+
+	public function form( $instance ) {
+
+		$author = get_the_author();
+
+		?> <p> <?php echo $author ?> </p> <?php
+	}
+
+	function widget( $args, $instance ) {
+		extract( $args ); ?>
+
+        <div class="widget author-widget">
+            <div class="heading"><h2><?php _e( 'Author', 'dicenews2015' ); ?></h2></div>
+
+            <div class="author-meta-area">
+                <div class="larger-author-text">
+					<?php $author = get_the_author_meta( 'ID' ) ?>
+                    <a href="<?php echo get_author_posts_url( $author ); ?>">
+                        <div class="the-author"><?php the_author(); ?></div>
+                    </a>
+						<?php $dice_position = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'dice_position' ) ); ?>
+                        <div class="author-position"><?php echo $dice_position ?></div>
+	                <?php
+                    $show_email = get_cimyFieldValue( $author, 'author_email' ) == 'YES';
+                    $cimy_twitter = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'twitter' ) );
+                    $show_twitter = strlen( $cimy_twitter ) > 0;
+
+                    if ( $show_email or $show_twitter ) { ?>
+                        <div class="smaller-author-text">
+			                <?php if ( $show_email ) { ?>
+                                <div class="icon icon-mail-1"><?php echo the_author_meta( 'user_email', $author ); ?></div>
+			                <?php } ?>
+			                <?php if ( $show_twitter ) { ?>
+                                <div class="icon icon-twitter-logo-filled"><a
+                                            href="http://www.twitter.com/<?php echo $cimy_twitter ?>"><i
+                                                class="fab fa-twitter"></i><?php echo $cimy_twitter ?></a>
+                                </div>
+			                <?php } ?>
+                        </div>
+	                <?php } ?>
+                </div>
+                <a href="<?php echo get_author_posts_url( $author ); ?>">
+					<?php echo get_avatar( $author ) ?>
+                </a>
+                <div class="author-description"><?php echo the_author_meta( 'description' ); ?></div>
+
+            </div>
+        </div>
+
+	<?php }
+}
+
+function author_widget_init() {
+	register_widget( 'author_widget' );
+}
+
+add_action( 'widgets_init', 'author_widget_init' );
+
