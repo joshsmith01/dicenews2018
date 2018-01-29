@@ -94,7 +94,7 @@
 						<?php endforeach; ?>
                     </div>
 				<?php endwhile; ?>
-				<?php edit_post_link( __( 'Edit', 'diceorg' ) ); ?>
+
             </main>
 			<?php get_sidebar(); ?>
         </div><!-- END .main-grid -->
