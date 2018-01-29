@@ -20,12 +20,14 @@
 							if ( get_cimyFieldValue( $user->ID, 'author_masthead' ) == 'YES' ):?>
 								<?php $author = $user->ID ?>
                                 <div class="author-fields">
-                                    <a class="larger-author-text" href="<?php echo get_author_posts_url( $author ); ?>">
+                                    <a class="author-avatar" href="<?php echo get_author_posts_url( $author ); ?>">
 										<?php echo get_avatar( $author ) ?>
+                                    </a>
+                                    <a class="larger-author-text" href="<?php echo get_author_posts_url( $author ); ?>">
                                         <div class="the-author"><?php echo get_the_author_meta( 'nickname', $author ); ?></div>
+                                    </a>
 										<?php $dice_position = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'dice_position' ) ); ?>
                                         <div class="author-position"><?php echo $dice_position ?></div>
-                                    </a>
 
                                     <div class="smaller-author-text">
 										<?php if ( get_cimyFieldValue( $user->ID, 'author_email' ) == 'YES' ): ?>
@@ -61,8 +63,10 @@
 								<?php $author = $user->ID ?>
                                 <div class="author-fields">
 
+                                    <a class="author-avatar" href="<?php echo get_author_posts_url( $author ); ?>">
+		                                <?php echo get_avatar( $author ) ?>
+                                    </a>
                                     <a class="larger-author-text" href="<?php echo get_author_posts_url( $author ); ?>">
-										<?php echo get_avatar( $author ) ?>
                                         <div class="the-author"><?php echo get_the_author_meta( 'nickname', $author ); ?></div>
                                     </a>
 

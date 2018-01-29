@@ -19,9 +19,9 @@
     word-wrap: break-word;
     text-align: center;
     margin: 20px 0;
-    //@include breakpoint (500px) {
-    //  width: 40%;
-    //}
+    .author-avatar {
+      align-self: center;
+    }
     @include breakpoint (small only) {
       width: 100%;
     }
