@@ -1,5 +1,12 @@
 #### [unreleased]
 
+### 0.0.8
+#### Added
+* Add a button to the search for mobile users
+
+#### Updated
+* Center images and buttons in the sidebar
+
 ### 0.0.7
 #### Added
 * Filter Jetpack Related posts by ERC and non-ERC content and then return the respective posts back to the page
