@@ -1,5 +1,9 @@
 #### [unreleased]
 
+### 0.0.9
+#### Added
+* New template file to display tag archives: tag.php
+
 ### 0.0.8
 #### Added
 * Add a button to the search for mobile users
