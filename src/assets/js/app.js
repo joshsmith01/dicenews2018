@@ -38,11 +38,14 @@ function buildGetUrl() {
     const restscrollId = $('#restscroll');
     let catId = restscrollId.data('catid');
     let authId = restscrollId.data('authid');
+    let cptId   = restscrollId.data('cptid');
     console.log('I\'m the category ID ' + catId);
     if (catId) {
          getUrl = "/wp-json/wp/v2/posts?categories=" + catId + "&_embed&page=2";
     } else if (authId) {
         getUrl = "/wp-json/wp/v2/posts?author=" + authId + "&_embed&page=2";
+    } else if (cptId) {
+        getUrl = "/wp-json/wp/v2/erc-post?_embed&page=2";
     } else {
          getUrl = "/wp-json/wp/v2/posts?_embed&categories_exclude=4722&page=2";
     }
