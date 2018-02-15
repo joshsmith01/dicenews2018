@@ -1,5 +1,12 @@
 #### [unreleased]
 
+### 0.0.12
+#### Update
+* Move Posts with category of ERC* to their own custom post type
+* Display the ERC posts with their own taxonomy
+* Display the ERC posts on their own archive page
+* Give the authors their own ERC post editing experience
+
 ### 0.0.9
 #### Added
 * New template file to display tag archives: tag.php

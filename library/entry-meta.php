@@ -26,7 +26,7 @@ if ( ! function_exists( 'foundationpress_entry_meta' ) ) :
 		echo '<time class="updated" datetime="' . get_the_time( 'c' ) . '">' . get_the_date() . '</time></span></div>';
 
 		$post_type = get_post_type();
-		if ( $post_type === 'post' ) {
+		if ( $post_type === 'post' || $post_type === 'erc-post' ) {
 			$tag = get_the_tags();
 			if ( $tag ) { ?>
                 <div class="post-tags"><i class="fal fa-tag"></i><?php the_tags( '', '' ); ?></div><?php }
