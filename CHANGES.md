@@ -1,5 +1,11 @@
 #### [unreleased]
 
+### 0.0.13
+#### Update
+* Update ERC templates
+* Update JS to find More Posts
+
+
 ### 0.0.12
 #### Update
 * Move Posts with category of ERC* to their own custom post type
