@@ -19,6 +19,16 @@ function foundationpress_sidebar_widgets() {
 		'after_title'   => '</h6></div>',
 	) );
 
+	register_sidebar( array(
+		'id'            => 'erc-post-sidebar',
+		'name'          => __( 'ERC Posts Sidebar', 'foundationpress' ),
+		'description'   => __( 'Drag widgets to this ERC Post sidebar container', 'foundationpress' ),
+		'before_widget' => '<section id="%1$s" class="widget  %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<div class="heading"><h6 >',
+		'after_title'   => '</h6></div>',
+	) );
+
 	register_sidebar(array(
 		'id' => 'sidebar-widgets',
 		'name' => __( 'Sidebar widgets', 'foundationpress' ),

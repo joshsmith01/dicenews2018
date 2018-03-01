@@ -1,5 +1,9 @@
 #### [unreleased]
 
+### 1.0.0
+#### Added
+* New sidebar for ERC posts
+
 ### 0.0.13
 #### Update
 * Update ERC templates
