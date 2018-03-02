@@ -40,7 +40,7 @@ function buildGetUrl() {
     let authId = restscrollId.data('authid');
     let cptId   = restscrollId.data('cptid');
     let cptCatId   = restscrollId.data('cptcatid');
-    console.log('I\'m the category ID ' + catId);
+
     if (catId) {
          getUrl = "/wp-json/wp/v2/posts?categories=" + catId + "&_embed&page=2";
     } else if (authId) {
@@ -113,18 +113,12 @@ function loadMore(url, responseHeaderNext) {
 
             if ( currentPage < responseHeaderTotalPages ) {
                 $('#restscroll').removeClass('invisible');
-                console.log(data);
-                // console.log(currentPage, responseHeaderTotalPages);
                 confirmStorage();
             } else if (currentPage === responseHeaderTotalPages ) {
                 $('#restscroll').removeClass('invisible');
-                console.log(data);
-                // console.log(currentPage, responseHeaderTotalPages);
                 confirmStorage();
             } else {
                 $('#restscroll').removeClass('invisible');
-                console.log('out of data');
-                console.log(data);
                 confirmStorage();
             }
             sessionStorage.setItem('nextPosts', JSON.stringify(data));
@@ -209,7 +203,6 @@ $(document).ready(function () {
     buildGetUrl();
     $('#restscroll').addClass('invisible');
     loadMore(getUrl);
-    console.log('I\'m the pathname ' + pathname);
 });
 
 
