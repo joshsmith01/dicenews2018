@@ -122,7 +122,9 @@ function loadMore(url, responseHeaderNext) {
                 confirmStorage();
             }
             sessionStorage.setItem('nextPosts', JSON.stringify(data));
-            sessionStorage.setItem('nextLink', nextLink.next.href);
+            if ("href" in nextLink) {
+                sessionStorage.setItem('nextLink', nextLink.next.href);
+            }
         }
     });
 }
