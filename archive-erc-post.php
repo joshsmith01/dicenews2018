@@ -39,8 +39,8 @@ get_header(); ?>
                         <div class="sponsor">
                             <img class="logo" src="<?php echo get_field( 'sponsor_icon' ); ?>">
                             <div class="learn-more">
-                                Brought to you by <?php echo get_field( 'sponsor' ); ?> <a
-                                        href="<?php echo get_field( 'sponsor_link' ); ?>">Learn More</a>
+	                            <?php _e( 'Brought to you by', 'dicenews2018' ); ?> <?php echo get_field( 'sponsor' ); ?> <a
+                                        href="<?php echo get_field( 'sponsor_link' ); ?>"><?php _e( 'Learn More', 'dicenews2018' ); ?></a>
                             </div>
                         </div>
 					<?php }
@@ -75,9 +75,9 @@ get_header(); ?>
 		    <?php if ( get_query_var( 'confirmation', 0 ) > 0 ) { // Email confirmation page ?>
                 <div class="confirmation-header">
                     <div class="confirmation">
-                        <h1>Confirmation</h1>
+                        <h1><?php _e( 'Confirmation', 'dicenews2018' ); ?></h1>
                     </div>
-                    <div class="confirmation-text">Thanks for signing up!</div>
+                    <div class="confirmation-text"><?php _e( 'Thanks for signing up!', 'dicenews2018' ); ?></div>
                 </div>
 
                 <!--			--><?php //} elseif ( have_posts() ) { ?>
@@ -112,7 +112,7 @@ get_header(); ?>
                 <!-- More posts button -->
                 <!--                    <div class="autoscroll button expanded">Old Autoscroll</div>-->
                 <div id="restscroll" class="restscroll button expanded"
-                     data-cptid=<?php echo 'erc-post' ?>>More Posts
+                     data-cptid=<?php echo 'erc-post' ?>><?php _e( 'More Posts', 'dicenews2018' ); ?>
                 </div>
             </div>
 

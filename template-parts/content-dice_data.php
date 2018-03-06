@@ -1,11 +1,11 @@
 <?php /* Template part for populating Dice Data page */ ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'grid-x content-dice_data small-6 cell' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'grid-xddd content-dice_data small-6 cell' ); ?>>
     <?php if(get_field('sponsor')): ?>
         <div class="sponsor">
             <img class="logo" src="<?php echo get_field('sponsor_icon'); ?>">
             <div class="learn-more">
-                Brought to you by <?php echo get_field('sponsor') ?> <a href="<?php echo get_field('sponsor_link'); ?>">Learn More</a>
+	            <?php _e( 'Brought to you by', 'dicenews2018' ); ?> <?php echo get_field('sponsor') ?> <a href="<?php echo get_field('sponsor_link'); ?>"><?php _e( 'Learn More', 'dicenews2018' ); ?></a>
             </div>
         </div>
     <?php endif; ?>

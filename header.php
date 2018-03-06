@@ -24,7 +24,12 @@
     <meta name="google-site-verification" content="nYFZB2o_OTgNCj_VIe2Ef0QjRr6Mkz44yJ8fmF4z3EQ"/>
 
     <!-- Begin Adobe Dynamic tag manager -->
-    <script src="//assets.adobedtm.com/8c06f57f0590fbbe830e2dd0366687c0599684e7/satelliteLib-73044e29039c50f90968e5135f6f50a83641e7f0.js"></script>
+    <?php if ($_SERVER['HTTP_HOST'] === 'insights.dice.com' ) { ?>
+
+        <script src="//assets.adobedtm.com/8c06f57f0590fbbe830e2dd0366687c0599684e7/satelliteLib-73044e29039c50f90968e5135f6f50a83641e7f0.js"></script>
+    <?php } else { ?>
+        <script src="//assets.adobedtm.com/8c06f57f0590fbbe830e2dd0366687c0599684e7/satelliteLib-73044e29039c50f90968e5135f6f50a83641e7f0-staging.js"></script>
+    <?php } ?>
     <!-- End Adobe tag-->
 
     <!-- Google ad with tracking -->

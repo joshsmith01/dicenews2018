@@ -1,5 +1,9 @@
 #### [unreleased]
 
+### 1.0.1
+#### Fixed
+* Add the more posts button to Dice Data category page
+
 ### 1.0.0
 #### Added
 * New sidebar for ERC posts

@@ -19,25 +19,28 @@ get_header(); ?>
 <div class="main-container">
     <div class="main-grid">
 
-        <main class="main-content grid-x grid-margin-x">
+        <main class="main-content grid-x grid-margin-x ">
 			<?php if ( have_posts() ) { ?>
-                <!-- Nonfeatured posts -->
+            <!-- Nonfeatured posts -->
 
 
-                        <!-- Posts -->
-						<?php $gradient_number = 0;
-						$featured_counter      = 0;
-						while ( have_posts() ) {
-							the_post(); ?>
-							<?php get_template_part( 'template-parts/content-dice_data', get_post_format() ); ?>
-							<?php $gradient_number ++ ?>
-						<?php } ?>
+            <!-- Posts -->
+			<?php $gradient_number = 0;
+			$featured_counter      = 0;
+			while ( have_posts() ) {
+				the_post(); ?>
+				<?php get_template_part( 'template-parts/content-dice_data', get_post_format() ); ?>
+				<?php $gradient_number ++ ?>
+			<?php } ?>
 
-                    <!-- More posts button -->
-                    <!--                    <div class="autoscroll button expanded">Old Autoscroll</div>-->
-                <div id="restscroll" class="restscroll button expanded"
-                     data-catid=<?php echo $wp_query->queried_object->cat_ID; ?>>REST Scroll
-                </div>
+
+            <div class="stories"></div>
+
+            <!-- More posts button -->
+
+            <div id="restscroll" class="restscroll button expanded"
+                 data-catid=<?php echo $wp_query->queried_object->cat_ID; ?>><?php _e( 'More Posts', 'dicenews2018' ); ?>
+            </div>
 
             <div class="navigation-holder show-for-sr">
 				<?php /* Display navigation to next/previous pages when applicable */
@@ -50,9 +53,9 @@ get_header(); ?>
                         <div class="post-next"><?php previous_posts_link( __( 'Newer posts &rarr;', 'foundationpress' ) ); ?></div>
                     </nav>
 				<?php } ?>
-			<?php } else {
-				get_template_part( 'template-parts/content', 'none' );
-			} ?>
+				<?php } else {
+					get_template_part( 'template-parts/content', 'none' );
+				} ?>
             </div>
         </main>
 		<?php get_sidebar(); ?>

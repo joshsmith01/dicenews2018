@@ -91,6 +91,12 @@
     }
   }
 }
+.category-dice-data {
+  main.main-content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .main-grid {
   @include xy-grid();
   margin-top: $global-margin;
@@ -146,10 +152,24 @@
 
 .author-bio {
   @extend .main-grid;
-  margin-right: 0.9375rem;
-  margin-left: 0.9375rem;
+  //margin-right: 0.9375rem;
+  //margin-left: 0.9375rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
   background: white;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  .page-title-holder {
+    margin: 0;
+    background: white;
+    padding: 0;
+    h1 {
+      color: $dark-nav-color;
+      font-style: normal;
+      font-weight: normal;
+    }
+  }
 }
 .page-title-holder {
   //width: calc(66.66667% - 1.875rem);
