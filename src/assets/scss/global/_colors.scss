@@ -10,10 +10,9 @@ body.page {
     background: white;
   }
 }
-body.post-template-default {
-  background: #ffffff;
-}
-body.post-template {
+body.post-template-default,
+body.post-template,
+body.archive.author {
   background: #ffffff;
 }
 // Update the font color of block quotes

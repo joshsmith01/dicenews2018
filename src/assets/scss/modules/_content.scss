@@ -164,12 +164,23 @@
     margin: 0;
     background: white;
     padding: 0;
-    h1 {
+    h1, .category-page-subtitle {
       color: $dark-nav-color;
       font-style: normal;
       font-weight: normal;
     }
+    h1 {
+      font-size: rem-calc(42px);
+      font-family: $header-font-family;
+    }
+    .category-page-subtitle {
+      font-size: rem-calc(35px);
+      font-family: $header-font-family;
+    }
   }
+}
+.page-subtitle-holder {
+  margin-top: 50px;
 }
 .page-title-holder {
   //width: calc(66.66667% - 1.875rem);

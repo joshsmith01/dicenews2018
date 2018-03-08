@@ -7,9 +7,9 @@ $author_linkedin = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'LINK
 $author_twitter  = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'TWITTER' ) );
 $author_facebook = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'FACEBOOK' ) );
 $author_email    = get_the_author_meta( 'email' );
+$site_title      = get_bloginfo( 'title' );
+$site_url        = get_bloginfo( 'url' );
 
-
-$author_contact_arr = [];
 
 ?>
 <?php get_header(); ?>
@@ -20,43 +20,70 @@ $author_contact_arr = [];
 
 
                 <div class="author-bio">
-                    <div class="page-title-holder">
-                        <h1 class="category-page-title"><?php echo get_the_author(); ?></h1>
-                    </div>
+                    <div class="author-meta">
+						<?php if ( validate_gravatar( get_the_author_meta( 'ID' ) ) ) { ?>
+                            <div class="author-avatar-holder show-for-medium">
+                                <img src="<?php echo esc_url( get_avatar_url( $author_email, [ 'size' => 85 ] ) ); ?>"
+                                     class="avatar"/>
+                            </div>
+						<?php } ?>
+                        <div class="author-text-meta">
 
-					<?php if ( $dice_position ) { ?>
-                        <div class="author-position-holder">
-                            <h4 class="author-position"><?php echo $dice_position ?></h4>
+                            <h1 class="category-page-title"><?php echo get_the_author(); ?></h1>
+	                        <?php if ( validate_gravatar( get_the_author_meta( 'ID' ) ) ) { ?>
+                                <div class="author-avatar-holder show-for-small-only">
+                                    <img src="<?php echo esc_url( get_avatar_url( $author_email, [ 'size' => 85 ] ) ); ?>"
+                                         class="avatar"/>
+                                </div>
+	                        <?php } ?>
+							<?php if ( $dice_position ) { ?>
+                                <h4 class="author-position"><?php echo $dice_position ?><?php if ( $site_title ) {
+										echo ', <a href="' . $site_url . '" class="site-link"> ' . $site_title . '</a>';
+									} ?></h4>
+
+							<?php } ?>
+
+							<?php if ( $author_location ) { ?>
+
+                                <h4 class="author-position"><?php echo $author_location ?></h4>
+
+							<?php } ?>
                         </div>
-					<?php } ?>
+                    </div> <!-- END .author-meta -->
+                    <div class="author-social-contact">
+						<?php if ( $author_facebook ) { ?>
+                            <a href="<?php echo $author_facebook ?>" class="" rel="" target="">
 
-					<?php if ( $author_location ) { ?>
-                        <div class="author-position-holder">
-                            <h4 class="author-position"><?php echo $author_location ?></h4>
-                        </div>
-					<?php } ?>
-
-                    <ul class="author-social-contact">
-	                    <?php if( $author_linkedin ) { ?>
-                            <a href="<?php echo $author_linkedin ?>" class="" rel="" target="">
-
-			                    <?php get_template_part( 'dist/assets/images/svg/logo', 'linked-in.svg' ) ?>
+								<?php get_template_part( 'dist/assets/images/svg/logo', 'facebook.svg' ) ?>
 
                             </a>
-                        <?php } ?>
-	                    <?php if ( $author_facebook ) { ?>
-                            <li><?php echo $author_facebook ?></li>
-	                    <?php } ?>
-	                    <?php if ( $author_twitter ) { ?>
-		                    <li><?php echo $author_twitter ?></li>
-	                    <?php } ?>
-	                    <?php if ( $author_email ) { ?>
-		                    <li><?php echo $author_email ?></li>
-	                    <?php } ?>
-                    </ul>
+						<?php } ?>
+						<?php if ( $author_twitter ) { ?>
+							<?php if ( $author_twitter ) { ?>
+                                <a href="//twitter.com/<?php echo $author_twitter ?>" class="" rel="" target="">
 
+									<?php get_template_part( 'dist/assets/images/svg/logo', 'twitter.svg' ) ?>
 
+                                </a>
+							<?php } ?>
+						<?php } ?>
+						<?php if ( $author_linkedin ) { ?>
+                            <a href="<?php echo $author_linkedin ?>" class="" rel="" target="">
 
+								<?php get_template_part( 'dist/assets/images/svg/logo', 'linked-in.svg' ) ?>
+
+                            </a>
+						<?php } ?>
+						<?php if ( $author_email ) { ?>
+							<?php if ( $author_email ) { ?>
+                                <a href="mailto:<?php echo $author_email ?>" class="" rel="" target="">
+
+									<?php get_template_part( 'dist/assets/images/svg/logo', 'email.svg' ) ?>
+
+                                </a>
+							<?php } ?>
+						<?php } ?>
+                    </div>
 
 
 					<?php if ( strlen( get_the_author_meta( 'description' ) ) > 0 ) { ?>
@@ -65,8 +92,11 @@ $author_contact_arr = [];
                         </div>
 					<?php } ?>
                     <a href="<?php echo get_site_url() . '/about' ?>">
-                        <div class="dice-authors">More Dice Authors</div>
+                        <div class="dice-authors"><?php _e( 'More Dice Authors', 'dicenews2018' ); ?></div>
                     </a>
+                    <div class="page-subtitle-holder">
+                        <h3 class="category-page-subtitle"><?php _e( 'Articles by ', 'dicenews2018' ); ?><?php echo get_the_author(); ?></h3>
+                    </div>
                 </div>
 
 				<?php if ( have_posts() ) { ?>
@@ -87,7 +117,7 @@ $author_contact_arr = [];
                     <!-- More posts button -->
                     <!-- <div class="autoscroll button expanded">Old Autoscroll</div>-->
                     <div id="restscroll" class="restscroll button expanded"
-                         data-authid=<?php echo $wp_query->queried_object->ID; ?>>More Posts
+                         data-authid=<?php echo $wp_query->queried_object->ID; ?>><?php _e( 'More Posts', 'dicenews2018' ); ?>
                     </div>
                 </div>
 

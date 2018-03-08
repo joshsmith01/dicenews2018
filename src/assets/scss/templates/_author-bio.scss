@@ -1,0 +1,61 @@
+.author-nick-kolakowski .main-grid {
+    margin-top: 50px;
+}
+
+.author-nick-kolakowski .author-bio {
+  margin-top: 0;
+  padding: 0;
+}
+.author-avatar-holder {
+  display: flex;
+  align-items: baseline;
+  margin-right: 1rem;
+  padding-top: .5rem;
+  justify-content: center;
+}
+
+.author-social-contact {
+  margin-top: 20px;
+  @include breakpoint(small only) {
+    justify-content: center;
+
+  }
+}
+
+.author-nick-kolakowski article {
+  border: solid 1px #e5e5e5;
+}
+
+.author-nick-kolakowski .author-description,
+.author-nick-kolakowski .dice-authors {
+  font-size: 21px;
+  line-height: 1.52;
+}
+
+.author-nick-kolakowski .dice-authors {
+  margin-top: 1rem;
+}
+.author-nick-kolakowski .category-page-subtitle {
+  font-size: 35px;
+  line-height: 1.4;
+}
+
+.author-nick-kolakowski .author-position {
+  font-size: 21px;
+  line-height: 32px;
+  margin-bottom: 0;
+}
+
+.author-nick-kolakowski .author-meta {
+  @include breakpoint(small only) {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.author-nick-kolakowski .author-meta h1 {
+  @include breakpoint(small only) {
+    font-size: 32px;
+  }
+}
+
