@@ -182,7 +182,7 @@ function displayData(nextLink) {
             "<p class='byline author'>" + value._embedded.author["0"].name + "</p>" +
             "<time class='updated' datetime='" + value.date + "'>, " +
             monthName[published.getMonth(Date.parse(value.date))] +
-            " " + published.getDay(Date.parse(value.date)) + ", " +
+            " " + published.getDate(Date.parse(value.date)) + ", " +
             published.getFullYear(Date.parse(value.date)) +
             "</time>" +
             "</div>" +

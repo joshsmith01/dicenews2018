@@ -1,5 +1,9 @@
 #### [unreleased]
 
+### 1.0.3
+#### Fixed
+* Display in the new articles properly. Parse the date with the GetDate method.
+
 ### 1.0.1
 #### Fixed
 * Add the more posts button to Dice Data category page
