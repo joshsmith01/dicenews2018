@@ -13,6 +13,11 @@ import webpackStream from 'webpack-stream';
 import webpack2      from 'webpack';
 import named         from 'vinyl-named';
 
+import shell from 'shelljs';
+import codecept from 'gulp-codeception';
+import notify from 'gulp-notify';
+import _ from 'lodash';
+
 // Load all Gulp plugins into one variable
 const $ = plugins();
 
@@ -78,6 +83,52 @@ function clean(done) {
   rimraf(PATHS.dist, done);
 }
 
+// Delete the "dump.sql" file
+// This happens every time a build starts
+function cleanDbDump() {
+    // if the file exists already then delete it and get a fresh one
+    if (fs.exists('tests/_data/dump.sql')) {
+        fs.unlink('tests/_data/dump.sql', function (err) {
+            if (err) {
+                shell.exec('wp db export tests/_data/dump.sql');
+                console.log('Failed to delete dump.sql' + err);
+            }
+        })
+    } else {
+        // if the file never existed then build a new one.
+        shell.exec('wp db export tests/_data/dump.sql');
+        console.log('Successfully deleted dump.sql');
+    }
+}
+
+// Create new database dump
+function createDbDump() {
+    shell.exec('wp db export tests/_data/dump.sql');
+    console.log('database dump created');
+    notify()
+}
+
+function testNotification(status, pluginName, override) {
+    let options = {
+        title: (status === 'pass') ? 'Tests Passed' : 'Tests Failed',
+        message: (status === 'pass') ? '\n\nAll tests have passed!\n\n' : '\n\nOne or more tests failed...\n\n',
+        icon: __dirname + '/node_modules/gulp-' + pluginName + '/assets/test-' + status + '.png'
+    };
+    options = _.merge(options, override);
+    return options;
+}
+
+// Run codeception tests
+gulp.task('codecept', function (done) {
+    cleanDbDump(createDbDump);
+
+    gulp.src('codeception.yml')
+        .pipe(codecept('./vendor/bin/codecept', {notify: true}))
+        .on('error', notify.onError(testNotification('fail', 'codecept')))
+        .pipe(notify(testNotification('pass', 'codecept')));
+    done();
+});
+
 // Copy files out of the assets folder
 // This task skips over the "images", "js", and "scss" folders, which are parsed separately
 function copy() {
@@ -128,7 +179,7 @@ let webpackConfig = {
   externals: {
     jquery: 'jQuery'
   }
-}
+};
 // Combine JavaScript into one file
 // In production, the file is minified
 function javascript() {
