@@ -1,29 +1,31 @@
-form#newsletter-content {
-  display: flex;
-}
-input#email-newsletter-email-submit,
-button#email-newsletter-email-submit,
-button#email-dice-newsletter-widget-email-submit,
-input#dice-newsletter-email,
-input#dice-newsletter-widget-email {
-  margin: 0;
-}
+.widget_dice_newsletter_widget {
+  form#newsletter-content {
+    display: flex;
+  }
+  input#email-newsletter-email-submit,
+  button#email-newsletter-email-submit,
+  button#email-dice-newsletter-widget-email-submit,
+  input#dice-newsletter-email,
+  input#dice-newsletter-widget-email {
+    margin: 0;
+  }
 
-input#dice-newsletter-widget-email {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  font-style: italic;
-}
-input#email-newsletter-email-submit,
-button#email-newsletter-email-submit,
-button#email-dice-newsletter-widget-email-submit {
-  padding: 0 0.7em;
-  border: 1px solid $medium-gray;
-  border-left: none;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  background-color: transparent;
-  color: $medium-gray;
-  font-size: 1.3rem;
+  input#dice-newsletter-widget-email {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-style: italic;
+  }
+  input#email-newsletter-email-submit,
+  button#email-newsletter-email-submit,
+  button#email-dice-newsletter-widget-email-submit {
+    padding: 0 0.7em;
+    border: 1px solid $medium-gray;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: transparent;
+    color: $medium-gray;
+    font-size: 1.3rem;
+  }
 }
 

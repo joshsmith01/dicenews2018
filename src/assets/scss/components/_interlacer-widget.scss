@@ -1,0 +1,13 @@
+.interlacer-widget {
+  margin: 2rem;
+  #email-newsletter-email-submit {
+    padding: 0.85em 2em;
+  }
+  h5 {
+    font-size: 1.4625rem;
+    @include breakpoint(medium) {
+      font-size: 1.85rem;
+    }
+  }
+}
+

@@ -1,5 +1,9 @@
 #### [unreleased]
 
+### 1.0.4
+#### Added
+* Added styles for Interlacer Widget which are specific to this theme.
+
 ### 1.0.3
 #### Fixed
 * Display in the new articles properly. Parse the date with the GetDate method.
