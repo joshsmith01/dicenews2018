@@ -1,5 +1,7 @@
 .interlacer-widget {
-  margin: 2rem;
+  @include breakpoint(medium) {
+    margin: 2rem;
+  }
   #email-newsletter-email-submit {
     padding: 0.65em 2.2em;
     font-size: 1.2rem;
