@@ -2,23 +2,37 @@
 
 <?php get_header(); ?>
     <div class="main-container">
-        <div class="page-title-holder">
-            <h1 class="category-page-title"><?php the_title(); ?></h1>
-        </div>
+
         <div class="main-grid">
             <main class="main-content">
 
+                <h1 class="category-page-title"><?php the_title(); ?></h1>
+
 				<?php while ( have_posts() ) : the_post(); ?>
-					<?php the_content(); ?>
+                    <div class="content">
+						<?php the_content(); ?>
+                    </div>
+                    <div class="share-buttons">
+                        <?php // From Shareaholic App Index Below content configuration. -JMS 2018-03-29
+                        echo do_shortcode('[shareaholic app="share_buttons" id="15186111"]')
+                        ?>
+                    </div>
+					<?php $blogusers = get_users( 'orderby=meta_value&meta_key=last_name' ); ?>
 
-					<?php $blogusers = get_users( 'orderby=nicename' ); ?>
-
-                    <h2><?php _e( 'MASTHEAD', 'dicenews2018' ); ?>  </h2>
+                    <h2 class="masthead-section-editors"><?php _e( 'Editors', 'dicenews2018' ); ?>  </h2>
                     <div class="masthead authors">
 						<?php
 						foreach ( $blogusers as $user ):
-							if ( get_cimyFieldValue( $user->ID, 'author_masthead' ) == 'YES' ):?>
-								<?php $author = $user->ID ?>
+							$author = $user->ID;
+							$dice_position = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'dice_position' ) );
+							$author_location = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'author_location' ) );
+							$author_linkedin = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'LINKEDIN' ) );
+							$author_twitter = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'TWITTER' ) );
+							$author_facebook = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'FACEBOOK' ) );
+							$author_email = get_the_author_meta( 'email', $author );
+							$site_title = get_bloginfo( 'title' );
+							$site_url = get_bloginfo( 'url' );
+							if ( get_cimyFieldValue( $author, 'author_masthead' ) == 'YES' ):?>
                                 <div class="author-fields">
                                     <a class="author-avatar" href="<?php echo get_author_posts_url( $author ); ?>">
 										<?php echo get_avatar( $author ) ?>
@@ -26,67 +40,101 @@
                                     <a class="larger-author-text" href="<?php echo get_author_posts_url( $author ); ?>">
                                         <div class="the-author"><?php echo get_the_author_meta( 'nickname', $author ); ?></div>
                                     </a>
-										<?php $dice_position = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'dice_position' ) ); ?>
-                                        <div class="author-position"><?php echo $dice_position ?></div>
+									<?php $dice_position = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'dice_position' ) ); ?>
+                                    <div class="author-position"><?php echo $dice_position ?></div>
 
                                     <div class="smaller-author-text">
-										<?php if ( get_cimyFieldValue( $user->ID, 'author_email' ) == 'YES' ): ?>
-                                            <div class="author-email">
-                                                <a href="mailto:<?php echo the_author_meta( 'user_email', $author ); ?>>">
-                                                <i class="fas fa-envelope"></i>
-                                                <span><?php echo the_author_meta( 'user_email', $author ); ?></span>
-                                                </a>
-                                            </div>
-										<?php endif ?>
+										<?php if ( $author_facebook ) { ?>
+                                            <a href="<?php echo $author_facebook ?>" class="" rel="" target="">
 
-										<?php $cimy_twitter = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'twitter' ) ); ?>
-										<?php if ( strlen( $cimy_twitter ) > 0 ): ?>
-                                            <div class="author-twitter">
-                                                <a href="http://www.twitter.com/<?php echo $cimy_twitter ?>">
-                                                    <i class="fab fa-twitter"></i><?php echo $cimy_twitter ?>
-                                                </a>
-                                            </div>
+												<?php get_template_part( 'dist/assets/images/svg/logo', 'facebook.svg' ) ?>
+
+                                            </a>
+										<?php } ?>
+										<?php if ( $author_twitter ): ?>
+                                            <a href="//twitter.com/<?php echo $author_twitter ?>" class="" rel=""
+                                               target="">
+
+												<?php get_template_part( 'dist/assets/images/svg/logo', 'twitter.svg' ) ?>
+
+                                            </a>
 										<?php endif; ?>
+										<?php if ( $author_linkedin ) { ?>
+                                            <a href="<?php echo $author_linkedin ?>" class="" rel="" target="">
+
+												<?php get_template_part( 'dist/assets/images/svg/logo', 'linked-in.svg' ) ?>
+
+                                            </a>
+										<?php } ?>
+										<?php if ( $author_email ): ?>
+                                            <a href="mailto:<?php echo $author_email ?>" class="" rel="" target="">
+
+												<?php get_template_part( 'dist/assets/images/svg/logo', 'email.svg' ) ?>
+
+                                            </a>
+										<?php endif ?>
                                     </div>
                                 </div>
 							<?php endif; ?>
 						<?php endforeach; ?>
                     </div>
 
-                    <h2><?php _e( 'AUTHORS', 'dicenews2018' ); ?>  </h2>
+                    <h2><?php _e( 'Authors', 'dicenews2018' ); ?>  </h2>
                     <div class="more-authors authors">
 
 						<?php
-						// Masthead
-						foreach ( $blogusers as $user ):
+						// Authors
+                        $authors = get_users( 'orderby=meta_value&meta_key=first_name' );
+						foreach ( $authors as $user ):
+							$author = $user->ID;
+							$dice_position = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'dice_position' ) );
+							$author_location = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'author_location' ) );
+							$author_linkedin = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'LINKEDIN' ) );
+							$author_twitter = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'TWITTER' ) );
+							$author_facebook = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'FACEBOOK' ) );
+							$author_email = get_the_author_meta( 'email', $author );
+							$site_title = get_bloginfo( 'title' );
+							$site_url = get_bloginfo( 'url' );
 							if ( get_cimyFieldValue( $user->ID, 'authors_page' ) == 'YES' ): ?>
-								<?php $author = $user->ID ?>
+
                                 <div class="author-fields">
 
                                     <a class="author-avatar" href="<?php echo get_author_posts_url( $author ); ?>">
-		                                <?php echo get_avatar( $author ) ?>
+										<?php echo get_avatar( $author ) ?>
                                     </a>
                                     <a class="larger-author-text" href="<?php echo get_author_posts_url( $author ); ?>">
                                         <div class="the-author"><?php echo get_the_author_meta( 'nickname', $author ); ?></div>
                                     </a>
 
                                     <div class="smaller-author-text">
-										<?php if ( get_cimyFieldValue( $author, 'author_email' ) == 'YES' ): ?>
-                                            <div class="author-email">
-                                                <a href="mailto:<?php echo the_author_meta( 'user_email', $author ); ?>>">
-                                                    <i class="fas fa-envelope"></i>
-                                                    <span><?php echo the_author_meta( 'user_email', $author ); ?></span>
-                                                </a>
-                                            </div>
-										<?php endif ?>
-										<?php $cimy_twitter = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'twitter' ) ); ?>
-										<?php if ( strlen( $cimy_twitter ) > 0 ): ?>
-                                            <div class="author-twitter">
-                                                <a href="http://www.twitter.com/<?php echo $cimy_twitter ?>">
-                                                    <i class="fab fa-twitter"></i>
-                                                    <?php echo $cimy_twitter ?>
-                                                </a>
-                                            </div>
+										<?php if ( $author_facebook ) { ?>
+                                            <a href="<?php echo $author_facebook ?>" class="" rel="" target="">
+
+												<?php get_template_part( 'dist/assets/images/svg/logo', 'facebook.svg' ) ?>
+
+                                            </a>
+										<?php } ?>
+										<?php if ( $author_twitter ): ?>
+                                            <a href="//twitter.com/<?php echo $author_twitter ?>" class="" rel=""
+                                               target="">
+
+												<?php get_template_part( 'dist/assets/images/svg/logo', 'twitter.svg' ) ?>
+
+                                            </a>
+										<?php endif; ?>
+										<?php if ( $author_linkedin ) { ?>
+                                            <a href="<?php echo $author_linkedin ?>" class="" rel="" target="">
+
+												<?php get_template_part( 'dist/assets/images/svg/logo', 'linked-in.svg' ) ?>
+
+                                            </a>
+										<?php } ?>
+										<?php if ( $author_email ): ?>
+                                            <a href="mailto:<?php echo $author_email ?>" class="" rel="" target="">
+
+												<?php get_template_part( 'dist/assets/images/svg/logo', 'email.svg' ) ?>
+
+                                            </a>
 										<?php endif ?>
                                     </div>
                                 </div>

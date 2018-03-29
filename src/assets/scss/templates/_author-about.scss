@@ -1,4 +1,21 @@
+body.page-template-custom-page-authors {
+  background: $white;
+}
 .page-template-custom-page-authors {
+  .shareaholic-share-buttons-container li.shareaholic-share-button {
+    padding: 1px !important;
+  }
+  .shareaholic-share-buttons-container ul.shareaholic-share-buttons {
+    margin: 0 !important;
+  }
+  ul.shareaholic-share-buttons li.shareaholic-share-button i.shareaholic-service-icon[class*="service-reddit"], ul li.shareaholic-share-button i.shareaholic-service-icon[class*="service-reddit"], ul.shareaholic-share-buttons li i.shareaholic-service-icon[class*="service-reddit"], ul li i.shareaholic-service-icon[class*="service-reddit"] {
+    background-color: #f84521;
+    background-image: none;
+  }
+  .main-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .main-grid {
     background: white;
     padding-top: 1rem;
@@ -8,19 +25,43 @@
     margin-left: 0;
     margin-right: 0;
   }
+  .content {
+    font-size: 21px;
+  }
+  .masthead-section-editors {
+    margin-top: 50px;
+  }
   .authors {
     display: flex;
     flex-wrap: wrap;
+    @include breakpoint( medium down) {
+      justify-content: space-evenly;
+    }
   }
   .author-fields {
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: 32%;
     word-wrap: break-word;
     text-align: center;
-    margin: 20px 0;
+    margin: 20px 5px;
+    padding-top: 29px;
+    padding-bottom: 20px;
+    border: 1px solid $light-border;
+    border-top: 4px solid $theme-main;
+    box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.5);
     .author-avatar {
       align-self: center;
+    }
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+    @include breakpoint (large) {
+      width: 30%;
+    }
+    @include breakpoint (medium only) {
+      width: 30%;
     }
     @include breakpoint (small only) {
       width: 100%;
