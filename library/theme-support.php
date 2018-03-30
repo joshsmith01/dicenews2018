@@ -261,7 +261,7 @@ class author_widget extends WP_Widget {
 
         <div class="widget author-widget">
             <div class="heading">
-                <h2><?php _e( 'Author', 'dicenews2015' ); ?></h2>
+                <h2><?php _e( 'Author Bio', 'dicenews2015' ); ?></h2>
             </div>
             <div class="author-avatar text-center">
             <a href="<?php echo get_author_posts_url( $author ); ?>">
