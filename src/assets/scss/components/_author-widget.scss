@@ -1,6 +1,16 @@
+.author-widget {
+  .author-social-contact {
+    justify-content: center;
+    svg {
+      @include breakpoint( medium ) {
+      height: 25px;
+      width: 25px;
+      }
+    }
+  }
+}
 .author-meta-area {
-  display: flex;
-  justify-content: space-between;
+  @extend .text-center;
 }
 .larger-author-text {
   display: flex;

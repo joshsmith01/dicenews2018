@@ -244,52 +244,78 @@ class author_widget extends WP_Widget {
 	}
 
 	function widget( $args, $instance ) {
-		extract( $args ); ?>
+		extract( $args );
+
+		$author          = get_the_author_meta( 'ID' );
+		$dice_position   = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'dice_position' ) );
+		$author_location = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'author_location' ) );
+		$author_linkedin = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'LINKEDIN' ) );
+		$author_twitter  = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'TWITTER' ) );
+		$author_facebook = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'FACEBOOK' ) );
+		$author_email    = get_the_author_meta( 'email' );
+		$site_title      = get_bloginfo( 'title' );
+		$site_url        = get_bloginfo( 'url' );
+
+
+		?>
 
         <div class="widget author-widget">
-            <div class="heading"><h2><?php _e( 'Author', 'dicenews2015' ); ?></h2></div>
+            <div class="heading">
+                <h2><?php _e( 'Author', 'dicenews2015' ); ?></h2>
+            </div>
+            <div class="author-avatar text-center">
+            <a href="<?php echo get_author_posts_url( $author ); ?>">
+				<?php echo get_avatar( $author, 64 ) ?>
+            </a>
+            </div>
+            <div class="author-social-contact">
+				<?php if ( $author_facebook ) { ?>
+                    <a href="<?php echo $author_facebook ?>" class="" rel="" target="">
 
-            <div class="author-meta-area">
+						<?php get_template_part( 'dist/assets/images/svg/logo', 'facebook.svg' ) ?>
+
+                    </a>
+				<?php } ?>
+				<?php if ( $author_twitter ) { ?>
+					<?php if ( $author_twitter ) { ?>
+                        <a href="//twitter.com/<?php echo $author_twitter ?>" class="" rel="" target="">
+
+							<?php get_template_part( 'dist/assets/images/svg/logo', 'twitter.svg' ) ?>
+
+                        </a>
+					<?php } ?>
+				<?php } ?>
+				<?php if ( $author_linkedin ) { ?>
+                    <a href="<?php echo $author_linkedin ?>" class="" rel="" target="">
+
+						<?php get_template_part( 'dist/assets/images/svg/logo', 'linked-in.svg' ) ?>
+
+                    </a>
+				<?php } ?>
+				<?php if ( $author_email ) { ?>
+					<?php if ( $author_email ) { ?>
+                        <a href="mailto:<?php echo $author_email ?>" class="" rel="" target="">
+
+							<?php get_template_part( 'dist/assets/images/svg/logo', 'email.svg' ) ?>
+
+                        </a>
+					<?php } ?>
+				<?php } ?>
+            </div>
+
+            <div class="author-meta-area text-center">
                 <div class="larger-author-text">
-					<?php $author = get_the_author_meta( 'ID' ) ?>
                     <a href="<?php echo get_author_posts_url( $author ); ?>">
                         <div class="the-author"><?php the_author(); ?></div>
                     </a>
-						<?php $dice_position = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'dice_position' ) ); ?>
-                        <div class="author-position"><?php echo $dice_position ?></div>
-
+					<?php $dice_position = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'dice_position' ) ); ?>
+                    <div class="author-position"><?php echo $dice_position ?></div>
                 </div>
-                <a href="<?php echo get_author_posts_url( $author ); ?>">
-					<?php echo get_avatar( $author ) ?>
-                </a>
-
             </div>
+
             <div class="author-description">
-                <?php echo the_author_meta( 'description' ); ?>
+				<?php echo the_author_meta( 'description' ); ?>
             </div>
-	        <?php
-	        $show_email   = get_cimyFieldValue( $author, 'author_email' ) == 'YES';
-	        $cimy_twitter = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'twitter' ) );
-	        $show_twitter = strlen( $cimy_twitter ) > 0;
-
-	        if ( $show_email or $show_twitter ) { ?>
-                <?php if ( $show_email ) { ?>
-                    <div class="author-email">
-                        <a href="mailto:<?php echo the_author_meta( 'user_email', $author ); ?>>">
-                            <i class="fas fa-envelope"></i>
-                            <span><?php echo the_author_meta( 'user_email', $author ); ?></span>
-                        </a>
-                    </div>
-                <?php } ?>
-                <?php if ( $show_twitter ) { ?>
-                    <div class="icon icon-twitter-logo-filled">
-                        <a href="http://www.twitter.com/<?php echo $cimy_twitter ?>">
-                            <i class="fab fa-twitter"></i>
-                            <?php echo $cimy_twitter ?>
-                        </a>
-                    </div>
-                <?php } ?>
-	        <?php } ?>
         </div>
 
 	<?php }
