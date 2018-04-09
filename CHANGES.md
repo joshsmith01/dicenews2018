@@ -1,5 +1,9 @@
 #### [unreleased]
 
+### 1.0.5
+#### Added
+* New styles for the Authors About page
+
 ### 1.0.4
 #### Added
 * Added styles for Interlacer Widget which are specific to this theme.
