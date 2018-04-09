@@ -12,6 +12,19 @@ body.page-template-custom-page-authors {
     background-color: #f84521;
     background-image: none;
   }
+  .social-sharing-data {
+    margin-top: 3rem;
+    .share-buttons {
+      display: flex;
+      align-items: baseline;
+      @include breakpoint(small only) {
+        justify-content: center;
+      }
+      a {
+      margin-right: 1px;
+      }
+    }
+  }
   .main-container {
     padding-left: 0;
     padding-right: 0;

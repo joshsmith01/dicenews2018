@@ -12,10 +12,64 @@
                     <div class="content">
 						<?php the_content(); ?>
                     </div>
-                    <div class="share-buttons">
-                        <?php // From Shareaholic App Index Below content configuration. -JMS 2018-03-29
-                        echo do_shortcode('[shareaholic app="share_buttons" id="15186111"]')
-                        ?>
+                    <div class="social-sharing-data">
+						<?php
+						$dice_follow_social_heading = get_field( 'dice_social_heading' );
+						$dice_follow_facebook       = get_field( 'dice_social_facebook' );
+						$dice_follow_twitter        = get_field( 'dice_social_twitter' );
+						$dice_follow_linkedin       = get_field( 'dice_social_linkedin' );
+						$dice_follow_pinterest      = get_field( 'dice_social_pinterest' );
+						$dice_follow_reddit         = get_field( 'dice_social_reddit' );
+						$dice_follow_contact_us     = get_field( 'dice_social_contact_us' );
+						?>
+	                    <?php if ( $dice_follow_social_heading ) { ?>
+                            <h5><?php echo $dice_follow_social_heading ?></h5>
+                        <?php } ?>
+                        <div class="share-buttons">
+							<?php if ( $dice_follow_facebook ) { ?>
+                                <a href="<?php echo $dice_follow_facebook ?>" class="" rel="" target="">
+
+									<?php get_template_part( 'dist/assets/images/svg/logo', 'facebook.svg' ) ?>
+
+                                </a>
+							<?php } ?>
+							<?php if ( $dice_follow_twitter ) { ?>
+                                <a href="<?php echo $dice_follow_twitter ?>" class="" rel="" target="">
+
+									<?php get_template_part( 'dist/assets/images/svg/logo', 'twitter.svg' ) ?>
+
+                                </a>
+							<?php } ?>
+							<?php if ( $dice_follow_linkedin ) { ?>
+                                <a href="<?php echo $dice_follow_linkedin ?>" class="" rel="" target="">
+
+									<?php get_template_part( 'dist/assets/images/svg/logo', 'linked-in.svg' ) ?>
+
+                                </a>
+							<?php } ?>
+							<?php if ( $dice_follow_pinterest ) { ?>
+                                <a href="<?php echo $dice_follow_pinterest ?>" class="" rel="" target="">
+
+									<?php get_template_part( 'dist/assets/images/svg/logo', 'pinterest.svg' ) ?>
+
+                                </a>
+							<?php } ?>
+							<?php if ( $dice_follow_reddit ) { ?>
+                                <a href="<?php echo $dice_follow_reddit ?>" class="" rel="" target="">
+
+									<?php get_template_part( 'dist/assets/images/svg/logo', 'reddit.svg' ) ?>
+
+                                </a>
+							<?php } ?>
+							<?php if ( $dice_follow_contact_us ) { ?>
+                                <a href="mailto:<?php echo $dice_follow_contact_us ?>" class="" rel="" target="">
+
+									<?php _e( 'Contact Us', 'dicenews2018' ); ?>
+
+                                </a>
+							<?php } ?>
+
+                        </div>
                     </div>
 					<?php $blogusers = get_users( 'orderby=meta_value&meta_key=last_name' ); ?>
 
@@ -84,17 +138,17 @@
 
 						<?php
 						// Authors
-                        $authors = get_users( 'orderby=meta_value&meta_key=first_name' );
+						$authors             = get_users( 'orderby=meta_value&meta_key=first_name' );
 						foreach ( $authors as $user ):
 							$author = $user->ID;
-							$dice_position = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'dice_position' ) );
+							$dice_position   = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'dice_position' ) );
 							$author_location = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'author_location' ) );
 							$author_linkedin = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'LINKEDIN' ) );
-							$author_twitter = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'TWITTER' ) );
+							$author_twitter  = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'TWITTER' ) );
 							$author_facebook = cimy_uef_sanitize_content( get_cimyFieldValue( $author, 'FACEBOOK' ) );
-							$author_email = get_the_author_meta( 'email', $author );
-							$site_title = get_bloginfo( 'title' );
-							$site_url = get_bloginfo( 'url' );
+							$author_email    = get_the_author_meta( 'email', $author );
+							$site_title      = get_bloginfo( 'title' );
+							$site_url        = get_bloginfo( 'url' );
 							if ( get_cimyFieldValue( $user->ID, 'authors_page' ) == 'YES' ): ?>
 
                                 <div class="author-fields">
