@@ -1,5 +1,9 @@
 #### [unreleased]
 
+### 1.0.6
+#### Added
+* Move Contact link below the social sharing buttons
+
 ### 1.0.5
 #### Added
 * New styles for the Authors About page

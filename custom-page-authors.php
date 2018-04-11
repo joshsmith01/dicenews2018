@@ -61,14 +61,15 @@
 
                                 </a>
 							<?php } ?>
-							<?php if ( $dice_follow_contact_us ) { ?>
-                                <a href="mailto:<?php echo $dice_follow_contact_us ?>" class="" rel="" target="">
+                        </div>
+                        <div class="share-buttons">
+	                    <?php if ( $dice_follow_contact_us ) { ?>
+                            <a href="mailto:<?php echo $dice_follow_contact_us ?>" class="" rel="" target="">
 
-									<?php _e( 'Contact Us', 'dicenews2018' ); ?>
+			                    <?php _e( 'Contact Us', 'dicenews2018' ); ?>
 
-                                </a>
-							<?php } ?>
-
+                            </a>
+	                    <?php } ?>
                         </div>
                     </div>
 					<?php $blogusers = get_users( 'orderby=meta_value&meta_key=last_name' ); ?>
