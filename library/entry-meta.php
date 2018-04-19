@@ -23,7 +23,11 @@ if ( ! function_exists( 'foundationpress_entry_meta' ) ) :
 			<?php echo '<a href="' . get_author_posts_url( get_the_author_meta( 'ID' ) ) . '" rel="author" class="fn">' .get_avatar( get_the_author_meta( 'ID' ), 64 ) . '</a>'; ?>
         <?php }
 		echo '<span class="byline-data"><a href="' . get_author_posts_url( get_the_author_meta( 'ID' ) ) . '" rel="author" class="fn">' . get_the_author_meta( 'display_name' ) . '</a>';
-		echo '<time class="updated" datetime="' . get_the_time( 'c' ) . '">' . get_the_date() . '</time></span></div>';
+		echo '<time class="updated" datetime="' . get_the_time( 'c' ) . '">' . get_the_date() . '</time>';
+		if ( function_exists( 'mtr_print' ) ) {
+			mtr_print();
+		}
+		echo'</span></div>';
 
 		$post_type = get_post_type();
 		if ( $post_type === 'post' || $post_type === 'erc-post' ) {

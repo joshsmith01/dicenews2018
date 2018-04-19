@@ -21,6 +21,12 @@
             <div class="entry-meta entry-meta-standard">
 			    <?php foundationpress_entry_meta_standard(); ?>
             </div>
+	        <?php
+	        if ( function_exists( 'mtr_print' ) ) {
+		        echo '<p class="entry-meta-standard">';
+		        mtr_print();
+		        echo '</p>';
+	        } ?>
         </header>
         <div class="entry-content hide-for-small-only">
 		    <?php the_excerpt(); ?>
