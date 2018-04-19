@@ -55,8 +55,11 @@ get_header(); ?>
                             <?php the_post_thumbnail( $thumb_size ); ?>
                         </a>
                         <?php
-				    } else {
-					    the_post_thumbnail( 'featured-one-third' );
+				    } else { ?>
+                        <a href="<?php the_permalink(); ?>">
+					        <?php the_post_thumbnail( 'featured-one-third' ); ?>
+                        </a>
+                        <?php
 					    $thirds += 1;
 				    }
 				    $num_featured ++;
