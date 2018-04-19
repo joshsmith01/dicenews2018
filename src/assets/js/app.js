@@ -186,6 +186,7 @@ function displayData(nextLink) {
             published.getFullYear(Date.parse(value.date)) +
             "</time>" +
             "</div>" +
+            "<div class='entry-meta-standard'>" + value.time_to_read + "</div>" +
             "</header>" +
             "<div class='entry-content hide-for-small-only'>" +
             value.excerpt.rendered +

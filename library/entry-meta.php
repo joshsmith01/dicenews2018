@@ -24,8 +24,8 @@ if ( ! function_exists( 'foundationpress_entry_meta' ) ) :
         <?php }
 		echo '<span class="byline-data"><a href="' . get_author_posts_url( get_the_author_meta( 'ID' ) ) . '" rel="author" class="fn">' . get_the_author_meta( 'display_name' ) . '</a>';
 		echo '<time class="updated" datetime="' . get_the_time( 'c' ) . '">' . get_the_date() . '</time>';
-		if ( function_exists( 'mtr_print' ) ) {
-			mtr_print();
+		if ( function_exists( 'bm_estimated_reading_time' ) ) {
+			echo bm_estimated_reading_time();
 		}
 		echo'</span></div>';
 

@@ -22,9 +22,9 @@
 			    <?php foundationpress_entry_meta_standard(); ?>
             </div>
 	        <?php
-	        if ( function_exists( 'mtr_print' ) ) {
+	        if ( function_exists( 'bm_estimated_reading_time' ) ) {
 		        echo '<p class="entry-meta-standard">';
-		        mtr_print();
+		        echo bm_estimated_reading_time();
 		        echo '</p>';
 	        } ?>
         </header>
