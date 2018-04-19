@@ -166,9 +166,10 @@ function displayData(nextLink) {
 
             "<article class='grid-x content-standard post-" + value.id + " post type-post status-publish format-standard has-post-thumbnail hentry category-ai category-headline tag-a-i tag-artificial-intelligence tag-google'>" +
             ((image)?("<div class='article-excerpt-img'>" +
-
+                "<a href='" + value.link + "'>" +
                 "<img src='" + image + "'>" +
                 "<div class='overlay'></div>" +
+                "</a>" +
 
                 "</div>"):("<div class='small-12 cell'>")) +
             "<div class='article-excerpt-details'>" +
@@ -188,7 +189,9 @@ function displayData(nextLink) {
             "</div>" +
             "</header>" +
             "<div class='entry-content hide-for-small-only'>" +
+            "<a href='" + value.link + "'>" +
             value.excerpt.rendered +
+            "</a>" +
             "</div>" +
             "</article>" );
     });

@@ -50,7 +50,11 @@ get_header(); ?>
 						    $thumb_size = 'featured-one-third';
 						    $thirds     += 1;
 					    }
-					    the_post_thumbnail( $thumb_size );
+					    ?>
+                        <a href="<?php the_permalink(); ?>">
+                            <?php the_post_thumbnail( $thumb_size ); ?>
+                        </a>
+                        <?php
 				    } else {
 					    the_post_thumbnail( 'featured-one-third' );
 					    $thirds += 1;

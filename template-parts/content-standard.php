@@ -13,7 +13,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('grid-x content-standard'); ?>>
 
     <div class="article-excerpt-img small-4 cell">
-	    <?php the_post_thumbnail( 'thumbnail-desktop' ); ?>
+        <a href="<?php the_permalink(); ?>">
+	        <?php the_post_thumbnail( 'thumbnail-desktop' ); ?>
+        </a>
     </div>
     <div class="article-excerpt-details small-8 cell">
         <header>
@@ -23,7 +25,9 @@
             </div>
         </header>
         <div class="entry-content hide-for-small-only">
-		    <?php the_excerpt(); ?>
+            <a href="<?php the_permalink(); ?>">
+		        <?php the_excerpt(); ?>
+            </a>
         </div>
     </div>
 

@@ -23,6 +23,9 @@
     p {
       margin-bottom: 0;
     }
+    a {
+      color: $body-font-color;
+    }
   }
 }
 .category article.content-dice_data {
@@ -135,6 +138,9 @@
     }
     .entry-content {
       margin-top: $global-margin;
+      a {
+        color: $body-font-color;
+      }
     }
   }
 

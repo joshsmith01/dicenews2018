@@ -1,5 +1,9 @@
 #### [unreleased]
 
+### 1.0.7
+#### Added
+* Surround index pages' exerpt articles with existing links
+
 ### 1.0.6
 #### Added
 * Move Contact link below the social sharing buttons
