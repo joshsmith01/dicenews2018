@@ -1,5 +1,9 @@
 #### [unreleased]
 
+### 1.0.8
+#### Added
+* Wrap the post's permalink around the post image and the post excerpt on index pages
+
 ### 1.0.7
 #### Added
 * Surround index pages' exerpt articles with existing links
