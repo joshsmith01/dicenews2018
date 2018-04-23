@@ -187,10 +187,13 @@ function displayData(nextLink) {
             published.getFullYear(Date.parse(value.date)) +
             "</time>" +
             "</div>" +
+            "<div class='entry-meta entry-meta-standard'>" +
+            value.time_to_read +
+            "</div>" +
             "</header>" +
             "<div class='entry-content hide-for-small-only'>" +
             "<a href='" + value.link + "'>" +
-            value.excerpt.rendered +
+            value.get_excerpt_by_char_count +
             "</a>" +
             "</div>" +
             "</article>" );

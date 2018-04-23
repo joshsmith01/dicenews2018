@@ -74,7 +74,7 @@ if ( ! function_exists( 'foundationpress_theme_support' ) ) :
 		add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 		add_action( 'rest_api_init', function () {
-			register_rest_field( array( 'post', 'erc-post' ), 'get_excerpt_by_char_count', array(
+			register_rest_field( array( 'post', 'erc-post', 'report' ), 'get_excerpt_by_char_count', array(
 				'get_callback' => function () {
 					$get_excerpt = get_excerpt( 120, 'content' );
 

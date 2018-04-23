@@ -23,10 +23,21 @@
             <div class="entry-meta entry-meta-standard">
 			    <?php foundationpress_entry_meta_standard(); ?>
             </div>
+            <div class="entry-meta-standard">
+                <?php if (function_exists('calculate_time_to_read')) {
+                    echo calculate_time_to_read();
+                } ?>
+            </div>
         </header>
         <div class="entry-content hide-for-small-only">
             <a href="<?php the_permalink(); ?>">
-		        <?php the_excerpt(); ?>
+		        <?php
+                    if(function_exists('get_excerpt')) {
+                        echo get_excerpt(120, 'content');
+                    } else {
+                        the_excerpt();
+                    }
+                 ?>
             </a>
         </div>
     </div>
