@@ -17,13 +17,14 @@
     $mobile_url = wp_get_attachment_image_src($thumb_id, 'featured-mobile')[0];
     ?>
 
-
-    <picture>
-        <source srcset="<?php echo $desktop_url; ?>" media="(min-width: 996px)" />
-        <source srcset="<?php echo $tablet_url; ?>" media="(min-width: 768px)" />
-        <source srcset="<?php echo $mobile_url; ?>" media="(max-width: 767px)" />
-        <img srcset="<?php echo $desktop_url; ?>">
-    </picture>
+    <a href="<?php the_permalink(); ?>">
+        <picture>
+            <source srcset="<?php echo $desktop_url; ?>" media="(min-width: 996px)" />
+            <source srcset="<?php echo $tablet_url; ?>" media="(min-width: 768px)" />
+            <source srcset="<?php echo $mobile_url; ?>" media="(max-width: 767px)" />
+            <img srcset="<?php echo $desktop_url; ?>">
+        </picture>
+    </a>
 
     <span class="title <?php echo get_field('color'); ?>">
         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
