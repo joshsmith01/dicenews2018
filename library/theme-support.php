@@ -58,7 +58,36 @@ if ( ! function_exists( 'foundationpress_theme_support' ) ) :
 			return 26;
 		}
 
+		function get_excerpt( $limit, $source = null ) {
+
+			if ( $source == "content" ? ( $excerpt = get_the_content() ) : ( $excerpt = get_the_excerpt() ) )
+			$excerpt = preg_replace( " (\[.*?\])", '', $excerpt );
+			$excerpt = strip_shortcodes( $excerpt );
+			$excerpt = strip_tags( $excerpt );
+			$excerpt = substr( $excerpt, 0, $limit );
+			$excerpt = substr( $excerpt, 0, strripos( $excerpt, " " ) );
+			$excerpt = trim( preg_replace( '/\s+/', ' ', $excerpt ) );
+			$excerpt = $excerpt . '...';
+
+			return $excerpt;
+		}
 		add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+		add_action( 'rest_api_init', function () {
+			register_rest_field( array( 'post', 'erc-post' ), 'get_excerpt_by_char_count', array(
+				'get_callback' => function () {
+					$get_excerpt = get_excerpt( 120, 'content' );
+
+					return (string) $get_excerpt;
+				},
+				'schema'       => array(
+					'description' => __( 'excerpt_by_characters' ),
+					'type'        => 'string'
+				),
+			) );
+		} );
+
+
 
 		function custom_excerpt( $text ) {
 			if ( strpos( $text, '[&hellip;]' ) ) {
@@ -326,38 +355,3 @@ function author_widget_init() {
 }
 
 add_action( 'widgets_init', 'author_widget_init' );
-/**
- * Estimate time required to read the article
- *
- * @return string
- */
-function bm_estimated_reading_time() {
-
-	$post = get_post();
-
-	$words   = str_word_count( strip_tags( $post->post_content ) );
-	$minutes = floor( $words / 120 );
-	$seconds = floor( $words % 120 / ( 120 / 60 ) );
-
-	if ( 1 <= $minutes ) {
-//		$estimated_time = $minutes . ' minute' . ( $minutes == 1 ? '' : 's' ) . ', ' . $seconds . ' second' . ( $seconds == 1 ? '' : 's' );
-		$estimated_time = $minutes . ' min' . ( $minutes == 1 ? '' : 's' );
-	} else {
-		$estimated_time = $seconds . ' second' . ( $seconds == 1 ? '' : 's' );
-	}
-
-	return $estimated_time;
-
-}
-add_action( 'rest_api_init', function () {
-	register_rest_field( array('post', 'erc-post'), 'time_to_read', array(
-		'get_callback'    => function (  ) {
-			$time_to_read = bm_estimated_reading_time();
-			return (string) $time_to_read;
-		},
-		'schema'          => array(
-			'description' => __( 'Time to read.' ),
-			'type'        => 'string'
-		),
-	) );
-} );
