@@ -1,5 +1,9 @@
 #### [unreleased]
 
+### 1.0.10
+#### Added
+* Add field in API response for number of comments per post
+
 ### 1.0.9
 #### Added
 * Add support for Minutes to Read plugin

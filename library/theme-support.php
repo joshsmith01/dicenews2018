@@ -355,3 +355,22 @@ function author_widget_init() {
 }
 
 add_action( 'widgets_init', 'author_widget_init' );
+
+/**
+ * Make the number of comments available to the REST API responses.
+ *
+ * Register the fields and name the response. -JMS
+ */
+add_action( 'rest_api_init', function () {
+	register_rest_field( array( 'post', 'erc-post', 'report', 'd3' ), 'comments_number', array(
+		'get_callback' => function () {
+			$comments_number = get_comments_number();
+
+			return (int) $comments_number;
+		},
+		'schema'       => array(
+			'description' => __( 'Number of Comments' ),
+			'type'        => 'int'
+		),
+	) );
+} );
