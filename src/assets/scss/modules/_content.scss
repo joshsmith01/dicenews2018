@@ -24,7 +24,7 @@
       margin-bottom: 0;
     }
     a {
-      color: $body-font-color;
+      //color: $body-font-color;
     }
   }
 }
@@ -139,7 +139,7 @@
     .entry-content {
       margin-top: $global-margin;
       a {
-        color: $body-font-color;
+        //color: $body-font-color;
       }
     }
   }
@@ -229,13 +229,9 @@
     flex-direction: column;
     margin-left: $global-margin/2;
     @include breakpoint(small only) {
-      flex-direction: row;
-      &:before {
-        content: 'By ';
-      }
       a, time {
         margin-right: $global-margin/2;
-        margin-left: $global-margin/2;
+        margin-left: 0;
       }
 
     }

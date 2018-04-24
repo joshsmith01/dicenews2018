@@ -22,7 +22,7 @@ if ( ! function_exists( 'foundationpress_entry_meta' ) ) :
 		if ( validate_gravatar( get_the_author_meta( 'ID' ) ) ) { ?>
 			<?php echo '<a href="' . get_author_posts_url( get_the_author_meta( 'ID' ) ) . '" rel="author" class="fn">' .get_avatar( get_the_author_meta( 'ID' ), 64 ) . '</a>'; ?>
         <?php }
-		echo '<span class="byline-data"><a href="' . get_author_posts_url( get_the_author_meta( 'ID' ) ) . '" rel="author" class="fn">' . get_the_author_meta( 'display_name' ) . '</a>';
+		echo '<span class="byline-data"><span><span class="hide-for-medium">by </span><a href="' . get_author_posts_url( get_the_author_meta( 'ID' ) ) . '" rel="author" class="fn">' . get_the_author_meta( 'display_name' ) . '</a></span>';
 		echo '<time class="updated" datetime="' . get_the_time( 'c' ) . '">' . get_the_date() . '</time>';
 		if ( function_exists( 'calculate_time_to_read' ) ) {
 			echo calculate_time_to_read();
