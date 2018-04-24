@@ -1,5 +1,11 @@
 #### [unreleased]
 
+### 1.0.9
+#### Added
+* Add support for Minutes to Read plugin
+#### Fixed
+* Change color of anchor links to blue
+
 ### 1.0.8
 #### Added
 * Wrap the post's permalink around the post image and the post excerpt on index pages
