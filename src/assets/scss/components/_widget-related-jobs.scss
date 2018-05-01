@@ -1,0 +1,24 @@
+.widget-dice-related-jobs-widget {
+  .job-result {
+    border: none;
+    padding-bottom: 8px;
+    padding-left: 0;
+    .related-job-company {
+      color: $dark-gray;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+  .related-jobs-category-prompt {
+    color: $dark-gray;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 32px;
+  }
+  .related-jobs-author {
+    .job-result {
+      padding-bottom: 0;
+      padding-top: 8px;
+    }
+  }
+}
