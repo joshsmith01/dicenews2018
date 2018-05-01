@@ -1,12 +1,15 @@
 #### [unreleased]
 
+### 1.0.12
+#### Updated
+* Use the built-in WordPress function to display post thumbnails
+
 ### 1.0.11
 #### Added
 * Get ready for the new Dice Related Jobs Widget
     * Custom styles
     * Override the existing styles which have changed
 * Add new ACF Pro fields
-
 
 ### 1.0.10
 #### Added
