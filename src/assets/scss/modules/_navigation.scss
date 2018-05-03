@@ -263,8 +263,14 @@
 
 .nav-previous {
   float:left;
+  svg {
+    margin-right: 8px;
+  }
 }
 
 .nav-next {
   float:right;
+  svg {
+    margin-left: 8px;
+  }
 }
