@@ -10,7 +10,8 @@ foreach ($erc_cats as $cat){
 
 // Check if we should search for ERC or Tech Pro posts
 if((!is_home() && have_posts()) and
-    $_GET['cat'] != '-'.$erc and
+//    $_GET['cat'] != '-'.$erc and
+   get_post_type() === 'erc-post' and
     (in_category($erc_cat_ids) or
      is_category($erc_cat_ids))){
     $is_erc = TRUE;

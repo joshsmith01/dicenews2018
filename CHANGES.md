@@ -3,6 +3,8 @@
 ### 1.0.13
 #### Updated
 * Space out the next and prev arrows on the indiviual posts
+#### Fix
+* PHP error when looking for a global variable that no longer exists
 
 ### 1.0.12
 #### Updated
