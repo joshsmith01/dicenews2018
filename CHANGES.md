@@ -1,5 +1,9 @@
 #### [unreleased]
 
+### 1.0.14
+#### Updated
+* Tighten spacing on Dice Related Jobs Widget
+
 ### 1.0.13
 #### Updated
 * Space out the next and prev arrows on the indiviual posts
