@@ -1,7 +1,7 @@
 .widget-dice-related-jobs-widget {
   .job-result {
     border: none;
-    padding-bottom: 0;
+    padding-bottom: 8px;
     padding-left: 0;
     line-height: 20px;
     margin-bottom: 0;
@@ -16,12 +16,11 @@
     font-size: 14px;
     line-height: 14px;
     margin-top: 32px;
-    margin-bottom: 0;
   }
   .related-jobs-author {
     margin-bottom: 0;
     .job-result {
-      padding-bottom: 0;
+      padding-bottom: 8px;
       padding-top: 8px;
       line-height: 1rem;
     }
