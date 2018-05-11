@@ -1,5 +1,9 @@
 #### [unreleased]
 
+### 1.0.15
+#### Added
+* Create AMP directory to use as psuedo-child theme for AMP pages
+
 ### 1.0.14
 #### Updated
 * Tighten spacing on Dice Related Jobs Widget
