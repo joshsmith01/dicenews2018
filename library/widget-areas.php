@@ -39,6 +39,16 @@ function foundationpress_sidebar_widgets() {
 		'after_title' => '</h6></div>',
 	));
 
+	register_sidebar( array(
+		'id'            => 'single-sidebar',
+		'name'          => __( 'Single Sidebar', 'foundationpress' ),
+		'description'   => __( 'Drag widgets to this sidebar container.', 'foundationpress' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<div class="heading"><h6 >',
+		'after_title'   => '</h6></div>',
+	) );
+
 	register_sidebar(array(
 		'id' => 'footer-widgets',
 		'name' => __( 'Footer widgets', 'foundationpress' ),

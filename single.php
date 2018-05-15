@@ -27,9 +27,11 @@ get_header(); ?>
                 <aside class="sidebar">
 					<?php dynamic_sidebar( 'erc-post-sidebar' ); ?>
                 </aside>
-			<?php } else {
-				get_sidebar();
-			} ?>
+			<?php } else { ?>
+				<aside class="sidebar">
+					<?php dynamic_sidebar( 'single-sidebar' ); ?>
+                </aside>
+			<?php } ?>
         </div>
     </div>
 <?php get_footer();
