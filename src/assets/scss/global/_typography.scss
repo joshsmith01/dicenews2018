@@ -5,11 +5,10 @@
 .widget h6, .widget h2, .widget h3, .widgettitle {
   margin: 0 0 -1px;
   padding: 0 0 14px;
-  font-size: 19px;
-  //float: left;
-  line-height: 22px;
-  font-weight: normal;
-  color: #000;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $body-font-color;
   position: relative;
   border-bottom: 2px solid #66ccff;
 }
