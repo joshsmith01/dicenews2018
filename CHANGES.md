@@ -1,5 +1,10 @@
 #### [unreleased]
 
+### 1.0.18
+#### Updated
+* Use WP function to display featured images in srcSet on single pages
+* Allow CDN to pickup the images
+
 ### 1.0.17
 #### Added
 * Wrap up that pre text
