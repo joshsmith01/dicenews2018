@@ -1,5 +1,9 @@
 #### [unreleased]
 
+### 1.0.17
+#### Added
+* Wrap up that pre text
+
 ### 1.0.16
 #### Added
 * Sidebar for single posts
