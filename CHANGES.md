@@ -1,5 +1,14 @@
 #### [unreleased]
 
+### 1.0.16
+#### Added
+* Sidebar for single posts
+* Update layout
+
+#### Updated
+* Searches now return data from one post type instead of from a category
+* Bump font size and weight in sidebars
+
 ### 1.0.15
 #### Added
 * Create AMP directory to use as psuedo-child theme for AMP pages
