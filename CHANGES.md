@@ -1,5 +1,10 @@
 #### [unreleased]
 
+### 1.0.19
+### Hot Fix
+#### Remove
+* Remove inline styles from AMP footer
+
 ### 1.0.18
 #### Updated
 * Use WP function to display featured images in srcSet on single pages
