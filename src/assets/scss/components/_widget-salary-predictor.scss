@@ -15,8 +15,42 @@
     color: #999999;
     font-size: 14px;
     line-height: 18px;
+    display: inline;
   }
   #salary-predictor-cta {
 
+  }
+  i {
+    color: $primary-color;
+  }
+}
+#salary-predictor-modal-01 {
+  padding: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  .card-divider {
+    background: #ccc;
+    h3 {
+      margin-bottom: 0;
+      font-size: 24px;
+      font-style: italic;
+      font-family: 'Roboto Condensed', sans-serif;
+      color: #000;
+    }
+  }
+  .card-section {
+    background: #eee;
+    .lead {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .follow-up {
+      display: inline;
+    }
+    .button {
+      padding: 10px 20px;
+      font-size: 18px;
+      line-height: 1.33;
+      font-weight: 400;
+    }
   }
 }
