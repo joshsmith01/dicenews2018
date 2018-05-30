@@ -1,5 +1,9 @@
 #### [unreleased]
 
+### 1.0.20
+#### Fix
+* Fix sidescrolling on the rare Twitter embdded widget
+
 ### 1.0.19
 ### Hot Fix
 #### Remove
